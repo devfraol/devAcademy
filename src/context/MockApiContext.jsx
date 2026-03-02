@@ -9,7 +9,7 @@ const MockApiContext = createContext(null);
 const usersSeed = [
   { id: "usr-001", name: "John Doe", email: "john@email.com", role: "Student", status: "Active" },
   { id: "usr-002", name: "Sofia Khan", email: "sofia@email.com", role: "Instructor", status: "Inactive" },
-  { id: "inst-001", name: "Dev Fraol", email: "devfraol@devfraol.academy", role: "Instructor", status: "Active" },
+  { id: "inst-001", name: "Dev Fraol", email: "info@devfraol.academy", role: "Instructor", status: "Active" },
 ];
 
 const instructorsSeed = [
@@ -52,8 +52,8 @@ const contactSeed = {
   title: "Get in Touch",
   subtitle: "Have questions? Reach out and we’ll get back to you!",
   details: [
-    { id: "email", label: "Email", value: "hello@devfraol.academy", href: "mailto:hello@devfraol.academy" },
-    { id: "phone", label: "Phone", value: "+1 (555) 867-5309", href: "tel:+15558675309" },
+    { id: "email", label: "Email", value: "devfraol@gmail.com", href: "devfraol@gmail.com" },
+    { id: "phone", label: "Phone", value: "+251 935-3667-19", href: "tel:+251935366719" },
     { id: "location", label: "Location", value: "Remote-first · Serving globally", href: null },
   ],
 };
