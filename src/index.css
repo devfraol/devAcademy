@@ -49,7 +49,7 @@
     --card: 228 20% 13%;
     --muted: 228 16% 18%;
     --muted-foreground: 220 14% 72%;
-    --primary: 3 82% 57%;
+    --primary: 162 100% 24%;
     --primary-foreground: 0 0% 100%;
     --border: 228 18% 24%;
   }
@@ -83,7 +83,7 @@
 
 @utility text-glow {
   @apply relative;
-  text-shadow: 0 0 10px rgba(255, 59, 48, 0.5);
+  text-shadow: 0 0 10px rgba(0, 122, 85, 0.5);
 }
 
 @utility card-hover {
@@ -92,7 +92,7 @@
 
 @utility cosmic-button {
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium
-  transition-all duration-300 hover:shadow-[0_0_16px_rgba(255,59,48,0.55)] hover:scale-105 active:scale-95;
+  transition-all duration-300 hover:shadow-[0_0_16px_rgba(0,122,85,0.55)] hover:scale-105 active:scale-95;
 }
 
 @utility star {
@@ -101,8 +101,8 @@
 }
 
 @utility meteor {
-  @apply absolute bg-linear-to-r from-primary/80 via-orange-300 to-transparent rounded-full;
-  box-shadow: 0 0 10px 5px rgba(255, 79, 67, 0.25);
+  @apply absolute bg-linear-to-r from-primary/80 via-emerald-300 to-transparent rounded-full;
+  box-shadow: 0 0 10px 5px rgba(0, 122, 85, 0.25);
 }
 
 
@@ -119,7 +119,7 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(1100px circle at 50% 125%, rgba(255, 59, 48, 0.08), transparent 58%),
+    radial-gradient(1100px circle at 50% 125%, rgba(0, 122, 85, 0.1), transparent 58%),
     linear-gradient(180deg, #0f121c 0%, #090b13 100%);
 }
 
@@ -135,7 +135,7 @@
   left: -12%;
   width: min(42rem, 70vw);
   height: min(34rem, 60vw);
-  background: radial-gradient(circle, rgba(173, 36, 36, 0.55) 0%, rgba(173, 36, 36, 0.18) 34%, transparent 72%);
+  background: radial-gradient(circle, rgba(0, 122, 85, 0.45) 0%, rgba(0, 122, 85, 0.18) 34%, transparent 72%);
 }
 
 .app-background__glow--top-right {
@@ -143,7 +143,7 @@
   right: -8%;
   width: min(38rem, 62vw);
   height: min(30rem, 55vw);
-  background: radial-gradient(circle, rgba(134, 25, 36, 0.52) 0%, rgba(134, 25, 36, 0.2) 40%, transparent 74%);
+  background: radial-gradient(circle, rgba(0, 122, 85, 0.42) 0%, rgba(0, 122, 85, 0.18) 40%, transparent 74%);
 }
 
 .app-background__glow--bottom {
@@ -151,7 +151,7 @@
   left: 25%;
   width: min(44rem, 72vw);
   height: min(24rem, 48vw);
-  background: radial-gradient(ellipse at center, rgba(165, 41, 41, 0.44) 0%, rgba(165, 41, 41, 0.16) 42%, transparent 76%);
+  background: radial-gradient(ellipse at center, rgba(0, 122, 85, 0.36) 0%, rgba(0, 122, 85, 0.14) 42%, transparent 76%);
 }
 
 .app-background__noise {
@@ -165,7 +165,7 @@
 .glass-panel {
   background: linear-gradient(155deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.03));
   border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.34), 0 0 0 1px rgba(255, 59, 48, 0.06) inset;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.34), 0 0 0 1px rgba(0, 122, 85, 0.08) inset;
 }
 
 @supports ((-webkit-backdrop-filter: blur(0)) or (backdrop-filter: blur(0))) {
@@ -180,7 +180,7 @@
 
 
 :focus-visible {
-  outline: 2px solid #FF3B30;
+  outline: 2px solid #007a55;
   outline-offset: 2px;
 }
 

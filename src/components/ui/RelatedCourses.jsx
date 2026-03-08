@@ -13,7 +13,7 @@ export const RelatedCourses = ({ courses = [] }) => {
             key={course.id}
             type="button"
             onClick={() => navigate(`/course/${course.slug || course.id}`)}
-            className="overflow-hidden rounded-2xl border border-white/15 bg-black/10 text-left transition hover:-translate-y-0.5 hover:border-[#ff5d52]/60"
+            className="overflow-hidden rounded-2xl border border-white/15 bg-black/10 text-left transition hover:-translate-y-0.5 hover:border-[#009167]/60"
           >
             <img src={course.thumbnail} alt={course.title} className="h-36 w-full object-cover" />
             <div className="space-y-2 p-4">

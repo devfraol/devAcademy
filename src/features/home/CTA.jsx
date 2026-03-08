@@ -11,7 +11,7 @@ export const CTA = () => {
         className="container max-w-6xl mx-auto rounded-2xl border border-primary/40 bg-linear-to-r from-primary/15 via-primary/5 to-card p-8 sm:p-12"
       >
         <h2 className="text-3xl sm:text-4xl text-left">Start Your Journey Today</h2>
-        <p className="mt-3 text-left text-muted-foreground">Build real projects, sharpen your creative confidence, and move toward your next professional milestone.</p>
+        <p className="mt-3 text-left text-muted-foreground">Build practical networking projects, strengthen troubleshooting confidence, and move toward your next IT milestone.</p>
         <Link to="/apps" className="mt-6 inline-flex cosmic-button">
           Start Learning
         </Link>

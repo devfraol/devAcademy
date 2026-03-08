@@ -7,7 +7,7 @@ export const AdminHeader = ({ onMenuClick }) => {
         <button
           aria-label="Open sidebar"
           onClick={onMenuClick}
-          className="rounded-lg border border-white/10 p-2 text-zinc-100 transition hover:border-[#FF3B30]/70 hover:text-[#FF3B30] md:hidden"
+          className="rounded-lg border border-white/10 p-2 text-zinc-100 transition hover:border-[#007a55]/70 hover:text-[#007a55] md:hidden"
         >
           <Menu size={18} />
         </button>
@@ -24,7 +24,7 @@ export const AdminHeader = ({ onMenuClick }) => {
           />
         </label>
 
-        <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#FF3B30]/50 bg-[#FF3B30]/20 font-semibold text-[#FF3B30] shadow-[0_0_14px_rgba(255,59,48,0.35)]">
+        <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#007a55]/50 bg-[#007a55]/20 font-semibold text-[#007a55] shadow-[0_0_14px_rgba(0,122,85,0.35)]">
           AD
         </div>
       </div>

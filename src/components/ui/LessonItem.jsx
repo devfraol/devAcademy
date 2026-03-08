@@ -5,8 +5,8 @@ export const LessonItem = ({ lesson, index, isActive, onClick }) => (
       onClick={onClick}
       className={`w-full rounded-xl border px-4 py-3 text-left transition ${
         isActive
-          ? "border-[#ff6c63] bg-[#ff6c63]/15 shadow-[0_12px_24px_rgba(255,108,99,0.18)]"
-          : "border-white/10 bg-black/10 hover:border-[#ff6c63]/45"
+          ? "border-[#1b9b75] bg-[#1b9b75]/15 shadow-[0_12px_24px_rgba(0,122,85,0.18)]"
+          : "border-white/10 bg-black/10 hover:border-[#1b9b75]/45"
       }`}
     >
       <p className="text-sm font-medium text-foreground sm:text-base">

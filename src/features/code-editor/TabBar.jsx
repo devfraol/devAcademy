@@ -10,7 +10,7 @@ export const TabBar = ({ tabs, activeFileId, onSelectFile, onCloseTab }) => (
           type="button"
           onClick={() => onSelectFile(file.id)}
           className={`group flex items-center gap-2 rounded px-3 py-1.5 text-xs ${
-            isActive ? "bg-zinc-700 text-[#FF3B30]" : "bg-zinc-800 text-zinc-300 hover:bg-zinc-700"
+            isActive ? "bg-zinc-700 text-[#007a55]" : "bg-zinc-800 text-zinc-300 hover:bg-zinc-700"
           }`}
         >
           <span>{file.name}</span>

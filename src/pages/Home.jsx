@@ -14,16 +14,16 @@ const SectionSkeleton = () => <div className="mx-auto h-40 w-full max-w-6xl anim
 
 export const Home = () => {
   useSeoMeta({
-    title: "Dev Fraol Academy | Web Development, Design & Devfraol Apps",
+    title: "Dev Fraol Academy | Networking & Internet Skills",
     description:
-      "Dev Fraol Academy helps you master web development, graphic design, and digital skills through project-first content and Devfraol Apps.",
+      "Dev Fraol Academy helps you master networking, internet infrastructure, and practical troubleshooting through project-first learning.",
     keywords: [
       "Dev Fraol Academy",
       "Devfraol Apps",
-      "web development",
-      "graphic design",
-      "learn coding online",
-      "digital marketing tools",
+      "networking courses",
+      "internet fundamentals",
+      "network security basics",
+      "network troubleshooting",
     ],
     structuredData: {
       "@context": "https://schema.org",

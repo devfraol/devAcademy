@@ -8,13 +8,13 @@ export const NavigationFooter = ({ lessonPosition, lessonCount, hasPrevious, has
           type="button"
           onClick={onPrevious}
           disabled={!hasPrevious}
-          className="rounded-lg border border-[#E10600] px-4 py-2 text-sm font-semibold text-[#E10600] transition hover:bg-[#E10600]/10 disabled:cursor-not-allowed disabled:border-[#3F3F46] disabled:text-[#71717A]"
+          className="rounded-lg border border-[#007a55] px-4 py-2 text-sm font-semibold text-[#007a55] transition hover:bg-[#007a55]/10 disabled:cursor-not-allowed disabled:border-[#3F3F46] disabled:text-[#71717A]"
         >
           Previous Lesson
         </button>
         <Link
           to={`/courses/${courseSlug}`}
-          className="rounded-lg border border-[#3F3F46] px-4 py-2 text-sm font-semibold text-[#D4D4D8] transition hover:border-[#E10600] hover:text-white"
+          className="rounded-lg border border-[#3F3F46] px-4 py-2 text-sm font-semibold text-[#D4D4D8] transition hover:border-[#007a55] hover:text-white"
         >
           Course Details
         </Link>
@@ -24,7 +24,7 @@ export const NavigationFooter = ({ lessonPosition, lessonCount, hasPrevious, has
         type="button"
         onClick={onNext}
         disabled={!hasNext}
-        className="rounded-lg bg-[#E10600] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#c00500] disabled:cursor-not-allowed disabled:bg-[#3F3F46]"
+        className="rounded-lg bg-[#007a55] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#c00500] disabled:cursor-not-allowed disabled:bg-[#3F3F46]"
       >
         Next Lesson
       </button>
@@ -36,7 +36,7 @@ export const NavigationFooter = ({ lessonPosition, lessonCount, hasPrevious, has
           type="button"
           onClick={onPrevious}
           disabled={!hasPrevious}
-          className="rounded-lg border border-[#E10600] px-3 py-2 text-sm font-semibold text-[#E10600] disabled:cursor-not-allowed disabled:border-[#3F3F46] disabled:text-[#71717A]"
+          className="rounded-lg border border-[#007a55] px-3 py-2 text-sm font-semibold text-[#007a55] disabled:cursor-not-allowed disabled:border-[#3F3F46] disabled:text-[#71717A]"
         >
           Previous
         </button>
@@ -45,14 +45,14 @@ export const NavigationFooter = ({ lessonPosition, lessonCount, hasPrevious, has
           type="button"
           onClick={onNext}
           disabled={!hasNext}
-          className="rounded-lg bg-[#E10600] px-3 py-2 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:bg-[#3F3F46]"
+          className="rounded-lg bg-[#007a55] px-3 py-2 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:bg-[#3F3F46]"
         >
           Next
         </button>
       </div>
       <Link
         to={`/courses/${courseSlug}`}
-        className="mt-2 block rounded-lg border border-[#3F3F46] px-3 py-2 text-center text-sm font-semibold text-[#D4D4D8] transition hover:border-[#E10600] hover:text-white"
+        className="mt-2 block rounded-lg border border-[#3F3F46] px-3 py-2 text-center text-sm font-semibold text-[#D4D4D8] transition hover:border-[#007a55] hover:text-white"
       >
         Back to Course Details
       </Link>

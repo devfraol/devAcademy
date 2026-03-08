@@ -1,22 +1,22 @@
 import { motion } from "framer-motion";
-import { Brush, Code2 } from "lucide-react";
+import { ShieldCheck, Waypoints } from "lucide-react";
 import { sectionReveal, staggerContainer } from "@/lib/animations";
 import { TrackCard } from "./TrackCard";
 
 const tracks = [
   {
-    title: "Web Development Track",
-    description: "Build modern websites and applications from frontend foundations to backend logic.",
-    icon: Code2,
-    highlights: ["HTML & CSS", "JavaScript", "React JS", "PHP + MySQL", "Python"],
-    href: "/apps",
+    title: "Networking Fundamentals Track",
+    description: "Build strong foundations in network architecture, IP addressing, and core internet services.",
+    icon: Waypoints,
+    highlights: ["IP Addressing", "Routing Basics", "Switching", "DNS", "LAN/WAN"],
+    href: "/courses",
   },
   {
-    title: "Graphic Design Track",
-    description: "Create polished visual assets with industry-standard Adobe tools and workflows.",
-    icon: Brush,
-    highlights: ["Illustrator", "Photoshop", "InDesign", "Composition"],
-    href: "/apps",
+    title: "Network Security Track",
+    description: "Learn practical methods to secure devices, wireless networks, and user access.",
+    icon: ShieldCheck,
+    highlights: ["Firewall Basics", "Secure Wi-Fi", "Access Control", "Threat Awareness"],
+    href: "/courses",
   },
 ];
 
@@ -27,7 +27,7 @@ export const TracksOverview = () => {
         <motion.div variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
           <h2 className="text-3xl sm:text-4xl">Tracks Overview / What You Will Learn</h2>
           <p className="mt-3 max-w-3xl text-muted-foreground">
-            Start with a focused path. Learn practical, job-relevant skills through project-driven modules.
+            Follow focused networking paths and gain real, job-relevant skills with hands-on labs.
           </p>
         </motion.div>
 

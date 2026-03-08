@@ -24,7 +24,7 @@ export const Achievements = () => {
             transition={{ duration: 0.4, delay: index * 0.08 }}
             className="rounded-2xl border border-border/65 bg-card/55 p-4"
           >
-            <Icon className="h-6 w-6 text-[#FF3B30]" aria-hidden="true" />
+            <Icon className="h-6 w-6 text-[#007a55]" aria-hidden="true" />
             <h3 className="mt-3 text-base font-semibold">{label}</h3>
             <p className="mt-2 text-sm text-muted-foreground">{detail}</p>
           </motion.article>

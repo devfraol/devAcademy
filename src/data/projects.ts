@@ -40,7 +40,7 @@ export const projects = [
     demoUrl: "https://e-commerce-website-4w6a.vercel.app",
     githubUrl: "https://github.com/Sahilmd01/E-commerce-website",
     featured: true,
-    accentColor: "from-red-500 to-orange-500",
+    accentColor: "from-emerald-600 to-teal-600",
     status: "Live",
     highlights: ["Product catalog", "Shopping cart", "Payment processing"]
   },
@@ -55,7 +55,7 @@ export const projects = [
     demoUrl: "https://converse-pro-frontend.vercel.app",
     githubUrl: "https://github.com/Sahilmd01/converse-pro",
     featured: true,
-    accentColor: "from-red-500 to-rose-500",
+    accentColor: "from-emerald-600 to-emerald-600",
     status: "Live",
     highlights: ["Real-time chat", "Media sharing", "User authentication"]
   },
@@ -83,7 +83,7 @@ export const projects = [
     tags: ["React", "Chart.js", "Node.js", "Firebase"],
     demoUrl: "https://spendlix.vercel.app/login",
     githubUrl: "https://github.com/Sahilmd01/Spendlix",
-    accentColor: "from-rose-500 to-pink-600",
+    accentColor: "from-emerald-500 to-pink-600",
     status: "Live",
     highlights: ["Expense tracking", "Data visualization", "Budget planning"]
   },
@@ -97,7 +97,7 @@ export const projects = [
     tags: ["React", "Redux", "Mapbox", "Stripe"],
     demoUrl: "https://eattoo-food-delivery-website-frontend.onrender.com/",
     githubUrl: "https://github.com/Sahilmd01/Eattoo-food-delivery-website",
-    accentColor: "from-rose-500 to-red-600",
+    accentColor: "from-emerald-500 to-emerald-700",
     status: "Live",
     highlights: ["Restaurant listings", "Order system", "Location services"]
   },
@@ -111,7 +111,7 @@ export const projects = [
     tags: ["Next.js", "PostgreSQL", "Redis", "AI Integration"],
     demoUrl: "#",
     githubUrl: "#",
-    accentColor: "from-orange-500 to-red-600",
+    accentColor: "from-emerald-500 to-emerald-700",
     status: "Development",
     highlights: ["Job matching", "Candidate tracking", "Application system"]
   }
@@ -119,10 +119,10 @@ export const projects = [
 
 export const projectCategoryColors = {
   "Healthcare SaaS": "from-emerald-500/20 to-teal-600/20 text-emerald-600 border-emerald-500/30",
-  "E-commerce": "from-red-500/20 to-orange-500/20 text-red-500 border-red-500/30",
-  "Real-time Communication": "from-red-500/20 to-rose-500/20 text-red-500 border-red-500/30",
+  "E-commerce": "from-emerald-600/20 to-teal-600/20 text-emerald-500 border-emerald-500/30",
+  "Real-time Communication": "from-emerald-600/20 to-emerald-600/20 text-emerald-500 border-emerald-500/30",
   "Artificial Intelligence": "from-amber-500/20 to-orange-600/20 text-amber-600 border-amber-500/30",
-  "FinTech": "from-rose-500/20 to-pink-600/20 text-rose-600 border-rose-500/30",
-  "Food Tech": "from-rose-500/20 to-red-600/20 text-rose-500 border-rose-500/30",
-  "HR Tech": "from-orange-500/20 to-red-600/20 text-orange-600 border-orange-500/30"
+  "FinTech": "from-emerald-500/20 to-pink-600/20 text-emerald-600 border-emerald-500/30",
+  "Food Tech": "from-emerald-500/20 to-emerald-700/20 text-emerald-500 border-emerald-500/30",
+  "HR Tech": "from-emerald-500/20 to-emerald-700/20 text-teal-600 border-teal-500/30"
 }

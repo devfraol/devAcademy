@@ -13,12 +13,12 @@ export const InstructorSection = ({ instructor, totalCourses = 0 }) => {
         <img
           src={instructor.profile_image}
           alt={instructor.name}
-          className="h-20 w-20 rounded-2xl object-cover ring-2 ring-[#ff5d52]/40"
+          className="h-20 w-20 rounded-2xl object-cover ring-2 ring-[#009167]/40"
         />
         <div className="space-y-2">
           <h3 className="text-xl font-semibold text-foreground">{instructor.name}</h3>
           <p className="text-sm text-foreground/75">{instructor.bio}</p>
-          <p className="text-sm font-medium text-[#ff7f76]">{totalCourses}+ published courses</p>
+          <p className="text-sm font-medium text-[#3aa888]">{totalCourses}+ published courses</p>
         </div>
       </div>
     </motion.section>
