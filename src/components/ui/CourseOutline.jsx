@@ -8,7 +8,7 @@ export const CourseOutline = ({ modules, openModuleId, onToggleModule, activeLes
     <section className="rounded-3xl border border-white/15 bg-background/70 p-5 shadow-[0_18px_45px_rgba(15,20,35,0.28)] backdrop-blur-xl sm:p-7">
       <div className="mb-6 flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
         <div>
-          <p className="text-xs uppercase tracking-[0.18em] text-[#58b699]">Course Outline</p>
+          <p className="text-xs uppercase tracking-[0.18em] text-[#ff8f87]">Course Outline</p>
           <h2 className="mt-2 text-2xl font-semibold text-foreground sm:text-3xl">Course Outline</h2>
           <p className="mt-2 max-w-2xl text-sm text-foreground/70 sm:text-base">
             Select a lesson to open the reading panel without leaving this page.

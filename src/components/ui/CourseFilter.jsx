@@ -19,7 +19,7 @@ export const CourseFilter = ({ categories, levels, activeCategory, activeLevel, 
               {isActive ? (
                 <motion.span
                   layoutId="active-category-pill"
-                  className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-[#008a61] to-[#007a55]"
+                  className="absolute inset-0 -z-10 rounded-full bg-gradient-to-r from-[#ff564c] to-[#ff3b30]"
                   transition={{ type: "spring", stiffness: 300, damping: 24 }}
                 />
               ) : null}
@@ -34,7 +34,7 @@ export const CourseFilter = ({ categories, levels, activeCategory, activeLevel, 
         <motion.select
           value={activeLevel}
           onChange={(event) => onLevelChange(event.target.value)}
-          className="w-full rounded-xl border border-white/15 bg-background/70 px-3 py-2 text-sm text-foreground outline-none ring-[#007a55] transition focus:ring-2 sm:w-64"
+          className="w-full rounded-xl border border-white/15 bg-background/70 px-3 py-2 text-sm text-foreground outline-none ring-[#FF3B30] transition focus:ring-2 sm:w-64"
           whileFocus={{ scale: 1.01 }}
         >
           {levels.map((level) => (

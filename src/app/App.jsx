@@ -45,12 +45,12 @@ function App() {
             <Link
               to="/"
               aria-label="Go to home page"
-              className="fixed right-3 top-3 z-50 rounded-2xl border border-[#007a55]/45 bg-[linear-gradient(145deg,rgba(0,122,85,0.2),rgba(40,10,10,0.45))] px-3 py-2 shadow-[0_0_24px_rgba(0,122,85,0.42),inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-xl transition-transform duration-200 hover:scale-105 sm:right-4 sm:top-4"
+              className="fixed right-3 top-3 z-50 rounded-2xl border border-[#FF3B30]/45 bg-[linear-gradient(145deg,rgba(255,59,48,0.2),rgba(40,10,10,0.45))] px-3 py-2 shadow-[0_0_24px_rgba(255,59,48,0.42),inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-xl transition-transform duration-200 hover:scale-105 sm:right-4 sm:top-4"
             >
               <img
                 src={logoDark}
                 alt="Devfraol logo"
-                className="block h-6 w-auto select-none drop-shadow-[0_0_10px_rgba(0,122,85,0.75)] sm:h-7"
+                className="block h-6 w-auto select-none drop-shadow-[0_0_10px_rgba(255,59,48,0.75)] sm:h-7"
               />
             </Link>
             <Suspense fallback={<div className="flex min-h-[30vh] items-center justify-center"><LoadingSpinner label="Loading page..." /></div>}>

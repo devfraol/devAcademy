@@ -26,7 +26,7 @@ export const CourseCard = ({ course, index = 0 }) => {
         <img src={course.thumbnail} alt={course.title} className="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
         <span className={`absolute left-3 top-3 rounded-full border px-2.5 py-1 text-xs font-semibold ${levelClass}`}>{course.level}</span>
         {course.hasPreview ? (
-          <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full border border-[#67d2b4]/60 bg-[#008a61]/25 px-2.5 py-1 text-xs font-semibold text-[#ddfff2]">
+          <span className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full border border-[#ff8d84]/60 bg-[#ff564c]/25 px-2.5 py-1 text-xs font-semibold text-[#ffd9d6]">
             <PlayCircle className="h-3.5 w-3.5" /> Preview
           </span>
         ) : null}

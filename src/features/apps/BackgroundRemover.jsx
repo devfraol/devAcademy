@@ -55,7 +55,7 @@ export const BackgroundRemover = () => {
 
       <label
         htmlFor="bg-upload"
-        className="mt-4 flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-dashed border-border/70 bg-background/40 px-4 py-4 text-sm text-foreground/75 transition-colors hover:border-[#007a55]/70"
+        className="mt-4 flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-dashed border-border/70 bg-background/40 px-4 py-4 text-sm text-foreground/75 transition-colors hover:border-[#FF3B30]/70"
       >
         <Upload className="h-4 w-4" /> Upload image
       </label>
@@ -82,7 +82,7 @@ export const BackgroundRemover = () => {
           type="button"
           onClick={handleRemoveBackground}
           disabled={isLoading}
-          className="inline-flex items-center gap-2 rounded-xl bg-[#007a55] px-4 py-2.5 text-sm font-semibold text-white disabled:opacity-70"
+          className="inline-flex items-center gap-2 rounded-xl bg-[#FF3B30] px-4 py-2.5 text-sm font-semibold text-white disabled:opacity-70"
         >
           {isLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
           {isLoading ? "Removing..." : "Remove Background"}

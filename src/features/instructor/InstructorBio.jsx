@@ -34,7 +34,7 @@ export const InstructorBio = () => {
           className="rounded-3xl border border-border/60 bg-card/50 p-6 text-left sm:p-8"
         >
           <h2 id="instructor-bio" className="text-3xl font-bold">
-            About <span className="text-[#007a55]">Dev Fraol</span>
+            About <span className="text-[#FF3B30]">Dev Fraol</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
             Dev Fraol helps aspiring creators become confident builders. Lessons blend engineering discipline with modern visual communication so students can craft fast,
@@ -43,7 +43,7 @@ export const InstructorBio = () => {
           <ul className="mt-6 space-y-3 text-muted-foreground">
             {bioPoints.map((point) => (
               <li key={point} className="flex items-start gap-3">
-                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#007a55]" aria-hidden="true" />
+                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#FF3B30]" aria-hidden="true" />
                 <span>{point}</span>
               </li>
             ))}

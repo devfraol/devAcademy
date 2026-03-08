@@ -34,8 +34,8 @@ export const Testimonial = () => {
             <p className="font-medium text-white">{item.name} · {item.role}</p>
             <p className="mt-2">{item.message}</p>
             <div className="mt-3 flex gap-2">
-              <button onClick={() => { setEditingId(item.id); setForm({ name: item.name, role: item.role, message: item.message }); }} className="rounded border border-white/10 px-3 py-1 hover:border-[#007a55]/50">Edit</button>
-              <button onClick={() => setTestimonials((prev) => prev.filter((entry) => entry.id !== item.id))} className="rounded border border-white/10 px-3 py-1 hover:border-[#007a55]/50 hover:text-[#007a55]">Delete</button>
+              <button onClick={() => { setEditingId(item.id); setForm({ name: item.name, role: item.role, message: item.message }); }} className="rounded border border-white/10 px-3 py-1 hover:border-[#FF3B30]/50">Edit</button>
+              <button onClick={() => setTestimonials((prev) => prev.filter((entry) => entry.id !== item.id))} className="rounded border border-white/10 px-3 py-1 hover:border-[#FF3B30]/50 hover:text-[#FF3B30]">Delete</button>
             </div>
           </div>
         ))}
@@ -46,7 +46,7 @@ export const Testimonial = () => {
         <input value={form.name} onChange={(event) => setForm((prev) => ({ ...prev, name: event.target.value }))} placeholder="Name" className="w-full rounded-xl border border-white/10 bg-zinc-900 px-3 py-2 text-zinc-100 outline-none" />
         <input value={form.role} onChange={(event) => setForm((prev) => ({ ...prev, role: event.target.value }))} placeholder="Role" className="w-full rounded-xl border border-white/10 bg-zinc-900 px-3 py-2 text-zinc-100 outline-none" />
         <textarea value={form.message} onChange={(event) => setForm((prev) => ({ ...prev, message: event.target.value }))} placeholder="Message" rows={3} className="w-full rounded-xl border border-white/10 bg-zinc-900 px-3 py-2 text-zinc-100 outline-none" />
-        <button type="submit" className="rounded-xl border border-[#007a55]/60 bg-[#007a55]/15 px-4 py-2 text-sm text-[#FF7C73]">Save Testimonial</button>
+        <button type="submit" className="rounded-xl border border-[#FF3B30]/60 bg-[#FF3B30]/15 px-4 py-2 text-sm text-[#FF7C73]">Save Testimonial</button>
       </form>
     </section>
   );

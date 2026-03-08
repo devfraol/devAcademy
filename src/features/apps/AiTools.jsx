@@ -109,7 +109,7 @@ export const AiTools = () => {
           return (
             <section key={category.id} className="rounded-xl border border-border/70 bg-background/30 p-4">
               <div className="flex items-center gap-2">
-                <span className="inline-flex rounded-lg bg-[#007a55]/15 p-2 text-[#007a55]">
+                <span className="inline-flex rounded-lg bg-[#FF3B30]/15 p-2 text-[#FF3B30]">
                   <CategoryIcon className="h-4 w-4" />
                 </span>
                 <h4 className="text-lg font-bold tracking-tight text-foreground sm:text-xl">{category.title}</h4>
@@ -125,12 +125,12 @@ export const AiTools = () => {
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: categoryIndex * 0.05 + appIndex * 0.04 }}
-                    className="group rounded-2xl border border-border/70 bg-background/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#007a55]/70 hover:shadow-[0_16px_32px_rgba(0,122,85,0.22)]"
+                    className="group rounded-2xl border border-border/70 bg-background/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#FF3B30]/70 hover:shadow-[0_16px_32px_rgba(255,59,48,0.22)]"
                   >
                     <h5 className="text-lg font-bold tracking-tight text-foreground sm:text-xl">{app.name}</h5>
                     <p className="mt-2 text-sm leading-relaxed text-foreground/75">{app.description}</p>
                     <p className="mt-1 text-xs text-foreground/60">Official website: {formatWebsiteMeta(app.link)} · Opens in a new tab.</p>
-                    <span className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-[#007a55]/15 px-3 py-1.5 text-sm font-semibold text-[#007a55]">
+                    <span className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-[#FF3B30]/15 px-3 py-1.5 text-sm font-semibold text-[#FF3B30]">
                       Visit Website
                       <ArrowUpRight className="h-3.5 w-3.5" />
                     </span>

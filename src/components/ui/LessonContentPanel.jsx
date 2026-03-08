@@ -80,7 +80,7 @@ export const LessonContentPanel = ({ isOpen, lesson, onClose }) => {
             <header className="border-b border-white/10 p-6">
               <div className="flex items-start justify-between gap-4">
                 <div className="space-y-2">
-                  <p className="text-xs uppercase tracking-[0.18em] text-[#58b699]">Lesson</p>
+                  <p className="text-xs uppercase tracking-[0.18em] text-[#ff8f87]">Lesson</p>
                   <h3 className="text-2xl font-semibold text-white">{lesson.title}</h3>
                   <p className="text-sm text-white/70">{lesson.moduleTitle} • {lesson.duration}</p>
                 </div>
