@@ -19,7 +19,7 @@ export const Hero = () => {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
               <Link
                 to="/courses"
-                className="inline-flex items-center justify-center rounded-lg bg-[#155dfc] px-7 py-3 text-base font-semibold text-white transition hover:shadow-[0_0_20px_rgba(21,93,252,0.4)]"
+                className="inline-flex items-center justify-center rounded-lg bg-[#009689] px-7 py-3 text-base font-semibold text-white transition hover:shadow-[0_0_20px_rgba(0,150,137,0.4)]"
               >
                 Start Learning
               </Link>
@@ -27,7 +27,7 @@ export const Hero = () => {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>
               <Link
                 to="/apps"
-                className="inline-flex items-center justify-center rounded-lg border border-white/10 bg-[#1E1E1E] px-7 py-3 text-base font-semibold text-white transition hover:border-[#155dfc]/60 hover:text-[#155dfc]"
+                className="inline-flex items-center justify-center rounded-lg border border-white/10 bg-[#1E1E1E] px-7 py-3 text-base font-semibold text-white transition hover:border-[#009689]/60 hover:text-[#009689]"
               >
                 Apps
               </Link>

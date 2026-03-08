@@ -15,7 +15,7 @@ export const Instructor = () => {
 
   if (loading.list) return <section className="py-20 text-center text-muted-foreground">Loading instructor profile...</section>;
   if (!selectedInstructor) {
-    return <section className="py-20 text-center text-muted-foreground">Instructor profile not found.<div className="mt-4"><Link to="/instructors" className="text-[#155dfc]">Back to instructor page</Link></div></section>;
+    return <section className="py-20 text-center text-muted-foreground">Instructor profile not found.<div className="mt-4"><Link to="/instructors" className="text-[#009689]">Back to instructor page</Link></div></section>;
   }
   return <InstructorSection instructor={selectedInstructor} />;
 };

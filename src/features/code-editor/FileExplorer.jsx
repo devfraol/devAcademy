@@ -3,7 +3,7 @@ import { FileCode2, FileJson, FileText, Folder, FolderOpen, Trash2 } from "lucid
 const getIcon = (name) => {
   const extension = name.split(".").pop()?.toLowerCase();
   if (extension === "html") return <FileCode2 className="h-4 w-4 text-orange-400" />;
-  if (extension === "css") return <FileJson className="h-4 w-4 text-blue-400" />;
+  if (extension === "css") return <FileJson className="h-4 w-4 text-teal-400" />;
   if (extension === "js") return <FileJson className="h-4 w-4 text-yellow-400" />;
   if (extension === "php") return <FileText className="h-4 w-4 text-indigo-400" />;
   if (extension === "py") return <FileText className="h-4 w-4 text-emerald-400" />;
@@ -18,7 +18,7 @@ const TreeNode = ({ node, depth, expandedFolders, onToggleFolder, onOpenFile, ac
     <div>
       <div
         className={`group flex items-center justify-between rounded px-2 py-1 text-sm ${
-          node.id === activeFileId ? "bg-[#155dfc]/20 text-[#155dfc]" : "text-zinc-300 hover:bg-zinc-800"
+          node.id === activeFileId ? "bg-[#009689]/20 text-[#009689]" : "text-zinc-300 hover:bg-zinc-800"
         }`}
         style={{ paddingLeft: `${depth * 12 + 8}px` }}
       >
@@ -39,7 +39,7 @@ const TreeNode = ({ node, depth, expandedFolders, onToggleFolder, onOpenFile, ac
             </>
           )}
           <button type="button" onClick={() => onRename(node.id)} className="text-xs text-zinc-400 hover:text-zinc-200">Ren</button>
-          <button type="button" onClick={() => onDelete(node.id)} className="text-zinc-500 hover:text-blue-400"><Trash2 className="h-3.5 w-3.5" /></button>
+          <button type="button" onClick={() => onDelete(node.id)} className="text-zinc-500 hover:text-teal-400"><Trash2 className="h-3.5 w-3.5" /></button>
         </div>
       </div>
 

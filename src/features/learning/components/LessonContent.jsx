@@ -64,7 +64,7 @@ const renderCliCommandList = (items, index) => {
     <section key={index} className="mt-8 overflow-hidden rounded-2xl border border-[#31253b] bg-gradient-to-b from-[#14131d] via-[#11121a] to-[#0b0d12] shadow-[0_28px_90px_rgba(0,0,0,0.48)]">
       <header className="flex items-center justify-between border-b border-white/10 bg-black/35 px-4 py-3">
         <div className="flex items-center gap-2">
-          <span className="h-2.5 w-2.5 rounded-full bg-[#155dfc]" />
+          <span className="h-2.5 w-2.5 rounded-full bg-[#009689]" />
           <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
           <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
         </div>
@@ -154,9 +154,9 @@ const renderBlock = (block, index) => {
     return (
       <section
         key={index}
-        className="mt-4 rounded-2xl border border-[#155dfc]/35 bg-gradient-to-br from-[#1A1115] via-[#120f14] to-[#101317] p-5 shadow-[0_18px_50px_rgba(244,63,94,0.12)] md:p-6"
+        className="mt-4 rounded-2xl border border-[#009689]/35 bg-gradient-to-br from-[#1A1115] via-[#120f14] to-[#101317] p-5 shadow-[0_18px_50px_rgba(244,63,94,0.12)] md:p-6"
       >
-        <div className="mb-4 inline-flex items-center rounded-full border border-[#155dfc]/40 bg-[#155dfc]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#155dfc]">
+        <div className="mb-4 inline-flex items-center rounded-full border border-[#009689]/40 bg-[#009689]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#009689]">
           Pro Tips
         </div>
 
@@ -190,7 +190,7 @@ const renderBlock = (block, index) => {
   }
 
   if (block.type === "callout") {
-    return <div key={index} className="mt-7 rounded-xl border border-[#155dfc]/60 bg-[#1A1010] p-5 text-[16px] leading-[1.7] text-[#F4F4F5]">{block.text}</div>;
+    return <div key={index} className="mt-7 rounded-xl border border-[#009689]/60 bg-[#1A1010] p-5 text-[16px] leading-[1.7] text-[#F4F4F5]">{block.text}</div>;
   }
 
   if (block.type === "code") {
@@ -198,7 +198,7 @@ const renderBlock = (block, index) => {
   }
 
   if (block.type === "quote") {
-    return <blockquote key={index} className="mt-7 border-l-2 border-[#155dfc] pl-4 text-[16px] italic leading-[1.7] text-[#D4D4D8]">{block.text}</blockquote>;
+    return <blockquote key={index} className="mt-7 border-l-2 border-[#009689] pl-4 text-[16px] italic leading-[1.7] text-[#D4D4D8]">{block.text}</blockquote>;
   }
 
   if (block.type === "image") {
@@ -291,7 +291,7 @@ const LessonExam = ({ exam }) => {
         <p className="text-sm text-[#A1A1AA]">Final Exam</p>
         <h1 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-[38px]">{exam.title}</h1>
         <p className="mt-4 text-sm text-[#A1A1AA]">Passing Score: {passingScore}%</p>
-        <p className={`mt-2 text-sm font-medium ${timeRemaining <= 300 ? "text-[#155dfc]" : "text-[#A1A1AA]"}`}>
+        <p className={`mt-2 text-sm font-medium ${timeRemaining <= 300 ? "text-[#009689]" : "text-[#A1A1AA]"}`}>
           Time Remaining: {formatTimeRemaining(timeRemaining)}
         </p>
       </header>
@@ -302,7 +302,7 @@ const LessonExam = ({ exam }) => {
           <p className="mt-4 text-lg text-[#D4D4D8]">
             You scored <span className="font-bold text-white">{result.score}%</span> ({result.correctAnswers}/{exam.questions.length} correct)
           </p>
-          <p className={`mt-3 text-lg font-semibold ${result.passed ? "text-emerald-400" : "text-[#155dfc]"}`}>
+          <p className={`mt-3 text-lg font-semibold ${result.passed ? "text-emerald-400" : "text-[#009689]"}`}>
             {result.passed ? "Status: Passed" : "Status: Not Passed"}
           </p>
 
@@ -321,7 +321,7 @@ const LessonExam = ({ exam }) => {
                     return (
                       <li key={question.id} className="rounded-lg border border-[#2a2a2d] bg-[#141418] p-4 text-[#D4D4D8]">
                         <p className="font-semibold text-white">{question.text}</p>
-                        <p className="mt-2 text-sm text-[#155dfc]">
+                        <p className="mt-2 text-sm text-[#009689]">
                           Your answer: {selectedOption ? `${selectedOption.id}. ${selectedOption.text}` : "Not answered"}
                         </p>
                         <p className="mt-1 text-sm text-emerald-300">
@@ -342,7 +342,7 @@ const LessonExam = ({ exam }) => {
               setShowResult(false);
               setTimeRemaining(examDurationSeconds);
             }}
-            className="mt-6 rounded-lg border border-[#155dfc] px-4 py-2 text-sm font-medium text-[#155dfc] hover:bg-[#155dfc] hover:text-white"
+            className="mt-6 rounded-lg border border-[#009689] px-4 py-2 text-sm font-medium text-[#009689] hover:bg-[#009689] hover:text-white"
           >
             Retake Exam
           </button>
@@ -362,7 +362,7 @@ const LessonExam = ({ exam }) => {
             {currentQuestion.options.map((option) => (
               <label
                 key={option.id}
-                className="flex cursor-pointer items-center gap-3 rounded-lg border border-[#2a2a2d] bg-[#141418] px-4 py-3 text-[#E4E4E7] hover:border-[#155dfc]/70"
+                className="flex cursor-pointer items-center gap-3 rounded-lg border border-[#2a2a2d] bg-[#141418] px-4 py-3 text-[#E4E4E7] hover:border-[#009689]/70"
               >
                 <input
                   type="radio"
@@ -370,7 +370,7 @@ const LessonExam = ({ exam }) => {
                   value={option.id}
                   checked={selectedAnswer === option.id}
                   onChange={() => setAnswers((prev) => ({ ...prev, [currentQuestion.id]: option.id }))}
-                  className="h-4 w-4 accent-[#155dfc]"
+                  className="h-4 w-4 accent-[#009689]"
                 />
                 <span>
                   <span className="font-semibold">{option.id}.</span> {option.text}
@@ -394,7 +394,7 @@ const LessonExam = ({ exam }) => {
                 type="button"
                 onClick={() => setShowResult(true)}
                 disabled={!allAnswered}
-                className="rounded-lg border border-[#155dfc] px-4 py-2 text-sm font-medium text-[#155dfc] hover:bg-[#155dfc] hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
+                className="rounded-lg border border-[#009689] px-4 py-2 text-sm font-medium text-[#009689] hover:bg-[#009689] hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
               >
                 Submit Exam
               </button>
@@ -402,7 +402,7 @@ const LessonExam = ({ exam }) => {
               <button
                 type="button"
                 onClick={() => setQuestionIndex((prev) => Math.min(prev + 1, exam.questions.length - 1))}
-                className="rounded-lg border border-[#155dfc] px-4 py-2 text-sm font-medium text-[#155dfc] hover:bg-[#155dfc] hover:text-white"
+                className="rounded-lg border border-[#009689] px-4 py-2 text-sm font-medium text-[#009689] hover:bg-[#009689] hover:text-white"
               >
                 Next Question
               </button>
@@ -570,7 +570,7 @@ const DragOrderExam = ({ exam }) => {
         <p className="text-sm text-[#A1A1AA]">Practical Exam</p>
         <h1 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-[38px]">{exam.title}</h1>
         <p className="mt-4 text-sm text-[#A1A1AA]">Attempts Left: {Math.max(attemptsLeft, 0)} / {maxAttempts}</p>
-        <p className={`mt-2 text-sm font-medium ${timeRemaining <= 120 ? "text-[#155dfc]" : "text-[#A1A1AA]"}`}>
+        <p className={`mt-2 text-sm font-medium ${timeRemaining <= 120 ? "text-[#009689]" : "text-[#A1A1AA]"}`}>
           Time Remaining: {formatTimeRemaining(timeRemaining)}
         </p>
       </header>
@@ -636,11 +636,11 @@ const DragOrderExam = ({ exam }) => {
           ))}
         </div>
 
-        {feedback ? <p className={`mt-5 text-sm ${passed ? "text-emerald-300" : "text-[#155dfc]"}`}>{feedback}</p> : null}
+        {feedback ? <p className={`mt-5 text-sm ${passed ? "text-emerald-300" : "text-[#009689]"}`}>{feedback}</p> : null}
 
         {showResult ? (
           <div className="mt-6 rounded-xl border border-[#2a2a2f] bg-[#16161d] p-4">
-            <h3 className={`text-lg font-semibold ${passed ? "text-emerald-400" : "text-[#155dfc]"}`}>
+            <h3 className={`text-lg font-semibold ${passed ? "text-emerald-400" : "text-[#009689]"}`}>
               {passed ? "Status: Passed" : "Status: Not Passed"}
             </h3>
             <p className="mt-3 text-sm text-[#D4D4D8]">Correct order:</p>
@@ -654,7 +654,7 @@ const DragOrderExam = ({ exam }) => {
             <button
               type="button"
               onClick={handleReset}
-              className="mt-5 rounded-lg border border-[#155dfc] px-4 py-2 text-sm font-medium text-[#155dfc] hover:bg-[#155dfc] hover:text-white"
+              className="mt-5 rounded-lg border border-[#009689] px-4 py-2 text-sm font-medium text-[#009689] hover:bg-[#009689] hover:text-white"
             >
               Retake Exam
             </button>
@@ -664,7 +664,7 @@ const DragOrderExam = ({ exam }) => {
             type="button"
             onClick={handleSubmit}
             disabled={attemptsLeft <= 0 || timeRemaining <= 0}
-            className="mt-6 rounded-lg border border-[#155dfc] px-4 py-2 text-sm font-medium text-[#155dfc] hover:bg-[#155dfc] hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
+            className="mt-6 rounded-lg border border-[#009689] px-4 py-2 text-sm font-medium text-[#009689] hover:bg-[#009689] hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
           >
             Check Arrangement
           </button>

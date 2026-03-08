@@ -35,7 +35,7 @@ export const AdminDashboard = ({ activeSection }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.35, delay: index * 0.08 }}
               whileHover={{ y: -4, scale: 1.02 }}
-              className="rounded-2xl border border-white/10 bg-zinc-900/70 p-5 backdrop-blur-2xl transition hover:border-[#155dfc]/45 hover:shadow-[0_0_24px_rgba(21,93,252,0.28)]"
+              className="rounded-2xl border border-white/10 bg-zinc-900/70 p-5 backdrop-blur-2xl transition hover:border-[#009689]/45 hover:shadow-[0_0_24px_rgba(0,150,137,0.28)]"
             >
               <p className="text-sm text-zinc-400">{card.label}</p>
               <p className="mt-2 text-3xl font-semibold text-white">{card.value}</p>
@@ -56,7 +56,7 @@ export const AdminDashboard = ({ activeSection }) => {
             {activities.map((item) => (
               <div
                 key={item}
-                className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-zinc-200 transition hover:border-[#155dfc]/45 hover:bg-[#155dfc]/10"
+                className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-zinc-200 transition hover:border-[#009689]/45 hover:bg-[#009689]/10"
               >
                 {item}
               </div>
@@ -77,7 +77,7 @@ export const AdminDashboard = ({ activeSection }) => {
                 key={action}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
-                className="rounded-xl border border-[#155dfc]/50 bg-[#155dfc]/15 px-4 py-2 text-sm font-medium text-[#155dfc] transition hover:bg-[#155dfc]/25 hover:text-white hover:shadow-[0_0_18px_rgba(21,93,252,0.36)]"
+                className="rounded-xl border border-[#009689]/50 bg-[#009689]/15 px-4 py-2 text-sm font-medium text-[#009689] transition hover:bg-[#009689]/25 hover:text-white hover:shadow-[0_0_18px_rgba(0,150,137,0.36)]"
               >
                 {action}
               </motion.button>
@@ -86,7 +86,7 @@ export const AdminDashboard = ({ activeSection }) => {
 
           {activeSection !== "dashboard" && (
             <p className="mt-5 text-sm text-zinc-400">
-              Preview mode for <span className="text-[#155dfc]">{activeSection}</span> is ready for backend integration.
+              Preview mode for <span className="text-[#009689]">{activeSection}</span> is ready for backend integration.
             </p>
           )}
         </motion.article>

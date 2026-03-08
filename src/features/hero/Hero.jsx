@@ -73,7 +73,7 @@ export const HeroSection = () => {
           className="rounded-2xl border border-border bg-card/70 backdrop-blur-xl p-6 shadow-2xl"
         >
           <div className="flex items-center gap-2 mb-4">
-            <span className="h-3 w-3 rounded-full bg-blue-400" />
+            <span className="h-3 w-3 rounded-full bg-teal-400" />
             <span className="h-3 w-3 rounded-full bg-yellow-400" />
             <span className="h-3 w-3 rounded-full bg-green-400" />
           </div>

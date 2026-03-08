@@ -87,7 +87,7 @@ export const FileConverter = () => {
           event.preventDefault();
           handleFileSelect(event.dataTransfer.files?.[0]);
         }}
-        className="mt-4 flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-dashed border-border/70 bg-background/45 px-4 py-4 text-sm text-foreground/75 transition-colors hover:border-[#155dfc]/70"
+        className="mt-4 flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-dashed border-border/70 bg-background/45 px-4 py-4 text-sm text-foreground/75 transition-colors hover:border-[#009689]/70"
       >
         <UploadCloud className="h-4 w-4" />
         {file ? `Selected: ${file.name}` : "Drag & drop or click to upload"}
@@ -100,7 +100,7 @@ export const FileConverter = () => {
             <option key={`from-${format}`}>{format}</option>
           ))}
         </select>
-        <ArrowLeftRight className="mx-auto h-4 w-4 text-[#155dfc]" />
+        <ArrowLeftRight className="mx-auto h-4 w-4 text-[#009689]" />
         <select value={to} onChange={(event) => setTo(event.target.value)} className="rounded-xl border border-border bg-background/60 px-3 py-2.5 text-sm">
           {formats.map((format) => (
             <option key={`to-${format}`}>{format}</option>
@@ -113,7 +113,7 @@ export const FileConverter = () => {
         type="button"
         onClick={handleConvert}
         disabled={isConverting}
-        className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#155dfc] px-4 py-2.5 text-sm font-semibold text-white"
+        className="mt-4 inline-flex items-center gap-2 rounded-xl bg-[#009689] px-4 py-2.5 text-sm font-semibold text-white"
       >
         {isConverting ? <Loader2 className="h-4 w-4 animate-spin" /> : null}
         {isConverting ? "Converting..." : "Convert File"}
@@ -121,7 +121,7 @@ export const FileConverter = () => {
 
       {progress > 0 ? (
         <div className="mt-3 h-2 w-full rounded-full bg-background/70">
-          <div className="h-2 rounded-full bg-[#155dfc] transition-all" style={{ width: `${progress}%` }} />
+          <div className="h-2 rounded-full bg-[#009689] transition-all" style={{ width: `${progress}%` }} />
         </div>
       ) : null}
     </article>

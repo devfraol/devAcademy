@@ -25,7 +25,7 @@ export const Sidebar = ({ activeSection, setActiveSection, isMobileOpen, setIsMo
           <p className="text-sm font-semibold tracking-[0.22em] text-zinc-300">DEV FRAOL ADMIN</p>
           <button
             onClick={() => setIsMobileOpen(false)}
-            className="rounded-lg border border-white/10 p-2 text-zinc-200 transition hover:border-[#155dfc]/70 hover:text-[#155dfc] md:hidden"
+            className="rounded-lg border border-white/10 p-2 text-zinc-200 transition hover:border-[#009689]/70 hover:text-[#009689] md:hidden"
             aria-label="Close sidebar"
           >
             <X size={16} />
@@ -46,8 +46,8 @@ export const Sidebar = ({ activeSection, setActiveSection, isMobileOpen, setIsMo
                 }}
                 className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left text-sm font-medium transition ${
                   isActive
-                    ? "border-[#155dfc]/70 bg-[#155dfc]/15 text-[#155dfc] shadow-[0_0_24px_rgba(21,93,252,0.35)]"
-                    : "border-white/10 bg-white/5 text-zinc-200 hover:border-[#155dfc]/40 hover:bg-[#155dfc]/10 hover:text-white hover:shadow-[0_0_16px_rgba(21,93,252,0.25)]"
+                    ? "border-[#009689]/70 bg-[#009689]/15 text-[#009689] shadow-[0_0_24px_rgba(0,150,137,0.35)]"
+                    : "border-white/10 bg-white/5 text-zinc-200 hover:border-[#009689]/40 hover:bg-[#009689]/10 hover:text-white hover:shadow-[0_0_16px_rgba(0,150,137,0.25)]"
                 }`}
               >
                 <Icon size={16} />

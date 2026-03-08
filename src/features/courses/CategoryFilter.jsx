@@ -13,9 +13,9 @@ export const CategoryFilter = ({ activeCategory, onChange, counts = {} }) => {
             onClick={() => onChange(category)}
             className={`rounded-full border px-4 py-2 text-sm font-semibold transition ${
               isActive
-                ? "border-[#155dfc] bg-[#155dfc] text-white shadow-[0_0_20px_rgba(21,93,252,0.35)]"
-                : "border-white/20 bg-white/5 text-foreground/80 hover:border-[#155dfc]/50"
-            } ring-1 ring-[#155dfc]/25`}
+                ? "border-[#009689] bg-[#009689] text-white shadow-[0_0_20px_rgba(0,150,137,0.35)]"
+                : "border-white/20 bg-white/5 text-foreground/80 hover:border-[#009689]/50"
+            } ring-1 ring-[#009689]/25`}
           >
             {category}
             <span className="ml-2 text-xs opacity-80">({counts[category] ?? 0})</span>

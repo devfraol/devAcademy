@@ -9,7 +9,7 @@ export const SearchFilter = ({ query, onQueryChange, activeCategory, onCategoryC
           value={query}
           onChange={(event) => onQueryChange(event.target.value)}
           placeholder="Search apps by name or use case"
-          className="w-full rounded-xl border border-border/80 bg-background/60 py-2.5 pl-9 pr-3 text-sm text-foreground outline-none transition-colors duration-300 focus:border-[#155dfc]/70"
+          className="w-full rounded-xl border border-border/80 bg-background/60 py-2.5 pl-9 pr-3 text-sm text-foreground outline-none transition-colors duration-300 focus:border-[#009689]/70"
         />
       </label>
       <div className="flex flex-wrap gap-2">
@@ -20,8 +20,8 @@ export const SearchFilter = ({ query, onQueryChange, activeCategory, onCategoryC
             onClick={() => onCategoryChange(category)}
             className={`rounded-full px-3 py-2 text-xs font-semibold transition-all duration-300 ${
               activeCategory === category
-                ? "bg-[#155dfc] text-white shadow-[0_8px_18px_rgba(21,93,252,0.35)]"
-                : "border border-border text-foreground/75 hover:border-[#155dfc]/55 hover:text-[#155dfc]"
+                ? "bg-[#009689] text-white shadow-[0_8px_18px_rgba(0,150,137,0.35)]"
+                : "border border-border text-foreground/75 hover:border-[#009689]/55 hover:text-[#009689]"
             }`}
           >
             {category}

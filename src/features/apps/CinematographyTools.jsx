@@ -107,7 +107,7 @@ export const CinematographyTools = () => {
           return (
             <section key={category.id} className="rounded-xl border border-border/70 bg-background/30 p-4">
               <div className="flex items-center gap-2">
-                <span className="inline-flex rounded-lg bg-[#155dfc]/15 p-2 text-[#155dfc]">
+                <span className="inline-flex rounded-lg bg-[#009689]/15 p-2 text-[#009689]">
                   <CategoryIcon className="h-4 w-4" />
                 </span>
                 <h4 className="text-lg font-bold tracking-tight text-foreground sm:text-xl">{category.title}</h4>
@@ -123,12 +123,12 @@ export const CinematographyTools = () => {
                     initial={{ opacity: 0, y: 16 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: categoryIndex * 0.05 + appIndex * 0.04 }}
-                    className="group rounded-2xl border border-border/70 bg-background/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#155dfc]/70 hover:shadow-[0_16px_32px_rgba(21,93,252,0.22)]"
+                    className="group rounded-2xl border border-border/70 bg-background/40 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#009689]/70 hover:shadow-[0_16px_32px_rgba(0,150,137,0.22)]"
                   >
                     <h5 className="text-lg font-bold tracking-tight text-foreground sm:text-xl">{app.name}</h5>
                     <p className="mt-2 text-sm leading-relaxed text-foreground/75">{app.description}</p>
                     <p className="mt-1 text-xs text-foreground/60">Official website: {formatWebsiteMeta(app.link)} · Opens in a new tab.</p>
-                    <span className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-[#155dfc]/15 px-3 py-1.5 text-sm font-semibold text-[#155dfc]">
+                    <span className="mt-4 inline-flex items-center gap-1.5 rounded-lg bg-[#009689]/15 px-3 py-1.5 text-sm font-semibold text-[#009689]">
                       Visit Website
                       <ArrowUpRight className="h-3.5 w-3.5" />
                     </span>
@@ -141,7 +141,7 @@ export const CinematographyTools = () => {
       </div>
 
       <div className="mt-5 inline-flex items-center gap-1 rounded-lg border border-border/70 bg-background/20 px-3 py-1.5 text-xs text-foreground/70">
-        <Camera className="h-3.5 w-3.5 text-[#155dfc]" />
+        <Camera className="h-3.5 w-3.5 text-[#009689]" />
         Curated for filmmakers, DPs, and visual storytellers.
       </div>
     </article>

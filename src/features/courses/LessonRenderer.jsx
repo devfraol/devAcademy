@@ -17,8 +17,8 @@ export const LessonRenderer = ({ block }) => {
 
     case "tip":
       return (
-        <aside className="mb-6 rounded-lg border border-blue-200 bg-blue-50 p-4 text-blue-900">
-          <p className="text-sm font-semibold uppercase tracking-[0.12em] text-blue-700">Tip</p>
+        <aside className="mb-6 rounded-lg border border-teal-200 bg-teal-50 p-4 text-teal-900">
+          <p className="text-sm font-semibold uppercase tracking-[0.12em] text-teal-700">Tip</p>
           <p className="mt-2 text-gray-700 leading-relaxed">{block.text}</p>
         </aside>
       );

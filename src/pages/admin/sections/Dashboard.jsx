@@ -29,7 +29,7 @@ export const Dashboard = () => (
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: index * 0.06 }}
           whileHover={{ y: -3, scale: 1.02 }}
-          className="rounded-2xl border border-white/10 bg-zinc-900/70 p-5 backdrop-blur-xl transition hover:border-[#155dfc]/55 hover:shadow-[0_0_24px_rgba(21,93,252,0.3)]"
+          className="rounded-2xl border border-white/10 bg-zinc-900/70 p-5 backdrop-blur-xl transition hover:border-[#009689]/55 hover:shadow-[0_0_24px_rgba(0,150,137,0.3)]"
         >
           <p className="text-sm text-zinc-400">{card.label}</p>
           <p className="mt-2 text-3xl font-semibold text-white">{card.value}</p>
@@ -43,7 +43,7 @@ export const Dashboard = () => (
         {recentActivity.map((entry) => (
           <div
             key={entry.id}
-            className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-zinc-200 transition hover:border-[#155dfc]/40 hover:bg-[#155dfc]/10"
+            className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-zinc-200 transition hover:border-[#009689]/40 hover:bg-[#009689]/10"
           >
             {entry.action}
           </div>
