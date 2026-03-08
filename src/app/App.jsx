@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Link, Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import { AppProviders } from "@/app/providers";
@@ -10,7 +10,6 @@ import { FixedAuthActions } from "@/features/auth/FixedAuthActions";
 import { CodeFlowBackground } from "@/components/common/CodeFlowBackground";
 import { ErrorBoundary } from "@/components/common/ErrorBoundary";
 import { LoadingSpinner } from "@/shared/ui/LoadingSpinner";
-import logoDark from "@/assets/Logo dark.png";
 
 const Home = lazy(() => import("@/pages/Home").then((m) => ({ default: m.Home })));
 const Instructor = lazy(() => import("@/pages/Instructor").then((m) => ({ default: m.Instructor })));
@@ -42,17 +41,6 @@ function App() {
           <motion.div initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.75, ease: "easeOut" }}>
             <ScrollToTop />
             <FixedAuthActions />
-            <Link
-              to="/"
-              aria-label="Go to home page"
-              className="fixed right-3 top-3 z-50 rounded-2xl border border-[#009689]/45 bg-[linear-gradient(145deg,rgba(0,150,137,0.2),rgba(40,10,10,0.45))] px-3 py-2 shadow-[0_0_24px_rgba(0,150,137,0.42),inset_0_1px_0_rgba(255,255,255,0.2)] backdrop-blur-xl transition-transform duration-200 hover:scale-105 sm:right-4 sm:top-4"
-            >
-              <img
-                src={logoDark}
-                alt="Devfraol logo"
-                className="block h-6 w-auto select-none drop-shadow-[0_0_10px_rgba(0,150,137,0.75)] sm:h-7"
-              />
-            </Link>
             <Suspense fallback={<div className="flex min-h-[30vh] items-center justify-center"><LoadingSpinner label="Loading page..." /></div>}>
               <Routes>
                 <Route element={<MainLayout />}>
