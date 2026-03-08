@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import logoDark from "@/assets/Logo dark.png";
 
 const welcomeMessage = "Welcome to Dev Fraol Academy";
 const subTitle = "Code. Create. Launch your journey.";
@@ -89,16 +88,7 @@ export const WelcomePage = ({ onWelcomeComplete }) => {
           ))}
 
           <div className="relative w-full max-w-3xl rounded-3xl border border-white/10 bg-white/5 p-7 shadow-[0_0_100px_rgba(0,150,137,0.2)] backdrop-blur-2xl sm:p-10">
-            <motion.img
-              src={logoDark}
-              alt="Dev Fraol Academy"
-              className="mx-auto w-52 sm:w-64 md:w-72"
-              initial={{ opacity: 0, scale: 0.8, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0, filter: "drop-shadow(0 0 20px rgba(0,150,137,0.45))" }}
-              transition={{ duration: 0.95, ease: "easeOut", delay: 0.2 }}
-            />
-
-            <div className="mt-7 text-center">
+            <div className="text-center">
               <motion.h1
                 className="text-3xl font-extrabold tracking-tight sm:text-5xl"
                 initial={{ opacity: 0, y: 16 }}
