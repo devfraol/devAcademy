@@ -5,613 +5,441 @@ export const networkingInternetBasicsCourseContent = [
     title: "Networking & Internet Basics",
     modules: [
       {
-        title: "Module 1: Networking Fundamentals",
+        title: "Module 1 — Introduction to Computer Networks",
         lessons: [
           {
-            title: "Lesson 1: IP Addressing",
-            overview:
-              "In this lesson, you will clearly understand what an IP address is, why it is needed, and how it helps devices communicate on a network and on the internet. No technical background is required.",
+            title: "Lesson 1: What Is a Computer Network",
+            overview: "A computer network is a group of devices connected together so they can communicate and share resources.",
             definition:
-              "An IP address is like a phone number or home address for a device. It is a unique number that identifies a device on a network.",
+              "When devices such as computers, phones, printers, or servers are connected, they can send and receive data. These connections can be wired using cables or wireless using Wi-Fi. Networks allow devices to work together instead of operating alone. Without networks, every device would work independently with no communication between them.",
             examples: [
-              "A simple IP address looks like 192.168.1.5",
-              "If a phone, laptop, or smart TV connects to a network, it has an IP address",
+              "You can send files between computers",
+              "Multiple users can use the same printer",
+              "Devices can access the internet",
+              "Your home Wi-Fi is a simple network. Your phone, laptop, smart TV, and tablet all connect to the same router and communicate through it.",
             ],
             keyPoints: [
-              "An IP address identifies a device",
-              "No IP address means no communication",
-              "Each device should have a unique IP on the same network",
-              "Most devices get IP addresses automatically from the router",
-            ],
-            howToUse: [
-              "Connect your device to Wi-Fi or Ethernet",
-              "Allow the router to assign the IP automatically",
-              "If needed, open Command Prompt and run ipconfig to view your IP",
-              "Observe the address only; do not edit settings as a beginner",
-            ],
-            tips: [
-              "Restart Wi-Fi or router to fix temporary IP issues",
-              "You do not need to memorize IP number formats at this stage",
-            ],
-            quickSummary:
-              "An IP address is a unique number that allows devices to find and communicate with each other on a network or the internet.",
-            practiceTasks: [
-              "Open your device network settings and locate the IP address",
-              "On Windows, run ipconfig and identify the IPv4 address",
-            ],
-            quiz: [
-              "What is an IP address similar to in real life?",
-              "Can a device communicate on a network without an IP address?",
-              "Do devices usually get IP addresses automatically?",
+              "A network connects multiple devices",
+              "Devices communicate by sending data",
+              "Networks can be wired or wireless",
             ],
           },
           {
-            title: "Lesson 2: Routers and Switches",
-            overview:
-              "In this lesson, you will clearly understand what routers and switches are, what they do, and why they are important in home and office networks.",
+            title: "Lesson 2: Why Networks Are Important",
+            overview: "Computer networks are the foundation of modern communication and digital services.",
             definition:
-              "A router connects your local network to the internet and directs data to the correct destination. A switch connects devices inside a local network so they can communicate with each other.",
+              "Almost everything we do online depends on networks. When you browse websites, send emails, or watch videos, your device is communicating with other computers through networks. Businesses rely on networks to share files, run applications, and connect employees. Schools use networks for learning platforms and research. Banks use networks for financial transactions. Networks make it possible for millions of devices around the world to communicate instantly.",
             examples: [
-              "Home example: router shares internet to phones and laptops while a switch can add extra wired ports",
-              "Office example: one router connects to ISP and one or more switches connect many computers",
+              "When you open a website, your computer sends a request through the network to a server that stores that website. The server then sends the website data back to your device.",
             ],
             keyPoints: [
-              "Router connects LAN to the internet",
-              "Switch connects multiple local devices together",
-              "Routers often assign IP addresses automatically",
-              "Switches do not provide internet by themselves",
-            ],
-            howToUse: [
-              "Connect the router to your ISP line",
-              "Connect local devices directly to router LAN ports or via a switch",
-              "Use a switch when you need more wired device connections",
-            ],
-            tips: [
-              "Restart router when internet is slow",
-              "Place router in a central and open location",
-              "Check cable ports carefully before plugging",
-            ],
-            commonMistakes: [
-              "Thinking router and modem are always the same device",
-              "Plugging cables into wrong ports",
-              "Turning off router during active usage",
-            ],
-            quickSummary:
-              "Router handles internet access and traffic direction, while switch handles local device-to-device communication.",
-            practiceTasks: [
-              "Find your router and count LAN ports",
-              "Identify which cable is from ISP and which cables go to local devices",
-            ],
-            quiz: [
-              "Which device connects a network to the internet?",
-              "Which device connects computers together inside a LAN?",
-              "Can a switch provide internet access by itself?",
+              "Networks allow global communication",
+              "They support internet services and online applications",
+              "Businesses and organizations depend on networks",
             ],
           },
           {
-            title: "Lesson 3: LAN and WAN",
+            title: "Lesson 3: Real-World Network Examples",
             overview:
-              "In this lesson, you will understand what LAN and WAN mean, how they are different, and where you use them in real life.",
+              "Networks exist in many different environments. Understanding real examples helps you see how networking is used every day.",
             definition:
-              "LAN (Local Area Network) connects devices in one place, such as a home, school, or office. WAN (Wide Area Network) connects multiple LANs across large distances such as cities and countries.",
+              "Networks can be small or extremely large depending on their purpose. A home network connects devices like phones, laptops, and smart TVs through a Wi-Fi router. An office network connects employee computers, printers, and servers so people can share files and applications. The internet is the largest network in the world. It connects billions of devices across different countries. Each of these networks works on the same basic principle: devices communicate using network connections.",
             examples: [
-              "LAN examples: home Wi-Fi, office network, school computer lab",
-              "WAN examples: internet, mobile data network, branches connected across regions",
+              "In a company office: employees connect to the company network, files are stored on shared servers, and everyone can access internal systems.",
             ],
             keyPoints: [
-              "LAN is small and local",
-              "WAN is large and wide",
+              "Networks exist in homes, offices, schools, and the internet",
+              "They allow devices to share information and resources",
+              "Small and large networks follow the same basic concepts",
+            ],
+          },
+          {
+            title: "Lesson 4: Client vs Server",
+            overview: "In many networks, devices have different roles. Two common roles are clients and servers.",
+            definition:
+              "A client is a device that requests services or information. Examples include laptops, smartphones, and desktop computers. A server is a powerful computer that provides services, data, or applications to clients. When a client needs something, it sends a request to a server. The server processes that request and sends back the response. This model is used by most internet services.",
+            examples: [
+              "When you open a website: your computer acts as the client, the website's hosting machine acts as the server, and the server sends the webpage to your browser.",
+            ],
+            keyPoints: ["Clients request services", "Servers provide services", "Most internet systems follow the client-server model"],
+          },
+          {
+            title: "Lesson 5: How Data Travels on the Internet",
+            overview: "Data does not travel across networks as one large piece. Instead, it moves in small units.",
+            definition:
+              "When information is sent across a network, it is divided into smaller pieces called packets. Each packet contains a part of the data, the sender's address, and the destination address. Routers and other networking devices read this information and forward the packets toward their destination. When all packets arrive, the receiving device reassembles them to recreate the original message. This system makes network communication efficient and reliable.",
+            examples: [
+              "When you send a photo through the internet: the photo is split into many packets, each packet travels through the network, and the receiving device combines the packets to rebuild the photo.",
+            ],
+            keyPoints: [
+              "Data travels in packets",
+              "Packets contain addressing information",
+              "Devices reassemble packets to restore the original data",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Module 2 — Types of Networks",
+        lessons: [
+          {
+            title: "Lesson 1: Local Area Network (LAN)",
+            overview: "A Local Area Network is a network that connects devices within a small physical area.",
+            definition:
+              "A LAN usually exists in places like homes, offices, schools, or small buildings. Devices inside a LAN are connected using Ethernet cables or Wi-Fi and communicate through a router or switch. LANs are fast because the devices are close to each other and the network is controlled locally.",
+            examples: [
+              "Your home Wi-Fi network where your phone, laptop, and smart TV connect to the same router is a LAN.",
+            ],
+            keyPoints: ["A LAN covers a small area", "Common in homes and offices", "Usually provides high speed connections"],
+          },
+          {
+            title: "Lesson 2: Wide Area Network (WAN)",
+            overview: "A Wide Area Network connects multiple smaller networks across large geographic areas.",
+            definition:
+              "WANs allow networks in different cities or countries to communicate with each other. They rely on infrastructure provided by internet service providers. The largest WAN in the world is the internet.",
+            examples: ["When a company has offices in different cities, they use a WAN to connect all their office networks."],
+            keyPoints: [
+              "WAN connects networks across large distances",
+              "Used by companies and internet providers",
               "The internet is the largest WAN",
             ],
-            howToUse: [
-              "Identify your local network first (home or office)",
-              "Understand that LAN connects to WAN for internet access",
-              "Use this idea when troubleshooting: local issue vs internet-side issue",
-            ],
-            tips: [
-              "Protect LAN by using a strong Wi-Fi password",
-              "Restart local devices when connection drops",
-            ],
-            commonMistakes: [
-              "Thinking LAN is the internet",
-              "Assuming WAN is only for large companies",
-              "Ignoring basic network security",
-            ],
-            quickSummary: "LAN connects nearby devices. WAN connects networks across distance. Internet is the biggest WAN.",
-            practiceTasks: ["Identify your current network and classify it as LAN or WAN", "Name one WAN service you use daily"],
-            quiz: ["What does LAN stand for?", "What is the biggest WAN in the world?", "Is home Wi-Fi LAN or WAN?"],
           },
           {
-            title: "Lesson 4: Network Hand Tools",
-            overview:
-              "In this lesson, you will learn about basic network hand tools, what each tool is used for, and why they are important when building or fixing a network.",
+            title: "Lesson 3: Metropolitan Area Network (MAN)",
+            overview: "A Metropolitan Area Network connects networks within a city or large urban area.",
             definition:
-              "Network hand tools are simple physical tools used to connect, test, and fix network cables safely and correctly.",
-            examples: [
-              "Crimping tool: attaches RJ45 connectors to cable ends",
-              "Cable tester: confirms if a cable works or has wiring problems",
-              "Wire cutter/stripper: cuts cable and removes cable jacket",
-              "Screwdriver: opens network boxes and mounts devices",
-            ],
+              "MANs are larger than LANs but smaller than WANs. They are often operated by governments, universities, or telecommunications companies. They provide high-speed connections between buildings in the same city.",
+            examples: ["A city government network connecting public offices, libraries, and schools."],
             keyPoints: [
-              "Tools save time and reduce mistakes",
-              "Crimping tool attaches connectors",
-              "Cable tester checks cable quality",
-              "Always test cables after making them",
+              "Covers a city or metropolitan area",
+              "Larger than LAN but smaller than WAN",
+              "Often used by institutions and municipalities",
             ],
-            tips: [
-              "Use tools gently and correctly",
-              "Keep tools clean and organized",
-              "Never skip final cable testing",
-            ],
-            commonMistakes: [
-              "Using the wrong tool for the task",
-              "Forcing connectors into cable ends",
-              "Skipping tester verification",
-            ],
-            quickSummary:
-              "Network tools help you build reliable connections, confirm cable quality, and troubleshoot faults faster.",
-            practiceTasks: ["Look at an Ethernet cable and identify the RJ45 connector", "Name which tool is used to attach the connector"],
-            quiz: ["What is a crimping tool used for?", "Why is a cable tester important?", "Can a cable look fine but still fail?"],
           },
           {
-            title: "Lesson 5: Build a Small Wireless LAN (Wi-Fi)",
-            overview:
-              "In this lesson, you will learn how to build a small wireless network step by step and understand how devices connect to Wi-Fi.",
+            title: "Lesson 4: Personal Area Network (PAN)",
+            overview: "A Personal Area Network connects devices around a single person.",
             definition:
-              "A wireless LAN (Wi-Fi) is a local network that connects devices without cables by using radio signals.",
-            keyPoints: [
-              "A wireless router creates and shares Wi-Fi",
-              "Internet comes from ISP and is distributed by the router",
-              "Strong passwords protect your network",
-              "Router placement strongly affects signal quality",
-            ],
-            howToUse: [
-              "Power on the router",
-              "Connect ISP internet cable to router WAN port",
-              "Open router settings and set Wi-Fi name (SSID) and password",
-              "Connect phones, laptops, and tablets using the new credentials",
-              "Test internet by opening a website",
-            ],
-            tips: [
-              "Place router in the center of the home",
-              "Keep it away from metal obstacles and closed cabinets",
-              "Change default admin and Wi-Fi passwords",
-              "Restart router if speed becomes unstable",
-            ],
-            commonMistakes: ["Using weak passwords", "Placing router in corners", "Never reviewing unknown connected devices"],
-            quickSummary:
-              "A small Wi-Fi network needs internet input, a properly configured router, secure credentials, and smart router placement.",
-            practiceTasks: ["Check your Wi-Fi name", "Count connected devices", "Compare signal strength near and far from router"],
-            quiz: ["What device creates Wi-Fi?", "Why is a Wi-Fi password important?", "Where should a router be placed for best signal?"],
+              "PANs are small networks used for short-range communication between personal devices. They usually use technologies like Bluetooth or Wi-Fi Direct. These networks allow devices to exchange data easily without needing a large network.",
+            examples: ["Connecting your phone to wireless headphones using Bluetooth."],
+            keyPoints: ["Very small network range", "Connects personal devices", "Often uses Bluetooth technology"],
           },
           {
-            title: "Lesson 6: Building a Local Area Network (LAN)",
-            overview:
-              "In this lesson, you will build a small wired LAN and learn cable preparation, T568B wire arrangement, crimping, testing, and final device setup.",
+            title: "Lesson 5: Public vs Private Networks",
+            overview: "Networks can be classified based on who is allowed to access them.",
             definition:
-              "A wired LAN connects nearby devices through Ethernet cables so they can share internet, files, and local resources reliably.",
-            examples: [
-              "Small office setup: router to switch, then switch to multiple PCs",
-              "Straight-through cable setup: same T568B wire order on both ends",
-            ],
+              "A public network is open and accessible to many users. The internet is the most common example. A private network is restricted and used internally within an organization or home. Private networks provide better security because access is controlled.",
+            examples: ["A company internal network used only by employees is a private network."],
             keyPoints: [
-              "Ethernet cables contain 8 color-coded wires",
-              "T568B is a common beginner cable standard",
-              "Crimping attaches RJ45 connectors to cable ends",
-              "Cable testing confirms wiring is correct before use",
-            ],
-            howToUse: [
-              "Cut and strip cable to expose the 8 wires",
-              "Arrange wires in T568B order: White/Orange, Orange, White/Green, Blue, White/Blue, Green, White/Brown, Brown",
-              "Insert wires fully into RJ45 connector",
-              "Crimp firmly using a crimping tool",
-              "Repeat for second end with the same T568B order",
-              "Test both ends with cable tester and confirm all 8 lines",
-              "Connect PC to switch/router and verify connectivity",
-            ],
-            howToUseImageKey: "rj45",
-            howToUseImageAlt: "RJ45 connector reference",
-            tips: [
-              "Label cables when multiple devices are involved",
-              "Keep cable paths neat and avoid sharp bends",
-              "Always test cable before deploying it",
-            ],
-            commonMistakes: [
-              "Wrong wire color order",
-              "Wires not fully inserted into connector",
-              "Skipping cable testing",
-              "Plugging cable into incorrect router port",
-            ],
-            quickSummary:
-              "Building a stable LAN requires correct wire order, proper crimping, cable testing, and correct connection of router, switch, and devices.",
-            practiceTasks: ["Inspect an Ethernet cable and compare both ends", "Check whether both ends follow the same color order"],
-            quiz: [
-              "What does LAN stand for?",
-              "Why must wire colors be arranged correctly?",
-              "What tool attaches RJ45 connectors?",
-              "What device connects LAN to the internet?",
+              "Public networks are open",
+              "Private networks restrict access",
+              "Businesses mainly use private networks",
             ],
           },
         ],
       },
       {
-        title: "Module 2: Internet Fundamentals",
+        title: "Module 3 — Network Devices",
         lessons: [
           {
-            title: "Lesson 1: DNS Basics",
-            overview:
-              "In this lesson, you will learn how website names are converted into numbers so computers can find websites quickly and correctly.",
+            title: "Lesson 1: Router",
+            overview: "A router is a device that connects different networks and directs data traffic between them.",
             definition:
-              "DNS (Domain Name System) is like a contact list for the internet. It translates website names into IP addresses.",
-            examples: ["You type www.example.com, DNS finds the matching IP address, then your browser opens the site"],
+              "Routers examine the destination address of data packets and decide the best path to send them. In most homes and offices, the router connects the local network to the internet.",
+            examples: ["Your home router allows all your devices to share a single internet connection."],
             keyPoints: [
-              "Humans use website names, computers use IP numbers",
-              "DNS performs translation automatically",
-              "DNS makes web browsing easy for beginners",
+              "Connects different networks",
+              "Directs traffic between networks",
+              "Commonly used to connect to the internet",
             ],
-            tips: ["DNS works in the background", "Beginners usually do not need to change DNS settings"],
-            quickSummary: "DNS helps computers find websites using easy names instead of difficult number addresses.",
-            practiceTasks: ["Open a browser and visit any website", "Notice you type names, not numeric IP addresses"],
-            quiz: ["What does DNS do?", "Do computers understand website names directly?"],
           },
           {
-            title: "Lesson 2: Web Protocols",
-            overview:
-              "In this lesson, you will understand the basic rules that allow information to move correctly and safely on the internet.",
+            title: "Lesson 2: Switch",
+            overview: "A switch connects multiple devices within the same local network.",
             definition:
-              "A protocol is a set of communication rules that tells computers how to send and receive data.",
-            examples: ["HTTP is used for regular web communication", "HTTPS is secure web communication with encryption"],
-            keyPoints: ["Protocols make communication possible", "HTTPS is safer than HTTP", "Most modern websites use HTTPS"],
-            tips: ["Look for the lock icon in your browser", "Avoid entering passwords on HTTP-only pages"],
-            quickSummary: "Protocols are communication rules, and HTTPS helps protect your data while browsing.",
-            practiceTasks: ["Visit a few websites and check if each one uses HTTPS"],
-            quiz: ["What is a protocol?", "Which is more secure: HTTP or HTTPS?"],
+              "Switches receive data from one device and send it directly to the correct destination device within the network. This helps improve network efficiency because data is not broadcast to every device.",
+            examples: ["In an office network, computers are often connected to a switch using Ethernet cables."],
+            keyPoints: ["Connects devices inside a LAN", "Sends data to the correct device", "Improves network efficiency"],
           },
           {
-            title: "Lesson 3: Access and Use the Internet",
-            overview:
-              "In this lesson, you will learn how devices access the internet and how to use online services safely.",
+            title: "Lesson 3: Modem",
+            overview: "A modem allows a network to connect to an internet service provider.",
             definition:
-              "Internet access is the process of connecting your device to global services using Wi-Fi, mobile data, or wired Ethernet.",
-            examples: ["Connecting a phone with mobile data", "Connecting a laptop through home Wi-Fi"],
-            keyPoints: ["Internet connects devices worldwide", "There are multiple access methods", "Safe use protects accounts and personal data"],
-            tips: ["Use strong passwords", "Avoid unknown downloads", "Do not click suspicious links"],
-            quickSummary: "The internet enables communication and information sharing, but safe usage habits are essential.",
-            practiceTasks: ["Connect to Wi-Fi or mobile data", "Open a website and confirm internet access"],
-            quiz: ["Name one way to access the internet", "Why is safe internet use important?"],
+              "The modem converts signals from your ISP into a format your network devices can understand. In many homes, the modem and router are combined into one device.",
+            examples: ["Your internet modem connects your home network to your internet provider."],
+            keyPoints: [
+              "Connects your network to the ISP",
+              "Converts signals for network communication",
+              "Often combined with routers",
+            ],
+          },
+          {
+            title: "Lesson 4: Wireless Access Point",
+            overview: "A wireless access point allows devices to connect to a network using Wi-Fi.",
+            definition:
+              "Access points extend wireless coverage and allow many devices to connect without cables. They are commonly used in offices, schools, and large buildings.",
+            examples: ["A coffee shop Wi-Fi system uses access points to provide internet access to customers."],
+            keyPoints: ["Provides wireless network access", "Extends Wi-Fi coverage", "Supports multiple devices"],
+          },
+          {
+            title: "Lesson 5: Firewall",
+            overview: "A firewall protects a network from unauthorized access.",
+            definition:
+              "Firewalls monitor incoming and outgoing traffic and block suspicious or harmful connections. They act as a security barrier between trusted internal networks and untrusted external networks.",
+            examples: ["A company firewall prevents hackers from accessing internal company systems."],
+            keyPoints: ["Protects networks from threats", "Monitors and filters traffic", "Important for network security"],
           },
         ],
       },
       {
-        title: "Module 3: Network Troubleshooting & Performance",
+        title: "Module 4 — Network Topologies",
         lessons: [
           {
-            title: "Lesson 1: Connectivity Checks",
-            overview:
-              "In this lesson, you will perform basic connectivity checks to find out why internet or network access is not working.",
+            title: "Lesson 1: Introduction to Network Topology",
+            overview: "Network topology describes how devices are arranged and connected within a network.",
             definition:
-              "Connectivity checks are simple diagnostic steps for verifying power, cables, Wi-Fi status, and device connection state.",
+              "The layout of a network affects how devices communicate and how reliable the network is. Some topologies are simple and inexpensive, while others are designed for reliability and fault tolerance. Understanding topology helps network engineers design efficient networks.",
+            examples: ["In many office networks, all computers connect to a central switch. This layout is known as a star topology."],
             keyPoints: [
-              "Start with simple checks before advanced fixes",
-              "Power, cables, and Wi-Fi status are most common causes",
-              "Restarting router and device solves many temporary issues",
+              "Network topology describes the layout of a network",
+              "It affects performance and reliability",
+              "Different environments use different topologies",
             ],
-            howToUse: [
-              "Check if router is on and indicator lights are active",
-              "Check Ethernet cable fit and cable condition",
-              "Verify Wi-Fi is enabled and connected to correct network",
-              "Restart device and router, wait 1–2 minutes, then retest",
-            ],
-            tips: ["Check whether other devices also lost internet", "Use the same test website after each fix step"],
-            quickSummary: "Connectivity checks help you find and solve simple network problems quickly.",
-            practiceTasks: ["Turn Wi-Fi off and on", "Restart router and test internet again"],
-            quiz: ["What should you check first when internet fails?", "Can restarting a router fix issues?"],
           },
           {
-            title: "Lesson 2: Common Network Errors",
-            overview:
-              "In this lesson, you will identify common network errors and apply easy fixes before escalating support.",
+            title: "Lesson 2: Star Topology",
+            overview: "Star topology is one of the most common network designs.",
             definition:
-              "A network error is a message or condition showing that a device cannot communicate properly with network or internet services.",
-            examples: ["No internet access", "Limited connectivity", "Wrong Wi-Fi password"],
+              "In this topology, every device connects to a central device such as a switch or hub. All communication between devices passes through this central point. If one device fails, the rest of the network continues working. However, if the central device fails, the network stops functioning.",
+            examples: ["Most modern office networks use star topology with a central switch."],
             keyPoints: [
-              "Most beginner network errors are common and fixable",
-              "Error messages provide useful troubleshooting clues",
-              "Simple repeatable steps resolve many issues",
+              "Devices connect to a central device",
+              "Easy to manage and expand",
+              "Failure of the central device affects the whole network",
             ],
-            howToUse: [
-              "Re-enter Wi-Fi password carefully",
-              "Restart router and device",
-              "Move closer to router and test again",
-              "If all local checks fail, contact ISP",
-            ],
-            tips: ["Do not panic when you see errors", "Try basic fixes before changing settings"],
-            quickSummary: "Common network errors can usually be resolved with simple checks and reconnection steps.",
-            practiceTasks: ["Disconnect from Wi-Fi and reconnect", "Test with a known correct password"],
-            quiz: ["Name one common network error", "Can wrong passwords cause connection problems?"],
           },
           {
-            title: "Lesson 3: Performance Tips",
-            overview:
-              "In this lesson, you will learn practical habits that improve internet speed, signal quality, and connection stability.",
+            title: "Lesson 3: Bus Topology",
+            overview: "Bus topology connects all devices using a single communication cable.",
             definition:
-              "Network performance describes how fast and reliable your network feels during real use.",
+              "All devices share the same transmission line. When one device sends data, it travels along the cable and can be received by other devices. This design is simple but not commonly used today because it has performance and reliability limitations.",
+            examples: ["Early computer networks often used bus topology."],
+            keyPoints: ["Uses a single shared cable", "Simple network design", "Less reliable for modern networks"],
+          },
+          {
+            title: "Lesson 4: Ring Topology",
+            overview: "In a ring topology, devices are connected in a circular structure.",
+            definition:
+              "Each device connects to two other devices, forming a closed loop. Data travels around the ring until it reaches the destination. Although this design ensures orderly communication, a break in the ring can disrupt the network.",
+            examples: ["Some early networking systems used ring-based communication."],
+            keyPoints: ["Devices form a circular connection", "Data travels around the ring", "A single break can affect communication"],
+          },
+          {
+            title: "Lesson 5: Mesh Topology",
+            overview: "Mesh topology connects devices using multiple paths.",
+            definition:
+              "Each device may have connections to several other devices. This design improves reliability because if one connection fails, data can take another path. Mesh networks are often used in critical systems where uptime is very important.",
+            examples: ["Large internet infrastructure networks often use mesh connections."],
+            keyPoints: ["Multiple paths between devices", "Highly reliable network design", "Used in large and critical networks"],
+          },
+        ],
+      },
+      {
+        title: "Module 5 — Introduction to IP Addressing",
+        lessons: [
+          {
+            title: "Lesson 1: What Is an IP Address",
+            overview: "An IP address is a unique identifier assigned to every device on a network.",
+            definition:
+              "Just like houses have street addresses, devices use IP addresses so they can send and receive data. Without IP addresses, devices would not know where to send information.",
+            examples: ["When you visit a website, your device sends a request to the IP address of the server hosting that website."],
             keyPoints: [
-              "Router placement affects signal strength",
-              "Too many active devices can reduce speed",
-              "Background apps consume bandwidth",
+              "Identifies devices on a network",
+              "Required for communication",
+              "Every connected device has an IP address",
             ],
-            howToUse: [
-              "Restart router weekly to clear temporary issues",
-              "Place router in an open central location",
-              "Limit unnecessary connected devices",
-              "Close apps that use internet in the background",
-              "Use wired Ethernet for stable high-priority tasks",
-            ],
-            tips: ["Keep router away from metal objects", "Compare performance before and after each improvement"],
-            quickSummary: "Simple actions and good habits can significantly improve network speed and reliability.",
-            practiceTasks: ["Run a speed test before and after moving closer to router", "Disable unused apps and compare internet performance"],
-            quiz: ["Does router placement affect speed?", "Can many devices slow internet?"],
           },
           {
-            title: "Lesson 4: Final Exam",
-            exam: {
-              title: "Networking & Internet Basics Final Exam",
-              questions: [
-                {
-                  id: 1,
-                  text: "What is an IP address?",
-                  options: [
-                    { id: "A", text: "A computer name" },
-                    { id: "B", text: "A unique number that identifies a device on a network" },
-                    { id: "C", text: "A website address" },
-                    { id: "D", text: "A password" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 2,
-                  text: "Which device connects different networks together?",
-                  options: [
-                    { id: "A", text: "Switch" },
-                    { id: "B", text: "Router" },
-                    { id: "C", text: "Cable" },
-                    { id: "D", text: "Monitor" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 3,
-                  text: "What does LAN stand for?",
-                  options: [
-                    { id: "A", text: "Large Area Network" },
-                    { id: "B", text: "Local Area Network" },
-                    { id: "C", text: "Long Access Network" },
-                    { id: "D", text: "Local Access Node" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 4,
-                  text: "Which network covers a large geographical area?",
-                  options: [
-                    { id: "A", text: "LAN" },
-                    { id: "B", text: "WLAN" },
-                    { id: "C", text: "WAN" },
-                    { id: "D", text: "PAN" },
-                  ],
-                  correctAnswer: "C",
-                },
-                {
-                  id: 5,
-                  text: "Which tool is used to test Ethernet network cables?",
-                  options: [
-                    { id: "A", text: "Screwdriver" },
-                    { id: "B", text: "Cable tester" },
-                    { id: "C", text: "Monitor" },
-                    { id: "D", text: "Keyboard" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 6,
-                  text: "What is Wi-Fi mainly used for?",
-                  options: [
-                    { id: "A", text: "Printing" },
-                    { id: "B", text: "Wireless network connection" },
-                    { id: "C", text: "Power supply" },
-                    { id: "D", text: "File storage" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 7,
-                  text: "What does DNS do?",
-                  options: [
-                    { id: "A", text: "Stores files" },
-                    { id: "B", text: "Converts domain names to IP addresses" },
-                    { id: "C", text: "Protects against viruses" },
-                    { id: "D", text: "Boosts internet speed" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 8,
-                  text: "Which protocol is more secure for websites?",
-                  options: [
-                    { id: "A", text: "HTTP" },
-                    { id: "B", text: "FTP" },
-                    { id: "C", text: "HTTPS" },
-                    { id: "D", text: "IP" },
-                  ],
-                  correctAnswer: "C",
-                },
-                {
-                  id: 9,
-                  text: "What symbol usually shows a secure website?",
-                  options: [
-                    { id: "A", text: "⭐ Star" },
-                    { id: "B", text: "🔒 Lock" },
-                    { id: "C", text: "⚠️ Warning" },
-                    { id: "D", text: "➡️ Arrow" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 10,
-                  text: "Which is a common way to access the internet?",
-                  options: [
-                    { id: "A", text: "Printer" },
-                    { id: "B", text: "Scanner" },
-                    { id: "C", text: "Wi-Fi" },
-                    { id: "D", text: "Speaker" },
-                  ],
-                  correctAnswer: "C",
-                },
-                {
-                  id: 11,
-                  text: "What should you check first when the internet is not working?",
-                  options: [
-                    { id: "A", text: "Buy a new router" },
-                    { id: "B", text: "Call a technician" },
-                    { id: "C", text: "Check power and connections" },
-                    { id: "D", text: "Change computer" },
-                  ],
-                  correctAnswer: "C",
-                },
-                {
-                  id: 12,
-                  text: "Restarting a router helps because it:",
-                  options: [
-                    { id: "A", text: "Makes internet free" },
-                    { id: "B", text: "Clears temporary problems" },
-                    { id: "C", text: "Deletes user data" },
-                    { id: "D", text: "Changes Wi-Fi name" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 13,
-                  text: "What commonly causes slow internet speed?",
-                  options: [
-                    { id: "A", text: "Bright screen" },
-                    { id: "B", text: "Too many connected devices" },
-                    { id: "C", text: "Keyboard settings" },
-                    { id: "D", text: "Mouse speed" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 14,
-                  text: "Which cable color standard is used in LAN wiring?",
-                  options: [
-                    { id: "A", text: "RGB" },
-                    { id: "B", text: "T568A / T568B" },
-                    { id: "C", text: "CMYK" },
-                    { id: "D", text: "HDMI" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 15,
-                  text: "What is a network switch mainly used for?",
-                  options: [
-                    { id: "A", text: "Internet browsing" },
-                    { id: "B", text: "Connecting devices in a LAN" },
-                    { id: "C", text: "Wireless signals" },
-                    { id: "D", text: "Power control" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 16,
-                  text: "Where should a Wi-Fi router be placed for best performance?",
-                  options: [
-                    { id: "A", text: "Inside a cabinet" },
-                    { id: "B", text: "Near metal objects" },
-                    { id: "C", text: "In a central open location" },
-                    { id: "D", text: "On the floor" },
-                  ],
-                  correctAnswer: "C",
-                },
-                {
-                  id: 17,
-                  text: "What happens if the Wi-Fi password is incorrect?",
-                  options: [
-                    { id: "A", text: "Internet slows down" },
-                    { id: "B", text: "Device still connects" },
-                    { id: "C", text: "Connection fails" },
-                    { id: "D", text: "Router turns off" },
-                  ],
-                  correctAnswer: "C",
-                },
-                {
-                  id: 18,
-                  text: "What does WAN usually connect?",
-                  options: [
-                    { id: "A", text: "Devices in one room" },
-                    { id: "B", text: "One computer only" },
-                    { id: "C", text: "Multiple LANs over distance" },
-                    { id: "D", text: "USB devices" },
-                  ],
-                  correctAnswer: "C",
-                },
-                {
-                  id: 19,
-                  text: "Which is a basic network hand tool?",
-                  options: [
-                    { id: "A", text: "Hammer" },
-                    { id: "B", text: "Crimping tool" },
-                    { id: "C", text: "Paint brush" },
-                    { id: "D", text: "Calculator" },
-                  ],
-                  correctAnswer: "B",
-                },
-                {
-                  id: 20,
-                  text: "Which connection is usually more stable?",
-                  options: [
-                    { id: "A", text: "Wi-Fi" },
-                    { id: "B", text: "Bluetooth" },
-                    { id: "C", text: "Wired Ethernet" },
-                    { id: "D", text: "Mobile hotspot" },
-                  ],
-                  correctAnswer: "C",
-                },
-              ],
-            },
+            title: "Lesson 2: IPv4 Address Structure",
+            overview: "IPv4 is the most widely used IP addressing system.",
+            definition:
+              "An IPv4 address is written as four numbers separated by periods. Each number ranges from 0 to 255. Example format: 192.168.1.1. Each section of the address represents part of the network identification system.",
+            keyPoints: ["IPv4 uses four numbers", "Numbers are separated by dots", "Each number ranges from 0–255"],
           },
           {
-            title: "Lesson 5: Cable Color Arrangement Exam",
-            exam: {
-              type: "drag_order",
-              title: "RJ45 T568B Color Arrangement Exam",
-              durationMinutes: 10,
-              maxAttempts: 3,
-              instructions:
-                "Drag each cable color from the Color Box into the Main Box in the correct T568B sequence. You have 10 minutes and 3 attempts.",
-              items: [
-                { id: "white-orange", label: "White/Orange", swatch: "#f4f4f5" },
-                { id: "orange", label: "Orange", swatch: "#f97316" },
-                { id: "white-green", label: "White/Green", swatch: "#ecfdf5" },
-                { id: "blue", label: "Blue", swatch: "#2563eb" },
-                { id: "white-blue", label: "White/Blue", swatch: "#eff6ff" },
-                { id: "green", label: "Green", swatch: "#16a34a" },
-                { id: "white-brown", label: "White/Brown", swatch: "#fef7ed" },
-                { id: "brown", label: "Brown", swatch: "#92400e" },
-              ],
-              correctOrder: [
-                "white-orange",
-                "orange",
-                "white-green",
-                "blue",
-                "white-blue",
-                "green",
-                "white-brown",
-                "brown",
-              ],
-            },
+            title: "Lesson 3: Public vs Private IP Addresses",
+            overview: "IP addresses can be classified as public or private.",
+            definition:
+              "A public IP address is used on the internet and is assigned by an internet service provider. A private IP address is used inside local networks such as homes or offices. Private addresses allow internal communication while protecting devices from direct exposure to the internet.",
+            keyPoints: [
+              "Public IP addresses exist on the internet",
+              "Private IP addresses exist inside local networks",
+              "Private networks improve security",
+            ],
+          },
+          {
+            title: "Lesson 4: Static vs Dynamic IP",
+            overview: "IP addresses can be assigned in different ways.",
+            definition:
+              "A static IP address is manually assigned and does not change. A dynamic IP address is automatically assigned by a network service and may change over time. Dynamic addressing is commonly used in home networks.",
+            keyPoints: [
+              "Static IP addresses stay the same",
+              "Dynamic IP addresses change automatically",
+              "Most networks use dynamic addressing",
+            ],
+          },
+          {
+            title: "Lesson 5: Introduction to Subnetting",
+            overview: "Subnetting divides a large network into smaller segments.",
+            definition:
+              "Breaking a network into smaller parts helps improve performance and organization. It also allows network administrators to control traffic and manage devices more efficiently.",
+            keyPoints: [
+              "Subnetting divides networks",
+              "Improves organization and efficiency",
+              "Used in larger networks",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Module 6 — MAC Address and ARP",
+        lessons: [
+          {
+            title: "Lesson 1: What Is a MAC Address",
+            overview: "A MAC address is a unique hardware identifier assigned to a network interface.",
+            definition:
+              "Unlike IP addresses, MAC addresses are built into network devices by manufacturers. They help devices identify each other inside local networks.",
+            keyPoints: [
+              "Hardware-based address",
+              "Unique for every network device",
+              "Used in local network communication",
+            ],
+          },
+          {
+            title: "Lesson 2: IP Address vs MAC Address",
+            overview: "IP and MAC addresses both identify devices but serve different purposes.",
+            definition:
+              "An IP address identifies a device across networks. A MAC address identifies a device within a local network. Together they help deliver data correctly.",
+            keyPoints: [
+              "IP address = logical address",
+              "MAC address = physical address",
+              "Both are required for communication",
+            ],
+          },
+          {
+            title: "Lesson 3: Address Resolution Protocol",
+            overview: "Devices use ARP to match IP addresses with MAC addresses.",
+            definition:
+              "When a device wants to send data to another device in the same network, it must know the destination MAC address. ARP helps discover that MAC address.",
+            keyPoints: [
+              "Connects IP addresses to MAC addresses",
+              "Works inside local networks",
+              "Enables device communication",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Module 7 — DNS and DHCP",
+        lessons: [
+          {
+            title: "Lesson 1: Domain Name System",
+            overview: "The Domain Name System converts domain names into IP addresses.",
+            definition:
+              "Humans prefer using names like google.com, but computers communicate using IP addresses. DNS acts like a directory that translates names into addresses.",
+            keyPoints: [
+              "Converts names into IP addresses",
+              "Makes the internet easier to use",
+              "Essential for web browsing",
+            ],
+          },
+          {
+            title: "Lesson 2: How Domain Names Work",
+            definition:
+              "When you type a website address, your computer sends a request to a DNS server. The DNS server finds the corresponding IP address and returns it to your device. Your device can then contact the correct server.",
+          },
+          {
+            title: "Lesson 3: Dynamic Host Configuration Protocol",
+            overview: "DHCP automatically assigns IP addresses to devices.",
+            definition:
+              "Instead of manually configuring every device, DHCP provides IP addresses and other network settings automatically when a device connects to a network.",
+            keyPoints: [
+              "Automatically assigns IP addresses",
+              "Simplifies network configuration",
+              "Common in most modern networks",
+            ],
+          },
+        ],
+      },
+      {
+        title: "Module 8 — Ports and Protocols",
+        lessons: [
+          {
+            title: "Lesson 1: What Is a Network Protocol",
+            definition:
+              "Protocols are rules that define how devices communicate and exchange information across networks. Different protocols are used for different types of communication.",
+          },
+          {
+            title: "Lesson 2: Common Internet Protocols",
+            definition:
+              "Examples include: HTTP for web pages, HTTPS for secure websites, FTP for file transfer, SSH for remote access. These protocols define how data is transmitted.",
+          },
+          {
+            title: "Lesson 3: What Are Ports",
+            definition:
+              "Ports allow multiple services to run on the same device. Each service uses a different port number so incoming data can reach the correct application.",
+          },
+          {
+            title: "Lesson 4: Well Known Ports",
+            definition:
+              "Examples: 80 for HTTP, 443 for HTTPS, 21 for FTP, 22 for SSH. These numbers help systems recognize the type of service being requested.",
+          },
+        ],
+      },
+      {
+        title: "Module 9 — Network Models",
+        lessons: [
+          {
+            title: "Lesson 1: Introduction to the OSI Model",
+            definition:
+              "This model divides network communication into seven layers. Each layer performs a specific role in the data communication process.",
+          },
+          {
+            title: "Lesson 2: The Seven Layers Explained",
+            definition:
+              "The layers include: Physical, Data Link, Network, Transport, Session, Presentation, Application. Each layer helps organize network functions.",
+          },
+          {
+            title: "Lesson 3: Introduction to the TCP/IP Model",
+            definition:
+              "The TCP/IP model is the practical framework used by the internet. It groups network communication into four layers.",
+          },
+          {
+            title: "Lesson 4: Comparing OSI and TCP/IP",
+            definition:
+              "Both models describe how communication works in networks, but the TCP/IP model is more commonly used in real-world networking.",
+          },
+        ],
+      },
+      {
+        title: "Module 10 — Network Tools and Troubleshooting",
+        lessons: [
+          {
+            title: "Lesson 1: Ping",
+            definition: "Ping is a basic tool used to test whether two devices can communicate across a network.",
+          },
+          {
+            title: "Lesson 2: Traceroute",
+            definition: "Traceroute shows the path that data takes across networks to reach its destination.",
+          },
+          {
+            title: "Lesson 3: Packet Analysis",
+            definition: "Tools like Wireshark allow engineers to inspect network traffic and analyze packets.",
+          },
+          {
+            title: "Lesson 4: Network Simulation",
+            definition:
+              "Simulation tools like Cisco Packet Tracer allow students to practice networking concepts in a virtual environment.",
           },
         ],
       },
