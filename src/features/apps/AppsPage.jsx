@@ -40,7 +40,7 @@ export const AppsPage = () => {
         <div className="mb-6 flex flex-col gap-4 glass-panel rounded-2xl p-4 sm:flex-row sm:items-center sm:justify-between">
           <label className="relative w-full sm:max-w-sm" htmlFor="app-search">
             <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-foreground/45" />
-            <input id="app-search" value={appQuery} onChange={(e) => setAppQuery(e.target.value)} placeholder="Search apps" className="w-full rounded-xl border border-white/10 bg-black/25 py-2.5 pl-9 pr-3 text-sm outline-none focus:border-[#007a55]/65" />
+            <input id="app-search" value={appQuery} onChange={(e) => setAppQuery(e.target.value)} placeholder="Search apps" className="w-full rounded-xl border border-white/10 bg-black/25 py-2.5 pl-9 pr-3 text-sm outline-none focus:border-[#FF3B30]/65" />
           </label>
           <div className="flex flex-wrap gap-2">{appCategories.map((category) => <Button key={category} variant={appCategory === category ? "primary" : "outline"} className="rounded-full px-4 py-2 text-sm font-semibold" onClick={() => setAppCategory(category)} aria-label={`Filter apps by ${category}`}>{category}</Button>)}</div>
         </div>
@@ -54,7 +54,7 @@ export const AppsPage = () => {
             return (
               <motion.div key={app.id} initial={{ opacity: 0, y: 22 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.06 }}>
                 <Card>
-                  <div className="inline-flex rounded-xl bg-[#007a55]/15 p-3 text-[#007a55]">
+                  <div className="inline-flex rounded-xl bg-[#FF3B30]/15 p-3 text-[#FF3B30]">
                     {Icon ? <Icon className="h-5 w-5" /> : <img src={app.icon} alt="" className="h-5 w-5" />}
                   </div>
                   <h3 className="mt-4 text-xl font-bold">{app.name}</h3>
@@ -75,7 +75,7 @@ export const AppsPage = () => {
         <div className="mt-6 mb-6 flex flex-col gap-4 glass-panel rounded-2xl p-4 sm:flex-row sm:items-center sm:justify-between">
           <label className="relative w-full sm:max-w-sm" htmlFor="website-search">
             <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-foreground/45" />
-            <input id="website-search" value={webQuery} onChange={(e) => setWebQuery(e.target.value)} placeholder="Search websites" className="w-full rounded-xl border border-white/10 bg-black/25 py-2.5 pl-9 pr-3 text-sm outline-none focus:border-[#007a55]/65" />
+            <input id="website-search" value={webQuery} onChange={(e) => setWebQuery(e.target.value)} placeholder="Search websites" className="w-full rounded-xl border border-white/10 bg-black/25 py-2.5 pl-9 pr-3 text-sm outline-none focus:border-[#FF3B30]/65" />
           </label>
           <div className="flex flex-wrap gap-2">{dynamicWebCategories.map((category) => <Button key={category} variant={webCategory === category ? "primary" : "outline"} className="rounded-full px-4 py-2 text-sm font-semibold" onClick={() => setWebCategory(category)} aria-label={`Filter websites by ${category}`}>{category}</Button>)}</div>
         </div>

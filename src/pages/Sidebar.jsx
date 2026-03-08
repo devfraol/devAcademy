@@ -24,7 +24,7 @@ export const Sidebar = ({ activeItem, setActiveItem, isMobileOpen, setIsMobileOp
           <p className="text-sm font-semibold tracking-[0.24em] text-zinc-300">DEV FRAOL ADMIN</p>
           <button
             aria-label="Close sidebar"
-            className="rounded-lg border border-white/10 p-2 text-zinc-200 transition hover:border-[#007a55]/70 hover:text-[#007a55] md:hidden"
+            className="rounded-lg border border-white/10 p-2 text-zinc-200 transition hover:border-[#FF3B30]/70 hover:text-[#FF3B30] md:hidden"
             onClick={() => setIsMobileOpen(false)}
           >
             <X size={16} />
@@ -46,8 +46,8 @@ export const Sidebar = ({ activeItem, setActiveItem, isMobileOpen, setIsMobileOp
                 }}
                 className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 text-left text-sm font-medium transition ${
                   isActive
-                    ? "border-[#007a55]/70 bg-[#007a55]/15 text-[#007a55] shadow-[0_0_22px_rgba(0,122,85,0.35)]"
-                    : "border-white/10 bg-white/5 text-zinc-200 hover:border-[#007a55]/35 hover:bg-[#007a55]/8 hover:text-white"
+                    ? "border-[#FF3B30]/70 bg-[#FF3B30]/15 text-[#FF3B30] shadow-[0_0_22px_rgba(255,59,48,0.35)]"
+                    : "border-white/10 bg-white/5 text-zinc-200 hover:border-[#FF3B30]/35 hover:bg-[#FF3B30]/8 hover:text-white"
                 }`}
               >
                 <Icon size={17} />
@@ -60,7 +60,7 @@ export const Sidebar = ({ activeItem, setActiveItem, isMobileOpen, setIsMobileOp
         <motion.button
           whileHover={{ scale: 1.01 }}
           whileTap={{ scale: 0.98 }}
-          className="mt-8 flex w-full items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-zinc-200 transition hover:border-[#007a55]/60 hover:bg-[#007a55]/12 hover:text-[#007a55]"
+          className="mt-8 flex w-full items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-zinc-200 transition hover:border-[#FF3B30]/60 hover:bg-[#FF3B30]/12 hover:text-[#FF3B30]"
         >
           <LogOut size={17} />
           Logout

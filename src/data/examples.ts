@@ -26,7 +26,7 @@ export const starterExamples = [
         name: "styles.css",
         language: "css",
         content:
-          "body {\n  margin: 0;\n  min-height: 100vh;\n  display: grid;\n  place-items: center;\n  background: #111;\n  color: #f5f5f5;\n  font-family: Inter, system-ui, sans-serif;\n}\n\n.card {\n  width: min(92vw, 460px);\n  border: 1px solid rgba(255, 59, 48, 0.5);\n  border-radius: 18px;\n  background: #1e1e1e;\n  padding: 2rem;\n}\n\nbutton {\n  margin-top: 1rem;\n  background: #007a55;\n  border: none;\n  color: white;\n  padding: 0.65rem 1rem;\n  border-radius: 0.75rem;\n}",
+          "body {\n  margin: 0;\n  min-height: 100vh;\n  display: grid;\n  place-items: center;\n  background: #111;\n  color: #f5f5f5;\n  font-family: Inter, system-ui, sans-serif;\n}\n\n.card {\n  width: min(92vw, 460px);\n  border: 1px solid rgba(255, 59, 48, 0.5);\n  border-radius: 18px;\n  background: #1e1e1e;\n  padding: 2rem;\n}\n\nbutton {\n  margin-top: 1rem;\n  background: #ff3b30;\n  border: none;\n  color: white;\n  padding: 0.65rem 1rem;\n  border-radius: 0.75rem;\n}",
       },
       {
         id: "file-js",
@@ -105,7 +105,7 @@ const buildCourseSnippet = (courseName) => {
         name: "styles.css",
         language: "css",
         content:
-          "body {\n  margin: 0;\n  min-height: 100vh;\n  display: grid;\n  place-items: center;\n  background: #111;\n  color: #fff;\n  font-family: Inter, system-ui, sans-serif;\n}\n\n.card {\n  width: min(90vw, 540px);\n  border: 1px solid rgba(255, 59, 48, 0.45);\n  border-radius: 16px;\n  background: #1e1e1e;\n  padding: 2rem;\n}\n\nbutton {\n  margin-top: 1rem;\n  border: 0;\n  border-radius: 12px;\n  background: #007a55;\n  color: #fff;\n  padding: 0.7rem 1rem;\n}",
+          "body {\n  margin: 0;\n  min-height: 100vh;\n  display: grid;\n  place-items: center;\n  background: #111;\n  color: #fff;\n  font-family: Inter, system-ui, sans-serif;\n}\n\n.card {\n  width: min(90vw, 540px);\n  border: 1px solid rgba(255, 59, 48, 0.45);\n  border-radius: 16px;\n  background: #1e1e1e;\n  padding: 2rem;\n}\n\nbutton {\n  margin-top: 1rem;\n  border: 0;\n  border-radius: 12px;\n  background: #ff3b30;\n  color: #fff;\n  padding: 0.7rem 1rem;\n}",
       },
       {
         name: "main.js",

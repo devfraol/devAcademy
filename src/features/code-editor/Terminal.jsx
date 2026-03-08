@@ -8,7 +8,7 @@ export const Terminal = ({ logs, onClear }) => (
     </div>
     <div className="flex-1 overflow-auto p-3 text-xs">
       {logs.map((entry) => (
-        <div key={entry.id} className={entry.type === "error" ? "text-emerald-400" : "text-zinc-200"}>
+        <div key={entry.id} className={entry.type === "error" ? "text-red-400" : "text-zinc-200"}>
           {entry.value}
         </div>
       ))}

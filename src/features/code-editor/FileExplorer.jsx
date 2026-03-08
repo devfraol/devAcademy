@@ -18,7 +18,7 @@ const TreeNode = ({ node, depth, expandedFolders, onToggleFolder, onOpenFile, ac
     <div>
       <div
         className={`group flex items-center justify-between rounded px-2 py-1 text-sm ${
-          node.id === activeFileId ? "bg-[#007a55]/20 text-[#007a55]" : "text-zinc-300 hover:bg-zinc-800"
+          node.id === activeFileId ? "bg-[#FF3B30]/20 text-[#FF3B30]" : "text-zinc-300 hover:bg-zinc-800"
         }`}
         style={{ paddingLeft: `${depth * 12 + 8}px` }}
       >
@@ -39,7 +39,7 @@ const TreeNode = ({ node, depth, expandedFolders, onToggleFolder, onOpenFile, ac
             </>
           )}
           <button type="button" onClick={() => onRename(node.id)} className="text-xs text-zinc-400 hover:text-zinc-200">Ren</button>
-          <button type="button" onClick={() => onDelete(node.id)} className="text-zinc-500 hover:text-emerald-400"><Trash2 className="h-3.5 w-3.5" /></button>
+          <button type="button" onClick={() => onDelete(node.id)} className="text-zinc-500 hover:text-red-400"><Trash2 className="h-3.5 w-3.5" /></button>
         </div>
       </div>
 

@@ -57,7 +57,7 @@ export const TestimonialsCarousel = () => {
           <button
             type="button"
             onClick={goToPrevious}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-700 transition-all duration-300 hover:border-[#007a55] hover:text-[#007a55] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#007a55] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-700 transition-all duration-300 hover:border-[#FF3B30] hover:text-[#FF3B30] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3B30] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200"
             aria-label="Show previous testimonial"
           >
             <ChevronLeft className="h-4 w-4" />
@@ -72,8 +72,8 @@ export const TestimonialsCarousel = () => {
                   key={item.id}
                   type="button"
                   onClick={() => setActiveIndex(index)}
-                  className={`h-2.5 rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#007a55] ${
-                    isActive ? "w-6 bg-[#007a55]" : "w-2.5 bg-gray-400/70 dark:bg-gray-500"
+                  className={`h-2.5 rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3B30] ${
+                    isActive ? "w-6 bg-[#FF3B30]" : "w-2.5 bg-gray-400/70 dark:bg-gray-500"
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                   aria-current={isActive ? "true" : "false"}
@@ -85,7 +85,7 @@ export const TestimonialsCarousel = () => {
           <button
             type="button"
             onClick={goToNext}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-700 transition-all duration-300 hover:border-[#007a55] hover:text-[#007a55] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#007a55] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-gray-300 bg-white text-gray-700 transition-all duration-300 hover:border-[#FF3B30] hover:text-[#FF3B30] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3B30] dark:border-gray-700 dark:bg-gray-900 dark:text-gray-200"
             aria-label="Show next testimonial"
           >
             <ChevronRight className="h-4 w-4" />

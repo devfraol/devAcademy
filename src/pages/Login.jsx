@@ -47,7 +47,7 @@ export const Login = () => {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-black via-[#120506] to-[#25080b] px-4 py-10 text-white">
-      <motion.section initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="mx-auto w-full max-w-lg rounded-3xl border border-[#007a55]/35 bg-black/45 p-6 shadow-[0_0_80px_rgba(0,122,85,0.15)] backdrop-blur-xl sm:p-8">
+      <motion.section initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} className="mx-auto w-full max-w-lg rounded-3xl border border-[#FF3B30]/35 bg-black/45 p-6 shadow-[0_0_80px_rgba(255,59,48,0.15)] backdrop-blur-xl sm:p-8">
         <h1 className="text-3xl font-bold">Login</h1>
         <p className="mt-2 text-sm text-white/70">Welcome back to Dev Fraol Academy.</p>
 
@@ -56,18 +56,18 @@ export const Login = () => {
           <Field label="Password" name="password" type="password" value={form.password} error={errors.password} onChange={(value) => setForm((prev) => ({ ...prev, password: value }))} />
 
           <label className="flex items-center gap-2 text-sm text-white/80">
-            <input type="checkbox" checked={form.remember} onChange={(event) => setForm((prev) => ({ ...prev, remember: event.target.checked }))} className="h-4 w-4 rounded border-white/20 bg-black/40 accent-[#007a55]" />
+            <input type="checkbox" checked={form.remember} onChange={(event) => setForm((prev) => ({ ...prev, remember: event.target.checked }))} className="h-4 w-4 rounded border-white/20 bg-black/40 accent-[#FF3B30]" />
             Remember me
           </label>
 
-          <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }} type="submit" className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#007a55] to-[#005f42] px-4 py-2.5 font-semibold">
+          <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }} type="submit" className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-[#ff3b30] to-[#b21310] px-4 py-2.5 font-semibold">
             <LogIn size={18} /> Login
           </motion.button>
         </form>
 
         <GoogleButton onClick={() => setMockUser("google")} />
 
-        <p className="mt-4 text-sm text-white/75">No account yet? <Link to="/signup" className="text-[#0f8f66] hover:underline">Create one</Link></p>
+        <p className="mt-4 text-sm text-white/75">No account yet? <Link to="/signup" className="text-[#ff5b54] hover:underline">Create one</Link></p>
       </motion.section>
     </main>
   );
@@ -82,14 +82,14 @@ const Field = ({ label, name, type, value, error, onChange }) => (
       value={value}
       onChange={(event) => onChange(event.target.value)}
       animate={error ? { x: [0, -5, 5, -3, 0] } : { x: 0 }}
-      className="w-full rounded-xl border border-white/10 bg-black/40 px-3 py-2.5 text-white outline-none transition focus:border-[#007a55]/70"
+      className="w-full rounded-xl border border-white/10 bg-black/40 px-3 py-2.5 text-white outline-none transition focus:border-[#FF3B30]/70"
     />
-    <AnimatePresence>{error ? <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="mt-1 block text-xs text-emerald-300">{error}</motion.span> : null}</AnimatePresence>
+    <AnimatePresence>{error ? <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="mt-1 block text-xs text-red-300">{error}</motion.span> : null}</AnimatePresence>
   </label>
 );
 
 const GoogleButton = ({ onClick }) => (
-  <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.98 }} type="button" onClick={onClick} className="mt-4 flex w-full items-center justify-center gap-3 rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-sm font-medium text-white transition hover:border-[#007a55]/45">
+  <motion.button whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.98 }} type="button" onClick={onClick} className="mt-4 flex w-full items-center justify-center gap-3 rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-sm font-medium text-white transition hover:border-[#FF3B30]/45">
     <GoogleLogo /> Continue with Google
   </motion.button>
 );

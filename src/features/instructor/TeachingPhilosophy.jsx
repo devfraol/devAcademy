@@ -42,7 +42,7 @@ export const TeachingPhilosophy = () => {
   return (
     <section aria-labelledby="teaching-philosophy" className="relative mt-14 overflow-hidden rounded-3xl border border-border/60 bg-card/45 p-6 text-left sm:p-10">
       <motion.div
-        className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[#007a55]/20 blur-3xl"
+        className="pointer-events-none absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[#FF3B30]/20 blur-3xl"
         animate={{ scale: [1, 1.2, 1], opacity: [0.35, 0.55, 0.35] }}
         transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
       />
@@ -64,10 +64,10 @@ export const TeachingPhilosophy = () => {
               tabIndex={selected ? 0 : -1}
               onClick={() => setActiveTab(tab)}
               onKeyDown={(event) => handleKeyNavigation(event, tab)}
-              className={`rounded-full border px-5 py-2 text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#007a55] focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
+              className={`rounded-full border px-5 py-2 text-sm font-semibold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3B30] focus-visible:ring-offset-2 focus-visible:ring-offset-background ${
                 selected
-                  ? "border-[#007a55]/80 bg-[#007a55]/15 text-[#007a55]"
-                  : "border-border/80 bg-background/40 text-muted-foreground hover:border-[#007a55]/50 hover:text-[#007a55]"
+                  ? "border-[#FF3B30]/80 bg-[#FF3B30]/15 text-[#FF3B30]"
+                  : "border-border/80 bg-background/40 text-muted-foreground hover:border-[#FF3B30]/50 hover:text-[#FF3B30]"
               }`}
             >
               {tab}
@@ -88,7 +88,7 @@ export const TeachingPhilosophy = () => {
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.25 }}
           >
-            <h3 className="text-xl font-semibold text-[#007a55]">{current.title}</h3>
+            <h3 className="text-xl font-semibold text-[#FF3B30]">{current.title}</h3>
             <p className="mt-4 text-muted-foreground">{current.content}</p>
           </motion.article>
         </AnimatePresence>

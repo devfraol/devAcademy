@@ -13,7 +13,7 @@ export const CurriculumSidebar = ({
   return (
     <aside className="rounded-3xl border border-white/15 bg-background/70 p-4 shadow-[0_18px_45px_rgba(15,20,35,0.3)] backdrop-blur-xl lg:sticky lg:top-20 lg:h-[calc(100vh-7rem)] lg:overflow-y-auto">
       <div className="mb-4 border-b border-white/10 pb-4">
-        <p className="text-xs uppercase tracking-[0.18em] text-[#3aa888]">Course Player</p>
+        <p className="text-xs uppercase tracking-[0.18em] text-[#ff8078]">Course Player</p>
         <h3 className="mt-1 text-lg font-semibold text-foreground">{course.title}</h3>
       </div>
 
@@ -75,7 +75,7 @@ export const CurriculumSidebar = ({
       {showEnroll ? (
         <button
           type="button"
-          className="mt-4 w-full rounded-xl bg-gradient-to-r from-[#009167] to-[#007a55] px-4 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(0,122,85,0.35)]"
+          className="mt-4 w-full rounded-xl bg-gradient-to-r from-[#ff5d52] to-[#ff3b30] px-4 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(255,59,48,0.35)]"
         >
           Enroll Now to unlock all lessons
         </button>

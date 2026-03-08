@@ -103,10 +103,10 @@ export const ContactForm = () => {
               required
               aria-invalid={Boolean(errors[name])}
               aria-describedby={errors[name] ? `${name}-error` : undefined}
-              className="mt-1 w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-white outline-none transition focus:border-[#007a55] focus:ring-2 focus:ring-[#007a55]/40"
+              className="mt-1 w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-white outline-none transition focus:border-[#FF3B30] focus:ring-2 focus:ring-[#FF3B30]/40"
             />
             {errors[name] && (
-              <p id={`${name}-error`} className="mt-1 text-xs text-emerald-400">
+              <p id={`${name}-error`} className="mt-1 text-xs text-red-400">
                 {errors[name]}
               </p>
             )}
@@ -126,10 +126,10 @@ export const ContactForm = () => {
             required
             aria-invalid={Boolean(errors.message)}
             aria-describedby={errors.message ? "message-error" : undefined}
-            className="mt-1 w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-white outline-none transition focus:border-[#007a55] focus:ring-2 focus:ring-[#007a55]/40"
+            className="mt-1 w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-white outline-none transition focus:border-[#FF3B30] focus:ring-2 focus:ring-[#FF3B30]/40"
           />
           {errors.message && (
-            <p id="message-error" className="mt-1 text-xs text-emerald-400">
+            <p id="message-error" className="mt-1 text-xs text-red-400">
               {errors.message}
             </p>
           )}
@@ -140,7 +140,7 @@ export const ContactForm = () => {
           whileTap={{ scale: 0.98 }}
           type="submit"
           disabled={loading.submit}
-          className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#007a55] px-4 py-3 font-semibold text-white transition hover:bg-[#008a61] disabled:cursor-not-allowed disabled:opacity-70"
+          className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF3B30] px-4 py-3 font-semibold text-white transition hover:bg-[#ff5248] disabled:cursor-not-allowed disabled:opacity-70"
         >
           {loading.submit ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
           {loading.submit ? "Sending..." : "Submit Message"}

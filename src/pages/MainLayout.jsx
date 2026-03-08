@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useRef } from "react";
-import { Navbar } from "@/features/navbar/Navbar";
+import { NavbarDock } from "@/features/home/NavbarDock";
 import { Footer } from "@/features/footer/Footer";
 
 const routeOrder = ["/", "/courses", "/blogs", "/apps", "/apps/python-code-editor", "/instructors", "/testimonials", "/contact", "/faq", "/login", "/signup"];
@@ -22,10 +22,7 @@ export const MainLayout = () => {
   previousIndex.current = currentIndex;
 
   return (
-    <div className="relative z-0 min-h-screen overflow-x-hidden pt-24 text-foreground">
-      <div className="fixed inset-x-0 top-4 z-[90] flex justify-center px-4 sm:px-6">
-        <Navbar />
-      </div>
+    <div className="relative z-0 min-h-screen overflow-x-hidden text-foreground">
       <main className={`relative z-0 ${immersiveMode ? "h-screen overflow-hidden p-0" : "pb-28 pt-4 md:pt-6"}`}>
         <AnimatePresence mode="wait">
           <motion.div
@@ -39,6 +36,7 @@ export const MainLayout = () => {
           </motion.div>
         </AnimatePresence>
       </main>
+      {!immersiveMode ? <NavbarDock /> : null}
       {!immersiveMode ? <Footer /> : null}
     </div>
   );

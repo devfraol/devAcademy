@@ -45,7 +45,7 @@ export const FixedAuthActions = () => {
           {user.profilePic ? (
             <img src={user.profilePic} alt={user.name} className="h-8 w-8 rounded-full object-cover" />
           ) : (
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#007a55] text-xs font-semibold">{initials}</span>
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#FF3B30] text-xs font-semibold">{initials}</span>
           )}
           <ChevronDown size={14} className={cn("transition-transform", profileOpen && "rotate-180")} />
         </motion.button>
