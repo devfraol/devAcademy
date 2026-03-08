@@ -48,7 +48,7 @@ export const CourseCard = ({ course, index = 0 }) => {
           }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.97 }}
-          className="w-full rounded-xl bg-gradient-to-r from-[#155dfc] to-[#155dfc] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_10px_20px_rgba(21,93,252,0.35)] transition-shadow hover:shadow-[0_14px_28px_rgba(21,93,252,0.45)]"
+          className="w-full rounded-xl bg-gradient-to-r from-[#009689] to-[#009689] px-4 py-2.5 text-sm font-semibold text-white shadow-[0_10px_20px_rgba(0,150,137,0.35)] transition-shadow hover:shadow-[0_14px_28px_rgba(0,150,137,0.45)]"
         >
           Enroll
         </motion.button>

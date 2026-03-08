@@ -34,7 +34,7 @@ export const CTASection = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="rounded-2xl border border-white/10 bg-gradient-to-r from-white/5 to-[#155dfc]/10 p-6 shadow-xl shadow-black/20 backdrop-blur-md"
+      className="rounded-2xl border border-white/10 bg-gradient-to-r from-white/5 to-[#009689]/10 p-6 shadow-xl shadow-black/20 backdrop-blur-md"
     >
       <h2 className="text-2xl font-semibold text-white">Stay updated</h2>
       <p className="mt-2 text-sm text-zinc-300">Get announcements about new tracks, workshops, and open sessions.</p>
@@ -48,13 +48,13 @@ export const CTASection = () => {
           value={email}
           onChange={(event) => setEmail(event.target.value)}
           placeholder="Enter your email"
-          className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-white outline-none transition focus:border-[#155dfc] focus:ring-2 focus:ring-[#155dfc]/40"
+          className="w-full rounded-xl border border-white/10 bg-black/30 px-3 py-2 text-white outline-none transition focus:border-[#009689] focus:ring-2 focus:ring-[#009689]/40"
         />
         <motion.button
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
           type="submit"
-          className="rounded-xl bg-[#155dfc] px-5 py-2.5 font-semibold text-white transition hover:bg-[#155dfc]"
+          className="rounded-xl bg-[#009689] px-5 py-2.5 font-semibold text-white transition hover:bg-[#009689]"
         >
           Subscribe
         </motion.button>

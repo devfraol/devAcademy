@@ -179,7 +179,7 @@ export const CodeEditor = () => {
             aria-label="Language selector"
             value={language}
             onChange={(event) => handleLanguageChange(event.target.value)}
-            className="rounded-lg border border-border bg-background px-3 py-1.5 text-sm text-foreground outline-none transition hover:border-[#155dfc]/80 focus:border-[#155dfc]"
+            className="rounded-lg border border-border bg-background px-3 py-1.5 text-sm text-foreground outline-none transition hover:border-[#009689]/80 focus:border-[#009689]"
           >
             {languageOptions.map((item) => (
               <option key={item.value} value={item.value}>
@@ -202,7 +202,7 @@ export const CodeEditor = () => {
           disabled={isRunning || !runtimeReady[language]}
           onClick={runCode}
           aria-label="Run code"
-          className="inline-flex items-center gap-2 rounded-xl bg-[#155dfc] px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-[#155dfc] disabled:cursor-not-allowed disabled:opacity-70"
+          className="inline-flex items-center gap-2 rounded-xl bg-[#009689] px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-[#009689] disabled:cursor-not-allowed disabled:opacity-70"
         >
           {isRunning ? <LoaderCircle className="h-4 w-4 animate-spin" /> : <Play className="h-4 w-4" />} {isRunning ? "Running…" : "Run"}
         </motion.button>
@@ -210,7 +210,7 @@ export const CodeEditor = () => {
           type="button"
           onClick={clearConsole}
           aria-label="Clear terminal output"
-          className="inline-flex items-center gap-2 rounded-xl border border-border px-4 py-2 text-sm font-semibold text-foreground/85 transition-all hover:border-[#155dfc]/70 hover:text-foreground"
+          className="inline-flex items-center gap-2 rounded-xl border border-border px-4 py-2 text-sm font-semibold text-foreground/85 transition-all hover:border-[#009689]/70 hover:text-foreground"
         >
           <Eraser className="h-4 w-4" /> Clear
         </button>
@@ -224,7 +224,7 @@ export const CodeEditor = () => {
         <div ref={terminalRef} className="max-h-56 overflow-y-auto px-3 py-2 font-mono text-xs leading-5">
           {outputLogs.length === 0 ? <p className="text-foreground/40">No output yet. Use Ctrl+Enter to run.</p> : null}
           {outputLogs.map((line) => (
-            <p key={line.id} className={line.type === "stderr" ? "text-blue-400" : line.type === "status" ? "text-cyan-300" : "text-emerald-300"}>
+            <p key={line.id} className={line.type === "stderr" ? "text-teal-400" : line.type === "status" ? "text-cyan-300" : "text-emerald-300"}>
               {line.message}
             </p>
           ))}

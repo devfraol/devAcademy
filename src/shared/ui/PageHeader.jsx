@@ -8,7 +8,7 @@ export const PageHeader = ({ eyebrow = "Dev Fraol Academy", title, description, 
     transition={{ duration: 0.35, ease: "easeInOut" }}
     className={cn("glass-panel rounded-3xl px-6 py-10 text-left", className)}
   >
-    <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#155dfc]">{eyebrow}</p>
+    <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#009689]">{eyebrow}</p>
     <h1 className="mt-3 text-4xl font-extrabold sm:text-5xl">{title}</h1>
     {description ? <p className="mt-4 max-w-3xl text-foreground/75">{description}</p> : null}
   </motion.header>

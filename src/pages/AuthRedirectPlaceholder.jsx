@@ -15,7 +15,7 @@ const AuthRedirectPlaceholder = () => {
     <main className="flex min-h-screen items-center justify-center bg-gradient-to-br from-black via-[#120506] to-[#25080b] px-4 text-white">
       <motion.section initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-xl rounded-3xl border border-white/10 bg-black/50 p-8 text-center backdrop-blur-xl">
         <h1 className="text-3xl font-bold">{provider} OAuth</h1>
-        <p className="mt-3 text-white/75">This is a frontend placeholder route (<code className="text-[#155dfc]">{location.pathname}</code>) and can now be connected to backend auth endpoints.</p>
+        <p className="mt-3 text-white/75">This is a frontend placeholder route (<code className="text-[#009689]">{location.pathname}</code>) and can now be connected to backend auth endpoints.</p>
       </motion.section>
     </main>
   );

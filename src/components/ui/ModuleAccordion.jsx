@@ -5,7 +5,7 @@ import { LessonItem } from "@/components/ui/LessonItem";
 export const ModuleAccordion = ({ module, isOpen, onToggle, activeLessonId, onLessonSelect }) => (
   <article
     className={`rounded-2xl border transition ${
-      isOpen ? "border-[#155dfc]/70 bg-[#155dfc]/10" : "border-white/10 bg-black/10"
+      isOpen ? "border-[#009689]/70 bg-[#009689]/10" : "border-white/10 bg-black/10"
     }`}
   >
     <button

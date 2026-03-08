@@ -16,8 +16,8 @@ const dockLinkClassName = ({ isActive }) =>
   cn(
     "group relative flex h-10 touch-manipulation select-none items-center gap-2 rounded-xl border px-3 text-sm font-medium backdrop-blur-xl transition-all duration-200",
     isActive
-      ? "border-[#155dfc]/70 bg-[#3A1D1A]/80 text-[#155dfc] shadow-[0_0_22px_rgba(21,93,252,0.35)]"
-      : "border-white/10 bg-white/5 text-[#D4D4D4] hover:border-[#155dfc]/55 hover:text-[#155dfc] hover:shadow-[0_0_20px_rgba(21,93,252,0.25)]"
+      ? "border-[#009689]/70 bg-[#3A1D1A]/80 text-[#009689] shadow-[0_0_22px_rgba(0,150,137,0.35)]"
+      : "border-white/10 bg-white/5 text-[#D4D4D4] hover:border-[#009689]/55 hover:text-[#009689] hover:shadow-[0_0_20px_rgba(0,150,137,0.25)]"
   );
 
 const NavItem = ({ icon: Icon, label, to }) => (
@@ -27,7 +27,7 @@ const NavItem = ({ icon: Icon, label, to }) => (
         <>
           <Icon className="h-4 w-4" />
           <span className="hidden md:inline">{label}</span>
-          {isActive && <motion.span layoutId="dock-active" className="absolute -bottom-1 left-1/2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-[#155dfc]" />}
+          {isActive && <motion.span layoutId="dock-active" className="absolute -bottom-1 left-1/2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-[#009689]" />}
         </>
       )}
     </NavLink>

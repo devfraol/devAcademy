@@ -103,14 +103,14 @@ export const CourseCatalog = () => {
   return (
     <div className="mx-auto w-full max-w-7xl space-y-8 px-4 pb-14 pt-2 sm:px-6 lg:px-8">
       <section className="overflow-hidden rounded-3xl border border-white/15 bg-gradient-to-r from-[#1d0f12] via-[#281116] to-[#121218] p-6 shadow-[0_20px_40px_rgba(0,0,0,0.25)] sm:p-10">
-        <p className="text-xs uppercase tracking-[0.2em] text-[#155dfc]">Dev Fraol Academy</p>
+        <p className="text-xs uppercase tracking-[0.2em] text-[#009689]">Dev Fraol Academy</p>
         <h1 className="mt-2 text-3xl font-bold text-white sm:text-5xl">Explore Our Courses</h1>
         <p className="mt-4 max-w-2xl text-sm text-white/80 sm:text-base">
           Master real-world skills with project-based courses in programming, graphics design, and computer operation fundamentals.
         </p>
         <Link
           to="/courses"
-          className="mt-6 inline-flex rounded-xl bg-[#155dfc] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#155dfc]/90"
+          className="mt-6 inline-flex rounded-xl bg-[#009689] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#009689]/90"
         >
           Start Learning
         </Link>

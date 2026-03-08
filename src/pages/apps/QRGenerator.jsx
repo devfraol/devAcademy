@@ -201,22 +201,22 @@ export const QRGenerator = () => {
   const renderTypeFields = () => {
     switch (form.type) {
       case "url":
-        return <input aria-label="URL input" value={form.url} onChange={(event) => updateField("url", event.target.value)} type="url" placeholder="https://example.com" className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#155dfc]/70 focus:ring-2 focus:ring-[#155dfc]/30" />;
+        return <input aria-label="URL input" value={form.url} onChange={(event) => updateField("url", event.target.value)} type="url" placeholder="https://example.com" className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#009689]/70 focus:ring-2 focus:ring-[#009689]/30" />;
       case "email":
-        return <input aria-label="Email input" value={form.email} onChange={(event) => updateField("email", event.target.value)} type="email" placeholder="name@example.com" className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#155dfc]/70 focus:ring-2 focus:ring-[#155dfc]/30" />;
+        return <input aria-label="Email input" value={form.email} onChange={(event) => updateField("email", event.target.value)} type="email" placeholder="name@example.com" className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#009689]/70 focus:ring-2 focus:ring-[#009689]/30" />;
       case "phone":
-        return <input aria-label="Phone input" value={form.phone} onChange={(event) => updateField("phone", event.target.value)} type="tel" placeholder="+1 555 123 4567" className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#155dfc]/70 focus:ring-2 focus:ring-[#155dfc]/30" />;
+        return <input aria-label="Phone input" value={form.phone} onChange={(event) => updateField("phone", event.target.value)} type="tel" placeholder="+1 555 123 4567" className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#009689]/70 focus:ring-2 focus:ring-[#009689]/30" />;
       case "wifi":
         return (
           <div className="grid gap-3 sm:grid-cols-2">
-            <input aria-label="Wi-Fi SSID" value={form.wifiSsid} onChange={(event) => updateField("wifiSsid", event.target.value)} type="text" placeholder="Network name (SSID)" className="rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#155dfc]/70 focus:ring-2 focus:ring-[#155dfc]/30" />
-            <input aria-label="Wi-Fi password" value={form.wifiPassword} onChange={(event) => updateField("wifiPassword", event.target.value)} type="text" placeholder="Wi-Fi password" className="rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#155dfc]/70 focus:ring-2 focus:ring-[#155dfc]/30" />
-            <select aria-label="Wi-Fi encryption" value={form.wifiEncryption} onChange={(event) => updateField("wifiEncryption", event.target.value)} className="rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#155dfc]/70 focus:ring-2 focus:ring-[#155dfc]/30">
+            <input aria-label="Wi-Fi SSID" value={form.wifiSsid} onChange={(event) => updateField("wifiSsid", event.target.value)} type="text" placeholder="Network name (SSID)" className="rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#009689]/70 focus:ring-2 focus:ring-[#009689]/30" />
+            <input aria-label="Wi-Fi password" value={form.wifiPassword} onChange={(event) => updateField("wifiPassword", event.target.value)} type="text" placeholder="Wi-Fi password" className="rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#009689]/70 focus:ring-2 focus:ring-[#009689]/30" />
+            <select aria-label="Wi-Fi encryption" value={form.wifiEncryption} onChange={(event) => updateField("wifiEncryption", event.target.value)} className="rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#009689]/70 focus:ring-2 focus:ring-[#009689]/30">
               <option value="WPA">WPA/WPA2</option>
               <option value="WEP">WEP</option>
               <option value="nopass">None</option>
             </select>
-            <label className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-3 py-2.5 text-sm focus-within:ring-2 focus-within:ring-[#155dfc]/30">
+            <label className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-3 py-2.5 text-sm focus-within:ring-2 focus-within:ring-[#009689]/30">
               <input aria-label="Wi-Fi hidden network" type="checkbox" checked={form.wifiHidden} onChange={(event) => updateField("wifiHidden", event.target.checked)} />
               Hidden network
             </label>
@@ -224,7 +224,7 @@ export const QRGenerator = () => {
         );
       case "text":
       default:
-        return <textarea aria-label="Text input" rows={4} value={form.text} onChange={(event) => updateField("text", event.target.value)} placeholder="Type your text here..." className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#155dfc]/70 focus:ring-2 focus:ring-[#155dfc]/30" />;
+        return <textarea aria-label="Text input" rows={4} value={form.text} onChange={(event) => updateField("text", event.target.value)} placeholder="Type your text here..." className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#009689]/70 focus:ring-2 focus:ring-[#009689]/30" />;
     }
   };
 
@@ -238,7 +238,7 @@ export const QRGenerator = () => {
       <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <article className="rounded-2xl border border-white/10 bg-white/5 p-5 backdrop-blur-xl">
           <label htmlFor="qr-type" className="mb-2 block text-sm font-medium">Input Type</label>
-          <select id="qr-type" aria-label="QR input type" value={form.type} onChange={(event) => updateField("type", event.target.value)} className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#155dfc]/70 focus:ring-2 focus:ring-[#155dfc]/30">
+          <select id="qr-type" aria-label="QR input type" value={form.type} onChange={(event) => updateField("type", event.target.value)} className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 text-sm outline-none focus:border-[#009689]/70 focus:ring-2 focus:ring-[#009689]/30">
             {inputTypes.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}
           </select>
 
@@ -250,7 +250,7 @@ export const QRGenerator = () => {
           <button
             type="button"
             aria-label="Toggle advanced options"
-            className="mt-5 text-sm font-semibold text-[#155dfc] underline-offset-2 hover:underline focus:outline-none focus:ring-2 focus:ring-[#155dfc]/40"
+            className="mt-5 text-sm font-semibold text-[#009689] underline-offset-2 hover:underline focus:outline-none focus:ring-2 focus:ring-[#009689]/40"
             onClick={() => setIsAdvancedOpen((prev) => !prev)}
           >
             {isAdvancedOpen ? "Hide advanced options" : "Show advanced options"}
@@ -260,12 +260,12 @@ export const QRGenerator = () => {
             <div className="mt-4 grid gap-4 sm:grid-cols-2">
               <label className="text-sm">
                 <span className="mb-1 block font-medium">Size (px)</span>
-                <input aria-label="QR size" type="number" min={120} max={1200} value={form.size} onChange={(event) => updateField("size", Number(event.target.value))} className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 outline-none focus:border-[#155dfc]/70 focus:ring-2 focus:ring-[#155dfc]/30" />
+                <input aria-label="QR size" type="number" min={120} max={1200} value={form.size} onChange={(event) => updateField("size", Number(event.target.value))} className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 outline-none focus:border-[#009689]/70 focus:ring-2 focus:ring-[#009689]/30" />
               </label>
 
               <label className="text-sm">
                 <span className="mb-1 block font-medium">Corner style</span>
-                <select aria-label="Corner style" value={form.cornerStyle} onChange={(event) => updateField("cornerStyle", event.target.value)} className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 outline-none focus:border-[#155dfc]/70 focus:ring-2 focus:ring-[#155dfc]/30">
+                <select aria-label="Corner style" value={form.cornerStyle} onChange={(event) => updateField("cornerStyle", event.target.value)} className="w-full rounded-xl border border-white/15 bg-black/25 px-3 py-2.5 outline-none focus:border-[#009689]/70 focus:ring-2 focus:ring-[#009689]/30">
                   {cornerStyles.map((style) => <option key={style.value} value={style.value}>{style.label}</option>)}
                 </select>
               </label>
@@ -282,7 +282,7 @@ export const QRGenerator = () => {
 
               <label className="text-sm">
                 <span className="mb-1 block font-medium">Gradient start</span>
-                <input aria-label="Gradient start color" type="color" value={form.gradientStart || "#155dfc"} onChange={(event) => updateField("gradientStart", event.target.value)} className="h-11 w-full rounded-xl border border-white/15 bg-black/25 p-1" />
+                <input aria-label="Gradient start color" type="color" value={form.gradientStart || "#009689"} onChange={(event) => updateField("gradientStart", event.target.value)} className="h-11 w-full rounded-xl border border-white/15 bg-black/25 p-1" />
               </label>
 
               <label className="text-sm">
@@ -297,7 +297,7 @@ export const QRGenerator = () => {
                   event.preventDefault();
                   handleLogoChange(event.dataTransfer.files?.[0]);
                 }}
-                className="sm:col-span-2 flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-dashed border-white/25 bg-black/20 px-3 py-3 text-sm text-foreground/80 hover:border-[#155dfc]/70"
+                className="sm:col-span-2 flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-dashed border-white/25 bg-black/20 px-3 py-3 text-sm text-foreground/80 hover:border-[#009689]/70"
               >
                 <Upload className="h-4 w-4" />
                 {logo ? `Logo selected: ${logo.name}` : "Drag & drop logo or click to upload"}
@@ -306,11 +306,11 @@ export const QRGenerator = () => {
             </div>
           ) : null}
 
-          {error ? <p className="mt-4 text-sm text-[#155dfc]" role="alert">{error}</p> : null}
+          {error ? <p className="mt-4 text-sm text-[#009689]" role="alert">{error}</p> : null}
 
           <div className="mt-5 flex flex-wrap gap-2">
-            <motion.button whileHover={{ y: -1 }} type="button" onClick={handleGenerate} className="rounded-xl bg-[#155dfc] px-4 py-2.5 text-sm font-semibold text-white">Generate QR</motion.button>
-            <button type="button" onClick={handleClear} className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2.5 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#155dfc]/30">
+            <motion.button whileHover={{ y: -1 }} type="button" onClick={handleGenerate} className="rounded-xl bg-[#009689] px-4 py-2.5 text-sm font-semibold text-white">Generate QR</motion.button>
+            <button type="button" onClick={handleClear} className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2.5 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#009689]/30">
               <RefreshCcw className="h-4 w-4" />
               Clear
             </button>
@@ -326,11 +326,11 @@ export const QRGenerator = () => {
           </div>
 
           <div className="mt-4 flex flex-wrap gap-2">
-            <button type="button" aria-label="Download QR as PNG" onClick={() => downloadQRCode("png")} className="inline-flex items-center gap-2 rounded-xl bg-[#155dfc] px-4 py-2.5 text-sm font-semibold text-white focus:outline-none focus:ring-2 focus:ring-[#155dfc]/30">
+            <button type="button" aria-label="Download QR as PNG" onClick={() => downloadQRCode("png")} className="inline-flex items-center gap-2 rounded-xl bg-[#009689] px-4 py-2.5 text-sm font-semibold text-white focus:outline-none focus:ring-2 focus:ring-[#009689]/30">
               <Download className="h-4 w-4" />
               Download PNG
             </button>
-            <button type="button" aria-label="Download QR as SVG" onClick={() => downloadQRCode("svg")} className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2.5 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#155dfc]/30">
+            <button type="button" aria-label="Download QR as SVG" onClick={() => downloadQRCode("svg")} className="inline-flex items-center gap-2 rounded-xl border border-white/20 px-4 py-2.5 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#009689]/30">
               <Download className="h-4 w-4" />
               Download SVG
             </button>
