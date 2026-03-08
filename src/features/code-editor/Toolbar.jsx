@@ -1,7 +1,7 @@
 import { Copy, Download, Moon, Redo2, RefreshCw, Sun, Undo2 } from "lucide-react";
 
 const toolbarButton =
-  "inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-xs text-white/80 transition-all hover:-translate-y-0.5 hover:border-[#FF3B30]/55 hover:text-white";
+  "inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-xs text-white/80 transition-all hover:-translate-y-0.5 hover:border-[#155dfc]/55 hover:text-white";
 
 export const Toolbar = ({
   isDarkMode,

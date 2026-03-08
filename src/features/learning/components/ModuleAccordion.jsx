@@ -15,12 +15,12 @@ export const ModuleAccordion = ({ module, moduleIndex, isOpen, onToggle, activeL
           onClick={onToggle}
           className={`flex w-full items-center justify-between gap-3 px-4 py-3 text-left transition duration-300 ${
             isOpen
-              ? "bg-gradient-to-r from-[#E10600]/30 via-[#E10600]/10 to-transparent shadow-[0_0_20px_rgba(225,6,0,0.2)]"
+              ? "bg-gradient-to-r from-[#155dfc]/30 via-[#155dfc]/10 to-transparent shadow-[0_0_20px_rgba(225,6,0,0.2)]"
               : "hover:brightness-110"
           }`}
         >
           <span className="truncate text-sm font-semibold text-white">{moduleName}</span>
-          <ChevronDown className={`h-4 w-4 text-[#E10600] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+          <ChevronDown className={`h-4 w-4 text-[#155dfc] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
         </button>
       </h2>
 
@@ -46,7 +46,7 @@ export const ModuleAccordion = ({ module, moduleIndex, isOpen, onToggle, activeL
 
       {isOpen ? (
         <div className="flex items-center justify-end gap-2 border-t border-[#232326] px-4 py-2 text-xs text-[#A1A1AA]">
-          <CheckCircle2 className="h-3.5 w-3.5 text-[#E10600]" />
+          <CheckCircle2 className="h-3.5 w-3.5 text-[#155dfc]" />
           <span>{completedLessonIds.size} lessons completed</span>
         </div>
       ) : null}

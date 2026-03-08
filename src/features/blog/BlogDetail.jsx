@@ -61,7 +61,7 @@ export const BlogDetailContent = () => {
         )}
 
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link to="/blogs" className="rounded-full border border-border px-5 py-2 font-medium hover:border-[#FF3B30] hover:text-[#FF3B30]">
+          <Link to="/blogs" className="rounded-full border border-border px-5 py-2 font-medium hover:border-[#155dfc] hover:text-[#155dfc]">
             Back to Blog
           </Link>
           <Link to="/apps" className="cosmic-button">

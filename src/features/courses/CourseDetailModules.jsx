@@ -22,7 +22,7 @@ export const CourseDetailModules = ({ modules, openModuleId, onToggleModule, act
               onClick={() => onToggleModule(module.id)}
               className={`flex w-full items-center justify-between gap-4 px-6 py-5 text-left transition duration-300 ${
                 isOpen
-                  ? "bg-gradient-to-r from-[#E10600]/25 via-[#E10600]/12 to-transparent brightness-110"
+                  ? "bg-gradient-to-r from-[#155dfc]/25 via-[#155dfc]/12 to-transparent brightness-110"
                   : "hover:bg-[#1A1A1F]"
               }`}
               aria-expanded={isOpen}
@@ -33,7 +33,7 @@ export const CourseDetailModules = ({ modules, openModuleId, onToggleModule, act
                 <h3 className="text-lg font-semibold text-white">{moduleName}</h3>
                 <p className="text-sm text-[#A1A1AA]">{module.lessons.length} lessons</p>
               </div>
-              <ChevronDown className={`h-5 w-5 text-[#E10600] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+              <ChevronDown className={`h-5 w-5 text-[#155dfc] transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
             </button>
 
             <AnimatePresence initial={false}>
@@ -62,7 +62,7 @@ export const CourseDetailModules = ({ modules, openModuleId, onToggleModule, act
                             }`}
                           >
                             <span
-                              className={`absolute left-0 top-2 h-[calc(100%-16px)] w-[3px] rounded-full bg-[#E10600] transition-opacity ${
+                              className={`absolute left-0 top-2 h-[calc(100%-16px)] w-[3px] rounded-full bg-[#155dfc] transition-opacity ${
                                 isActive ? "opacity-100" : "opacity-0"
                               }`}
                               aria-hidden="true"
@@ -70,7 +70,7 @@ export const CourseDetailModules = ({ modules, openModuleId, onToggleModule, act
                             <p className={`truncate pl-3 text-sm ${isActive ? "font-semibold text-white" : "font-medium text-[#D4D4D8]"}`}>
                               {lesson.title}
                             </p>
-                            {lesson.completed ? <CheckCircle2 className="h-4 w-4 shrink-0 text-[#E10600]" aria-hidden="true" /> : null}
+                            {lesson.completed ? <CheckCircle2 className="h-4 w-4 shrink-0 text-[#155dfc]" aria-hidden="true" /> : null}
                           </button>
                         </li>
                       );

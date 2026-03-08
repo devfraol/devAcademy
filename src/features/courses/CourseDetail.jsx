@@ -114,7 +114,7 @@ export const CourseDetail = () => {
       <section className="mx-auto flex min-h-[60vh] w-full max-w-[1240px] items-center justify-center px-4 py-16 sm:px-6">
         <div className="rounded-3xl border border-[#232326] bg-[#151518] p-8 text-center">
           <h1 className="text-3xl font-bold text-white">Course not found.</h1>
-          <Link to="/courses" className="mt-4 inline-flex rounded-xl border border-[#E10600] px-4 py-2 text-sm font-medium text-[#E10600]">
+          <Link to="/courses" className="mt-4 inline-flex rounded-xl border border-[#155dfc] px-4 py-2 text-sm font-medium text-[#155dfc]">
             Back to courses
           </Link>
         </div>
@@ -133,12 +133,12 @@ export const CourseDetail = () => {
           <header className="rounded-[24px] border border-[#232326] bg-[#151518] p-6 sm:p-8">
             <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,1fr)_300px]">
               <div>
-                <span className="inline-flex rounded-full bg-[#E10600]/20 px-3 py-1 text-sm font-medium text-[#ff8f8b]">{course.category}</span>
+                <span className="inline-flex rounded-full bg-[#155dfc]/20 px-3 py-1 text-sm font-medium text-[#155dfc]">{course.category}</span>
                 <h1 className="mt-4 text-4xl font-bold tracking-[-0.02em] text-white sm:text-[44px]">{course.title}</h1>
                 <p className="mt-4 max-w-2xl text-base font-medium leading-8 text-[#A1A1AA]">{course.description}</p>
                 <div className="mt-5 flex flex-wrap items-center gap-4 text-sm text-[#A1A1AA]">
                   <span>By {course.instructor.name}</span>
-                  <span className="inline-flex items-center gap-1 text-[#E10600]">
+                  <span className="inline-flex items-center gap-1 text-[#155dfc]">
                     <Star className="h-4 w-4 fill-current" /> {course.rating}
                   </span>
                 </div>
@@ -147,14 +147,14 @@ export const CourseDetail = () => {
                     whileTap={{ scale: 0.97 }}
                     type="button"
                     onClick={() => navigate(`/courses/${course.slug}/learn`)}
-                    className="rounded-xl bg-[#E10600] px-5 py-3 text-sm font-semibold text-white transition hover:shadow-[0_0_22px_rgba(225,6,0,0.35)]"
+                    className="rounded-xl bg-[#155dfc] px-5 py-3 text-sm font-semibold text-white transition hover:shadow-[0_0_22px_rgba(225,6,0,0.35)]"
                   >
                     Enroll Now
                   </motion.button>
                   <motion.button
                     whileTap={{ scale: 0.97 }}
                     type="button"
-                    className="rounded-xl border border-[#E10600] px-5 py-3 text-sm font-semibold text-[#E10600] transition hover:bg-[#E10600]/10"
+                    className="rounded-xl border border-[#155dfc] px-5 py-3 text-sm font-semibold text-[#155dfc] transition hover:bg-[#155dfc]/10"
                   >
                     Preview Syllabus
                   </motion.button>
@@ -185,13 +185,13 @@ export const CourseDetail = () => {
                 <div>
                   <p className="text-lg font-bold text-white">{course.instructor.name}</p>
                   <p className="text-sm text-[#A1A1AA]">{course.instructor.title}</p>
-                  <p className="mt-1 inline-flex items-center gap-1 text-sm text-[#E10600]"><Star className="h-4 w-4 fill-current" /> {course.instructor.rating ?? 4.9}</p>
+                  <p className="mt-1 inline-flex items-center gap-1 text-sm text-[#155dfc]"><Star className="h-4 w-4 fill-current" /> {course.instructor.rating ?? 4.9}</p>
                 </div>
               </div>
 
               <div className="max-w-xl">
                 <p className="line-clamp-4 text-sm leading-7 text-[#A1A1AA]">{course.instructor.bio}</p>
-                <button type="button" className="mt-4 rounded-xl border border-[#E10600] px-4 py-2 text-sm font-medium text-[#E10600] transition hover:bg-[#E10600]/10">
+                <button type="button" className="mt-4 rounded-xl border border-[#155dfc] px-4 py-2 text-sm font-medium text-[#155dfc] transition hover:bg-[#155dfc]/10">
                   View Profile
                 </button>
               </div>
@@ -204,7 +204,7 @@ export const CourseDetail = () => {
               {learningPoints.map((point) => (
                 <article key={point} className="rounded-xl border border-[#232326] bg-[#151518] p-4">
                   <p className="flex items-start gap-3 text-sm text-[#A1A1AA]">
-                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#E10600]" />
+                    <Check className="mt-0.5 h-4 w-4 shrink-0 text-[#155dfc]" />
                     <span>{point}</span>
                   </p>
                 </article>
@@ -231,18 +231,18 @@ export const CourseDetail = () => {
               whileTap={{ scale: 0.97 }}
               type="button"
               onClick={() => navigate(`/courses/${course.slug}/learn`)}
-              className="mt-5 w-full rounded-xl bg-[#E10600] px-4 py-3 text-sm font-semibold text-white transition hover:shadow-[0_0_24px_rgba(225,6,0,0.35)]"
+              className="mt-5 w-full rounded-xl bg-[#155dfc] px-4 py-3 text-sm font-semibold text-white transition hover:shadow-[0_0_24px_rgba(225,6,0,0.35)]"
             >
               Enroll Now
             </motion.button>
-            <button type="button" className="mt-3 w-full rounded-xl border border-[#E10600] px-4 py-3 text-sm font-semibold text-[#E10600] transition hover:bg-[#E10600]/10">
+            <button type="button" className="mt-3 w-full rounded-xl border border-[#155dfc] px-4 py-3 text-sm font-semibold text-[#155dfc] transition hover:bg-[#155dfc]/10">
               Add to Wishlist
             </button>
 
             <ul className="mt-6 space-y-3 text-sm text-[#A1A1AA]">
-              <li className="flex items-center gap-2"><BookOpen className="h-4 w-4 text-[#E10600]" /> Lifetime access</li>
-              <li className="flex items-center gap-2"><FileText className="h-4 w-4 text-[#E10600]" /> Text-based lesson notes</li>
-              <li className="flex items-center gap-2"><Clock3 className="h-4 w-4 text-[#E10600]" /> {formatDuration(course.totalMinutes)} self-paced content</li>
+              <li className="flex items-center gap-2"><BookOpen className="h-4 w-4 text-[#155dfc]" /> Lifetime access</li>
+              <li className="flex items-center gap-2"><FileText className="h-4 w-4 text-[#155dfc]" /> Text-based lesson notes</li>
+              <li className="flex items-center gap-2"><Clock3 className="h-4 w-4 text-[#155dfc]" /> {formatDuration(course.totalMinutes)} self-paced content</li>
             </ul>
 
             {firstLesson ? <p className="mt-6 text-xs text-[#A1A1AA]">Start with: {firstLesson.title}</p> : null}
@@ -260,7 +260,7 @@ export const CourseDetail = () => {
             whileTap={{ scale: 0.97 }}
             type="button"
             onClick={() => navigate(`/courses/${course.slug}/learn`)}
-            className="rounded-xl bg-[#E10600] px-4 py-3 text-sm font-semibold text-white"
+            className="rounded-xl bg-[#155dfc] px-4 py-3 text-sm font-semibold text-white"
           >
             Enroll Now
           </motion.button>

@@ -253,7 +253,7 @@
 }
 .py-terminal-logs p { margin: 0 0 4px; }
 .py-log-stdout { color: #cdd7ea; }
-.py-log-error { color: #ff8f8f; }
+.py-log-error { color: #155dfc; }
 .py-terminal-input {
   display: flex;
   gap: 8px;

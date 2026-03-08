@@ -23,7 +23,7 @@ export const Module = ({ module, moduleIndex, isOpen, onToggle, activeLessonId, 
 
       <div className="px-2 pb-2">
         <progress
-          className="h-0.5 w-full [&::-moz-progress-bar]:bg-[#E10600] [&::-webkit-progress-bar]:bg-[#232326] [&::-webkit-progress-value]:bg-[#E10600]"
+          className="h-0.5 w-full [&::-moz-progress-bar]:bg-[#155dfc] [&::-webkit-progress-bar]:bg-[#232326] [&::-webkit-progress-value]:bg-[#155dfc]"
           max="100"
           value={progress}
           aria-label={`${module.title} completion`}

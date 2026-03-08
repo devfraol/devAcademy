@@ -20,7 +20,7 @@ export const SocialLinks = ({ className = "", iconClassName = "", iconOnly = fal
             aria-label={`Visit Dev Fraol on ${name}`}
             whileHover={{ scale: 1.08, rotate: -4 }}
             whileFocus={{ scale: 1.05 }}
-            className={`inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-4 py-2 text-sm font-medium text-muted-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3B30] focus-visible:ring-offset-2 focus-visible:ring-offset-background hover:text-[#FF3B30] ${iconClassName}`.trim()}
+            className={`inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-4 py-2 text-sm font-medium text-muted-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#155dfc] focus-visible:ring-offset-2 focus-visible:ring-offset-background hover:text-[#155dfc] ${iconClassName}`.trim()}
           >
             <Icon className="h-4 w-4" aria-hidden="true" />
             {!iconOnly && <span>{name}</span>}

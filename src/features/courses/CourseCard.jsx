@@ -7,7 +7,7 @@ export const CourseCard = ({ course }) => {
     <article
       className={`group overflow-hidden rounded-2xl border bg-black/20 transition duration-300 hover:-translate-y-1 hover:shadow-2xl ${
         isProgramming
-          ? "border-[#ff3b30]/45 shadow-[0_0_24px_rgba(255,59,48,0.2)]"
+          ? "border-[#155dfc]/45 shadow-[0_0_24px_rgba(21,93,252,0.2)]"
           : "border-white/15 shadow-[0_10px_24px_rgba(0,0,0,0.24)]"
       }`}
     >
@@ -29,7 +29,7 @@ export const CourseCard = ({ course }) => {
 
         <Link
           to={`/courses/${course.slug}`}
-          className="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-[#ff564c] to-[#ff3b30] px-3 py-2 text-sm font-semibold text-white transition hover:shadow-[0_10px_20px_rgba(255,59,48,0.4)]"
+          className="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-[#155dfc] to-[#155dfc] px-3 py-2 text-sm font-semibold text-white transition hover:shadow-[0_10px_20px_rgba(21,93,252,0.4)]"
         >
           View Course
         </Link>

@@ -60,7 +60,7 @@ const SkillBar = ({ level }) => (
       className={`h-full rounded-full ${
         level > 75 ? 'bg-gradient-to-r from-green-400 to-emerald-500' : 
         level > 50 ? 'bg-gradient-to-r from-yellow-400 to-amber-500' : 
-        'bg-gradient-to-r from-red-400 to-pink-500'
+        'bg-gradient-to-r from-blue-400 to-pink-500'
       }`}
     />
   </div>
