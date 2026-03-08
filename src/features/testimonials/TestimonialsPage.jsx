@@ -12,7 +12,7 @@ export const TestimonialsPage = () => {
           transition={{ duration: 0.45 }}
           className="text-center"
         >
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#FF3B30]">Dev Fraol Academy</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#007a55]">Dev Fraol Academy</p>
           <h1 className="mt-3 text-4xl font-bold text-gray-900 transition-colors duration-300 dark:text-white sm:text-5xl">What Our Students Say</h1>
           <p className="mx-auto mt-4 max-w-3xl text-gray-700 transition-colors duration-300 dark:text-gray-300">
             Hear from our learners and see their success stories.
@@ -35,7 +35,7 @@ export const TestimonialsPage = () => {
           <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }} className="mt-6">
             <Link
               to="/apps"
-              className="inline-flex items-center justify-center rounded-full bg-[#FF3B30] px-7 py-3 text-sm font-semibold text-white shadow-[0_12px_24px_rgba(255,59,48,0.3)] transition-all duration-300 hover:bg-[#ff4f46] hover:shadow-[0_14px_28px_rgba(255,59,48,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3B30] focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-gray-950"
+              className="inline-flex items-center justify-center rounded-full bg-[#007a55] px-7 py-3 text-sm font-semibold text-white shadow-[0_12px_24px_rgba(0,122,85,0.3)] transition-all duration-300 hover:bg-[#008a61] hover:shadow-[0_14px_28px_rgba(0,122,85,0.45)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#007a55] focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-gray-950"
             >
               Start Learning Today
             </Link>

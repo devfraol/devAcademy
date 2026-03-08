@@ -36,7 +36,7 @@ export const LearningInterface = () => {
       <main className="flex min-h-screen items-center justify-center bg-[#0E0E10] px-6">
         <div className="rounded-2xl border border-[#232326] bg-[#151518] p-8 text-center">
           <h1 className="text-2xl font-semibold text-white">Learning page not found</h1>
-          <Link to="/courses" className="mt-4 inline-flex rounded-lg border border-[#E10600] px-4 py-2 text-sm font-medium text-[#E10600]">
+          <Link to="/courses" className="mt-4 inline-flex rounded-lg border border-[#007a55] px-4 py-2 text-sm font-medium text-[#007a55]">
             Back to courses
           </Link>
         </div>
@@ -94,7 +94,7 @@ export const LearningInterface = () => {
             <div className="min-w-0">
               <p className="truncate text-xs uppercase tracking-[0.14em] text-[#A1A1AA]">{course.title}</p>
             </div>
-            <Link to={`/courses/${course.slug}`} className="text-sm font-medium text-[#E10600] hover:text-[#ff4b44]">Exit</Link>
+            <Link to={`/courses/${course.slug}`} className="text-sm font-medium text-[#007a55] hover:text-[#ff4b44]">Exit</Link>
           </header>
 
           <div id="lesson-content-scroll" className="min-h-0 flex-1 overflow-y-auto">

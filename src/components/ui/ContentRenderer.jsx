@@ -3,7 +3,7 @@ export const ContentRenderer = ({ sections = [] }) => (
     {sections.map((section, index) => {
       if (section.type === "definition") {
         return (
-          <section key={`${section.type}-${index}`} className="rounded-2xl border border-[#ff6c63]/30 bg-[#ff6c63]/10 p-6">
+          <section key={`${section.type}-${index}`} className="rounded-2xl border border-[#1b9b75]/30 bg-[#1b9b75]/10 p-6">
             <h4 className="text-lg font-semibold text-foreground">{section.title}</h4>
             <p className="mt-3 leading-relaxed text-foreground/85">{section.text}</p>
           </section>
