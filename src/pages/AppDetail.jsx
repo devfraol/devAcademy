@@ -58,7 +58,7 @@ export const AppDetail = () => {
       <section className="mx-auto max-w-3xl px-4 py-20 text-center">
         <h1 className="text-3xl font-bold">App not found</h1>
         <p className="mt-3 text-foreground/75">This app may have been removed or the link is incorrect.</p>
-        <Link to="/apps" className="mt-6 inline-flex rounded-xl border border-[#FF3B30]/60 bg-[#FF3B30]/10 px-4 py-2 font-semibold text-[#FF3B30]">
+        <Link to="/apps" className="mt-6 inline-flex rounded-xl border border-[#155dfc]/60 bg-[#155dfc]/10 px-4 py-2 font-semibold text-[#155dfc]">
           Back to Apps
         </Link>
       </section>

@@ -4,7 +4,7 @@ const categories = ["All", "Web Development", "Graphic Design"];
 const sortOptions = ["Latest", "Popular"];
 
 const pillBase =
-  "rounded-full border px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FF3B30] focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+  "rounded-full border px-4 py-2 text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#155dfc] focus-visible:ring-offset-2 focus-visible:ring-offset-background";
 
 export const BlogFilter = ({ selectedCategory, selectedSort, onCategoryChange, onSortChange }) => {
   return (
@@ -19,7 +19,7 @@ export const BlogFilter = ({ selectedCategory, selectedSort, onCategoryChange, o
               type="button"
               onClick={() => onCategoryChange(category)}
               className={`${pillBase} ${
-                active ? "border-[#FF3B30] bg-[#FF3B30] text-white" : "border-border bg-muted/30 hover:border-[#FF3B30]"
+                active ? "border-[#155dfc] bg-[#155dfc] text-white" : "border-border bg-muted/30 hover:border-[#155dfc]"
               }`}
               aria-pressed={active}
             >
@@ -39,7 +39,7 @@ export const BlogFilter = ({ selectedCategory, selectedSort, onCategoryChange, o
               type="button"
               onClick={() => onSortChange(sort)}
               className={`${pillBase} ${
-                active ? "border-[#FF3B30] bg-[#FF3B30] text-white" : "border-border bg-muted/30 hover:border-[#FF3B30]"
+                active ? "border-[#155dfc] bg-[#155dfc] text-white" : "border-border bg-muted/30 hover:border-[#155dfc]"
               }`}
               aria-pressed={active}
             >

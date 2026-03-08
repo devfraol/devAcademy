@@ -9,7 +9,7 @@ const TestimonialCardComponent = ({ testimonial, priority = false }) => {
       viewport={{ once: true, amount: 0.4 }}
       whileHover={{ scale: 1.02, y: -3 }}
       transition={{ duration: 0.35 }}
-      className="group h-full rounded-2xl border border-gray-200 bg-white/95 p-6 shadow-sm transition-all duration-300 hover:border-[#FF3B30]/70 hover:shadow-[0_12px_30px_rgba(255,59,48,0.16)] dark:border-gray-700 dark:bg-gray-900/70"
+      className="group h-full rounded-2xl border border-gray-200 bg-white/95 p-6 shadow-sm transition-all duration-300 hover:border-[#155dfc]/70 hover:shadow-[0_12px_30px_rgba(21,93,252,0.16)] dark:border-gray-700 dark:bg-gray-900/70"
     >
       <header className="mb-4 flex items-center gap-3">
         <img
@@ -20,7 +20,7 @@ const TestimonialCardComponent = ({ testimonial, priority = false }) => {
         />
         <div>
           <h3 className="text-base font-semibold text-gray-900 transition-colors duration-300 dark:text-white">{testimonial.name}</h3>
-          <p className="text-sm text-[#FF3B30]">{testimonial.course}</p>
+          <p className="text-sm text-[#155dfc]">{testimonial.course}</p>
         </div>
       </header>
 

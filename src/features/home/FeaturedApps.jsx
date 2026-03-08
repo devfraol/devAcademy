@@ -21,7 +21,7 @@ export const FeaturedApps = () => {
           </div>
           <NavButton
             to="/apps"
-            className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-foreground backdrop-blur-xl transition hover:border-[#FF3B30]/60 hover:text-[#FF3B30]"
+            className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-foreground backdrop-blur-xl transition hover:border-[#155dfc]/60 hover:text-[#155dfc]"
           >
             See More
           </NavButton>
@@ -45,12 +45,12 @@ export const FeaturedApps = () => {
                 whileHover={{ y: -6, scale: 1.03 }}
                 className="group rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_10px_30px_rgba(0,0,0,0.25)] backdrop-blur-2xl"
               >
-                <div className="inline-flex rounded-xl bg-[#FF3B30]/15 p-3 text-[#FF3B30] transition-transform duration-300 group-hover:scale-110">
+                <div className="inline-flex rounded-xl bg-[#155dfc]/15 p-3 text-[#155dfc] transition-transform duration-300 group-hover:scale-110">
                   {Icon ? <Icon className="h-5 w-5" /> : <img src={app.icon} alt="" className="h-5 w-5" />}
                 </div>
                 <h3 className="mt-4 text-xl font-bold">{app.name}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{app.description}</p>
-                <Link to={app.route} className="mt-5 inline-flex items-center gap-2 font-semibold text-[#FF3B30] hover:underline">
+                <Link to={app.route} className="mt-5 inline-flex items-center gap-2 font-semibold text-[#155dfc] hover:underline">
                   Open App
                   <ArrowUpRight className="h-4 w-4" />
                 </Link>

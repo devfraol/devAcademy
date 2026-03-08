@@ -13,7 +13,7 @@ export const CurriculumSidebar = ({
   return (
     <aside className="rounded-3xl border border-white/15 bg-background/70 p-4 shadow-[0_18px_45px_rgba(15,20,35,0.3)] backdrop-blur-xl lg:sticky lg:top-20 lg:h-[calc(100vh-7rem)] lg:overflow-y-auto">
       <div className="mb-4 border-b border-white/10 pb-4">
-        <p className="text-xs uppercase tracking-[0.18em] text-[#ff8078]">Course Player</p>
+        <p className="text-xs uppercase tracking-[0.18em] text-[#155dfc]">Course Player</p>
         <h3 className="mt-1 text-lg font-semibold text-foreground">{course.title}</h3>
       </div>
 
@@ -45,8 +45,8 @@ export const CurriculumSidebar = ({
                         onClick={() => onSelectLesson(lesson)}
                         className={`w-full rounded-xl border px-3 py-2 text-left transition ${
                           isActive
-                            ? "border-[#ff4d43] bg-[#ff4d43]/15"
-                            : "border-white/10 bg-white/5 hover:border-[#ff4d43]/50"
+                            ? "border-[#155dfc] bg-[#155dfc]/15"
+                            : "border-white/10 bg-white/5 hover:border-[#155dfc]/50"
                         }`}
                       >
                         <p className="line-clamp-2 text-sm font-medium text-foreground">{lesson.title}</p>
@@ -75,7 +75,7 @@ export const CurriculumSidebar = ({
       {showEnroll ? (
         <button
           type="button"
-          className="mt-4 w-full rounded-xl bg-gradient-to-r from-[#ff5d52] to-[#ff3b30] px-4 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(255,59,48,0.35)]"
+          className="mt-4 w-full rounded-xl bg-gradient-to-r from-[#155dfc] to-[#155dfc] px-4 py-3 text-sm font-semibold text-white shadow-[0_10px_24px_rgba(21,93,252,0.35)]"
         >
           Enroll Now to unlock all lessons
         </button>

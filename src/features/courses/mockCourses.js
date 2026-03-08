@@ -102,7 +102,7 @@ export const mockCourses = [
               { type: "heading", text: "Palette Strategy" },
               { type: "paragraph", text: "Choose a primary, secondary, and accent color, then map each to a clear purpose." },
               { type: "quote", text: "Color is not decoration—it is communication." },
-              { type: "code", language: "css", code: ":root {\n  --primary: #ff3b30;\n  --secondary: #0ea5e9;\n  --surface: #0f172a;\n}" },
+              { type: "code", language: "css", code: ":root {\n  --primary: #155dfc;\n  --secondary: #0ea5e9;\n  --surface: #0f172a;\n}" },
             ],
           },
         ],

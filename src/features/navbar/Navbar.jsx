@@ -62,7 +62,7 @@ export const Navbar = () => {
         className={cn(
           "flex items-center justify-between gap-1 rounded-2xl border px-2 py-2 transition-all duration-300",
           "bg-background/60 supports-[backdrop-filter]:bg-background/45 backdrop-blur-2xl backdrop-saturate-150 shadow-[0_12px_35px_rgba(0,0,0,0.2)]",
-          isScrolled ? "border-primary/35 shadow-[0_16px_40px_rgba(255,59,48,0.15)]" : "border-border/70"
+          isScrolled ? "border-primary/35 shadow-[0_16px_40px_rgba(21,93,252,0.15)]" : "border-border/70"
         )}
       >
         <div className="flex items-center gap-1">
@@ -76,7 +76,7 @@ export const Navbar = () => {
                   "group px-3 py-2 rounded-xl text-xs sm:text-sm flex items-center gap-2 transition-all duration-300",
                   "hover:scale-[1.03]",
                   active
-                    ? "bg-primary text-primary-foreground shadow-[0_8px_20px_rgba(255,59,48,0.35)]"
+                    ? "bg-primary text-primary-foreground shadow-[0_8px_20px_rgba(21,93,252,0.35)]"
                     : "text-foreground/75 hover:text-foreground hover:bg-primary/10"
                 )}
               >

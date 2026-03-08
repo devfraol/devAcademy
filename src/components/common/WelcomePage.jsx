@@ -71,7 +71,7 @@ const WelcomePage = ({ onWelcomeComplete }) => {
           />
 
           <motion.div
-            className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(255,59,48,0.25),transparent_45%),radial-gradient(circle_at_80%_0%,rgba(255,59,48,0.16),transparent_35%),radial-gradient(circle_at_60%_80%,rgba(255,255,255,0.08),transparent_40%)]"
+            className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(21,93,252,0.25),transparent_45%),radial-gradient(circle_at_80%_0%,rgba(21,93,252,0.16),transparent_35%),radial-gradient(circle_at_60%_80%,rgba(255,255,255,0.08),transparent_40%)]"
             animate={{ opacity: [0.55, 0.85, 0.55] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           />
@@ -79,20 +79,20 @@ const WelcomePage = ({ onWelcomeComplete }) => {
           {particles.map((particle) => (
             <motion.span
               key={particle.id}
-              className={`absolute rounded-full bg-[#FF3B30]/60 ${particle.size}`}
+              className={`absolute rounded-full bg-[#155dfc]/60 ${particle.size}`}
               style={{ left: particle.left, top: particle.top }}
               animate={{ y: [0, -22, 0], opacity: [0.18, 0.9, 0.18], scale: [0.9, 1.15, 0.9] }}
               transition={{ duration: particle.duration, repeat: Infinity, delay: particle.delay, ease: "easeInOut" }}
             />
           ))}
 
-          <div className="relative w-full max-w-2xl rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_0_90px_rgba(255,59,48,0.2)] backdrop-blur-xl sm:p-9">
+          <div className="relative w-full max-w-2xl rounded-3xl border border-white/10 bg-white/5 p-6 shadow-[0_0_90px_rgba(21,93,252,0.2)] backdrop-blur-xl sm:p-9">
             <motion.img
               src={logoDark}
               alt="Dev Fraol Academy"
               className="mx-auto w-52 sm:w-64 md:w-72"
               initial={{ opacity: 0, scale: 0.84, y: 18 }}
-              animate={{ opacity: 1, scale: 1, y: 0, filter: "drop-shadow(0 0 18px rgba(255,59,48,0.45))" }}
+              animate={{ opacity: 1, scale: 1, y: 0, filter: "drop-shadow(0 0 18px rgba(21,93,252,0.45))" }}
               transition={{ duration: 0.9, ease: "easeOut" }}
             />
 
@@ -104,7 +104,7 @@ const WelcomePage = ({ onWelcomeComplete }) => {
             >
               <p className="text-lg font-semibold tracking-wide text-white sm:text-2xl">
                 {typedMessage}
-                <span className="ml-1 inline-block h-5 w-[2px] translate-y-1 animate-pulse bg-[#FF3B30]" />
+                <span className="ml-1 inline-block h-5 w-[2px] translate-y-1 animate-pulse bg-[#155dfc]" />
               </p>
               <p className="mt-3 text-sm text-white/70 sm:text-base">{subTitle}</p>
             </motion.div>
