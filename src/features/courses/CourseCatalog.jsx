@@ -122,10 +122,12 @@ export const CourseCatalog = () => {
         {error ? <p className="text-xs text-amber-300">{error}</p> : null}
       </section>
 
-      <section className="space-y-4">
+      <section className="space-y-5">
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-semibold text-foreground">{activeCategory}</h2>
-          <span className="text-sm text-foreground/70">{filteredCourses.length} courses</span>
+          <h2 className="text-xl font-semibold text-foreground sm:text-2xl">{activeCategory}</h2>
+          <span className="rounded-full border border-white/15 bg-black/25 px-3 py-1 text-xs text-foreground/75 sm:text-sm">
+            {filteredCourses.length} courses
+          </span>
         </div>
 
         {loading ? (
@@ -139,7 +141,7 @@ export const CourseCatalog = () => {
         ) : null}
 
         {!loading ? (
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
             {filteredCourses.map((course, index) => (
               <div
                 key={course.id}
