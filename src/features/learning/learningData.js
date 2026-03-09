@@ -1,8 +1,8 @@
 import { mockCourses } from "@/features/courses/mockCourses";
 import { courses as fallbackCourses } from "@/data/courses";
-import { microsoftWindowsCourseContent } from "@/data/microsoftWindowsCourseContent";
-import { networkingInternetBasicsCourseContent } from "@/data/networkingInternetBasicsCourseContent";
-import { operatingSystemsFundamentalsCourseContent } from "@/data/operatingSystemsFundamentalsCourseContent";
+import microsoftWindowsCourseContent from "@/data/microsoftWindowsCourseContent.json";
+import networkingInternetBasicsCourseContent from "@/data/networkingInternetBasicsCourseContent.json";
+import operatingSystemsFundamentalsCourseContent from "@/data/operatingSystemsFundamentalsCourseContent.json";
 import rj45Image from "@/assets/rj45.png";
 import windowsDesktopImage from "@/assets/windows-desktop.svg";
 
