@@ -147,8 +147,8 @@ const renderKeyboardShortcutList = (items, index) => {
 };
 
 const renderBlock = (block, index) => {
-  if (block.type === "h2") return <h2 key={index} className="mt-12 text-3xl font-semibold text-white">{block.text}</h2>;
-  if (block.type === "h3") return <h3 key={index} className="mt-8 text-2xl font-semibold text-white">{block.text}</h3>;
+  if (block.type === "h2") return <h2 key={index} className="mt-12 inline-flex rounded-full border border-[#009689]/35 bg-[#009689]/10 px-4 py-1.5 text-xl font-semibold text-[#7DEEE2]">{block.text}</h2>;
+  if (block.type === "h3") return <h3 key={index} className="mt-8 text-2xl font-semibold text-[#E4E4E7]">{block.text}</h3>;
 
   if (block.type === "tips-list") {
     return (
@@ -175,7 +175,7 @@ const renderBlock = (block, index) => {
     if (cliCommandList) return cliCommandList;
 
     return (
-      <ul key={index} className="mt-4 list-disc space-y-2 pl-6 text-[16px] leading-[1.7] text-[#D4D4D8]">
+      <ul key={index} className="mt-4 list-disc space-y-2 rounded-2xl border border-white/10 bg-[#12131a] p-5 pl-10 text-[16px] leading-[1.7] text-[#D4D4D8]">
         {block.items.map((item) => <li key={item}>{item}</li>)}
       </ul>
     );
@@ -183,7 +183,7 @@ const renderBlock = (block, index) => {
 
   if (block.type === "ordered-list") {
     return (
-      <ol key={index} className="mt-4 list-decimal space-y-2 pl-6 text-[16px] leading-[1.7] text-[#D4D4D8]">
+      <ol key={index} className="mt-4 list-decimal space-y-2 rounded-2xl border border-white/10 bg-[#12131a] p-5 pl-10 text-[16px] leading-[1.7] text-[#D4D4D8]">
         {block.items.map((item) => <li key={item}>{item}</li>)}
       </ol>
     );
@@ -227,7 +227,7 @@ const renderBlock = (block, index) => {
     );
   }
 
-  return <p key={index} className="mt-6 text-[16px] leading-[1.7] text-[#D4D4D8]">{block.text}</p>;
+  return <p key={index} className="mt-6 rounded-xl border border-white/5 bg-[#14151c] px-5 py-4 text-[16px] leading-[1.7] text-[#D4D4D8]">{block.text}</p>;
 };
 
 const LessonExam = ({ exam }) => {
@@ -286,8 +286,8 @@ const LessonExam = ({ exam }) => {
   }, [answers, exam.questions, passingScore]);
 
   return (
-    <article className="mx-auto w-full max-w-[800px] px-6 pb-24 pt-10 text-left md:px-10">
-      <header className="mb-10 border-b border-[#232326] pb-7">
+    <article className="mx-auto w-full max-w-[900px] px-6 pb-24 pt-10 text-left md:px-10">
+      <header className="mb-10 rounded-2xl border border-[#232326] bg-gradient-to-br from-[#181a22] to-[#12131a] p-6 shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
         <p className="text-sm text-[#A1A1AA]">Final Exam</p>
         <h1 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-[38px]">{exam.title}</h1>
         <p className="mt-4 text-sm text-[#A1A1AA]">Passing Score: {passingScore}%</p>
@@ -566,7 +566,7 @@ const DragOrderExam = ({ exam }) => {
 
   return (
     <article className="mx-auto w-full max-w-[900px] px-6 pb-24 pt-10 text-left md:px-10">
-      <header className="mb-10 border-b border-[#232326] pb-7">
+      <header className="mb-10 rounded-2xl border border-[#232326] bg-gradient-to-br from-[#181a22] to-[#12131a] p-6 shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
         <p className="text-sm text-[#A1A1AA]">Practical Exam</p>
         <h1 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-[38px]">{exam.title}</h1>
         <p className="mt-4 text-sm text-[#A1A1AA]">Attempts Left: {Math.max(attemptsLeft, 0)} / {maxAttempts}</p>
@@ -678,10 +678,10 @@ export const LessonContent = ({ lesson, moduleTitle }) => {
   if (lesson.exam) return <LessonExam exam={lesson.exam} />;
 
   return (
-    <article className="mx-auto w-full max-w-[800px] px-6 pb-24 pt-10 text-left md:px-10">
-      <header className="mb-10 border-b border-[#232326] pb-7">
-        <p className="text-sm text-[#A1A1AA]">{moduleTitle}</p>
-        <h1 className="mt-3 text-3xl font-bold tracking-tight text-white md:text-[38px]">{lesson.title}</h1>
+    <article className="mx-auto w-full max-w-[900px] px-6 pb-24 pt-10 text-left md:px-10">
+      <header className="mb-10 rounded-2xl border border-[#232326] bg-gradient-to-br from-[#181a22] to-[#12131a] p-6 shadow-[0_24px_60px_rgba(0,0,0,0.35)]">
+        <p className="inline-flex rounded-full border border-[#009689]/35 bg-[#009689]/10 px-3 py-1 text-xs uppercase tracking-[0.14em] text-[#7DEEE2]">{moduleTitle}</p>
+        <h1 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-[40px]">{lesson.title}</h1>
       </header>
 
       <div className="space-y-1">{lesson.content.map((block, index) => renderBlock(block, index))}</div>
