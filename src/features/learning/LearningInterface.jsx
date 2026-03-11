@@ -9,7 +9,11 @@ import { NavigationFooter } from "@/features/learning/components/NavigationFoote
 
 const flattenLessons = (modules) =>
   modules.flatMap((module, moduleIndex) =>
-    module.lessons.map((lesson) => ({ lesson, moduleId: module.id, moduleName: `Module ${moduleIndex + 1}` })),
+    module.lessons.map((lesson) => ({
+      lesson,
+      moduleId: module.id,
+      moduleName: module.title ?? `Module ${moduleIndex + 1}`,
+    })),
   );
 
 export const LearningInterface = () => {
