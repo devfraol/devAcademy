@@ -114,8 +114,8 @@ export const HomeCoursesPreview = () => {
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div className="space-y-2">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#009689]">Learn with Dev Fraol</p>
-            <h2 className="text-2xl font-bold text-white sm:text-3xl">Featured Courses</h2>
-            <p className="max-w-2xl text-sm text-white/70 sm:text-base">Discover high-impact courses with practical projects, structured lessons, and preview content before you enroll.</p>
+            <h2 className="text-2xl font-bold text-white sm:text-3xl">Featured IT Foundation Courses</h2>
+            <p className="max-w-2xl text-sm text-white/70 sm:text-base">Discover core IT courses designed for beginners, with clear lessons, hands-on practice, and preview content before you enroll.</p>
           </div>
           <Link
             to="/courses"

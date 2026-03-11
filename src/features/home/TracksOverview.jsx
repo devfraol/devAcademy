@@ -5,17 +5,17 @@ import { TrackCard } from "./TrackCard";
 
 const tracks = [
   {
-    title: "Web Development Track",
-    description: "Build modern websites and applications from frontend foundations to backend logic.",
+    title: "IT & Web Foundations Track",
+    description: "Master essential IT and web concepts step by step, from core computing basics to practical development workflows.",
     icon: Code2,
-    highlights: ["HTML & CSS", "JavaScript", "React JS", "PHP + MySQL", "Python"],
+    highlights: ["Computer Basics", "Operating Systems", "Networking Basics", "HTML & CSS", "JavaScript Fundamentals"],
     href: "/apps",
   },
   {
-    title: "Graphic Design Track",
-    description: "Create polished visual assets with industry-standard Adobe tools and workflows.",
+    title: "Programming Foundations Track",
+    description: "Build confidence in coding through beginner-first lessons that prepare you for full-stack and software learning paths.",
     icon: Brush,
-    highlights: ["Illustrator", "Photoshop", "InDesign", "Composition"],
+    highlights: ["Programming Logic", "Python Basics", "Web Fundamentals", "Databases Intro"],
     href: "/apps",
   },
 ];
@@ -25,9 +25,9 @@ export const TracksOverview = () => {
     <section id="tracks" className="px-4 py-16 sm:px-6">
       <div className="container mx-auto max-w-6xl text-left">
         <motion.div variants={sectionReveal} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
-          <h2 className="text-3xl sm:text-4xl">Tracks Overview / What You Will Learn</h2>
+          <h2 className="text-3xl sm:text-4xl">IT Foundations Roadmap / What You Will Learn</h2>
           <p className="mt-3 max-w-3xl text-muted-foreground">
-            Start with a focused path. Learn practical, job-relevant skills through project-driven modules.
+            Start with a focused path built around core IT knowledge. Learn practical, job-ready skills through structured and beginner-friendly modules.
           </p>
         </motion.div>
 

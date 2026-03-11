@@ -10,10 +10,10 @@ export const Hero = () => {
             DEV FRAOL ACADEMY
           </p>
           <h1 className="mt-5 text-4xl font-extrabold sm:text-5xl md:text-6xl">
-            <span className="text-primary">Programing</span> + <span className="text-primary">Graphic Design</span> with real-world projects.
+            Build strong <span className="text-primary">IT Foundations</span> for modern tech careers.
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-            Learn in a practice-first curriculum with guided modules, mentor-style explanations, and project workflows that mirror creative tech teams.
+            Start with beginner-friendly core courses in programming, operating systems, networking, and web fundamentals—then apply what you learn through guided practice.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.97 }}>

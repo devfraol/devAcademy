@@ -10,8 +10,8 @@ export const CTA = () => {
         viewport={{ once: true }}
         className="container max-w-6xl mx-auto rounded-2xl border border-primary/40 bg-linear-to-r from-primary/15 via-primary/5 to-card p-8 sm:p-12"
       >
-        <h2 className="text-3xl sm:text-4xl text-left">Start Your Journey Today</h2>
-        <p className="mt-3 text-left text-muted-foreground">Build real projects, sharpen your creative confidence, and move toward your next professional milestone.</p>
+        <h2 className="text-3xl sm:text-4xl text-left">Start Your IT Learning Journey Today</h2>
+        <p className="mt-3 text-left text-muted-foreground">Build your IT fundamentals with practical lessons and move confidently toward certifications, internships, and entry-level tech roles.</p>
         <Link to="/apps" className="mt-6 inline-flex cosmic-button">
           Start Learning
         </Link>
