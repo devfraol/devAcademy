@@ -11,8 +11,22 @@ const fallbackInstructor = {
   profile_image: "/profile-logo.png",
 };
 
+const featuredCategoryPriority = {
+  "Computer Fundamentals": 0,
+  Programming: 1,
+  "Graphic Design": 2,
+};
+
+const orderFeaturedCourses = (rawCourses = []) =>
+  [...rawCourses].sort((a, b) => {
+    const aRank = featuredCategoryPriority[a.category] ?? Number.MAX_SAFE_INTEGER;
+    const bRank = featuredCategoryPriority[b.category] ?? Number.MAX_SAFE_INTEGER;
+    if (aRank !== bRank) return aRank - bRank;
+    return 0;
+  });
+
 const mapFallbackCourses = () =>
-  fallbackCourses.slice(0, 8).map((course, index) => ({
+  orderFeaturedCourses(fallbackCourses).slice(0, 4).map((course, index) => ({
     id: course.id,
     title: course.title,
     slug: course.slug || course.id,
@@ -55,7 +69,7 @@ export const HomeCoursesPreview = () => {
       setIsLoading(true);
       try {
         const [coursesPayload, instructorsPayload] = await Promise.all([
-          apiFetch("/api/courses?limit=8"),
+          apiFetch("/api/courses?limit=4"),
           apiFetch("/api/instructors"),
         ]);
 
@@ -75,22 +89,19 @@ export const HomeCoursesPreview = () => {
 
         const instructorsMap = new Map(instructorsList.map((instructor) => [instructor.id, instructor]));
 
-        const orderedCourses = [...rawCourses].sort((a, b) => {
-          if (a.category === "Programming" && b.category !== "Programming") return -1;
-          if (b.category === "Programming" && a.category !== "Programming") return 1;
-          return 0;
-        });
+        const orderedCourses = orderFeaturedCourses(rawCourses);
+
+        if (orderedCourses.length === 0) {
+          const fallbackMap = new Map([[fallbackInstructor.id, fallbackInstructor]]);
+          setCourses(mapFallbackCourses().map((course) => mapCourse(course, fallbackMap)));
+          return;
+        }
 
         setCourses(orderedCourses.map((course) => mapCourse(course, instructorsMap)));
       } catch {
         if (!cancelled) {
           const fallbackMap = new Map([[fallbackInstructor.id, fallbackInstructor]]);
-          const sortedFallback = mapFallbackCourses().sort((a, b) => {
-            if (a.category === "Programming" && b.category !== "Programming") return -1;
-            if (b.category === "Programming" && a.category !== "Programming") return 1;
-            return 0;
-          });
-          setCourses(sortedFallback.map((course) => mapCourse(course, fallbackMap)));
+          setCourses(mapFallbackCourses().map((course) => mapCourse(course, fallbackMap)));
         }
       } finally {
         if (!cancelled) {
@@ -133,15 +144,7 @@ export const HomeCoursesPreview = () => {
           </div>
         ) : hasCourses ? (
           <>
-            <div className="flex snap-x snap-mandatory gap-4 overflow-x-auto pb-2 md:hidden">
-              {courses.map((course, index) => (
-                <div key={course.id} className="snap-start">
-                  <CourseCard course={course} index={index} />
-                </div>
-              ))}
-            </div>
-
-            <div className="hidden gap-5 md:grid md:grid-cols-2 xl:grid-cols-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
               {courses.map((course, index) => (
                 <CourseCard key={course.id} course={course} index={index} />
               ))}

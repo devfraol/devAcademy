@@ -20,7 +20,7 @@ export const CourseCard = ({ course, index = 0 }) => {
       transition={{ duration: 0.35, delay: index * 0.05 }}
       whileHover={{ scale: 1.02, y: -4 }}
       onClick={() => navigate(`/course/${course.slug}`)}
-      className="group min-w-[280px] cursor-pointer overflow-hidden rounded-2xl border border-white/15 bg-gradient-to-br from-[#1c2131] to-[#141926] shadow-[0_10px_24px_rgba(5,10,22,0.35)] transition-shadow hover:shadow-[0_18px_38px_rgba(4,8,22,0.5)] sm:min-w-[320px]"
+      className="group w-full min-w-0 cursor-pointer overflow-hidden rounded-2xl border border-white/15 bg-gradient-to-br from-[#1c2131] to-[#141926] shadow-[0_10px_24px_rgba(5,10,22,0.35)] transition-shadow hover:shadow-[0_18px_38px_rgba(4,8,22,0.5)]"
     >
       <div className="relative">
         <img src={course.thumbnail} alt={course.title} className="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
