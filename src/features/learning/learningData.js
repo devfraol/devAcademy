@@ -195,12 +195,34 @@ const normalizeCourse = (course) => {
 export const getLearningCourse = (slug) => {
   const normalizedSlug = String(slug ?? "").toLowerCase();
 
+  const findCourseBySlug = (dataset, fallbackCourse) => {
+    if (Array.isArray(dataset)) {
+      return dataset.find((course) => String(course.slug ?? course.id).toLowerCase() === normalizedSlug) ?? null;
+    }
+
+    if (dataset && typeof dataset === "object") {
+      const singleCourse = {
+        id: fallbackCourse.id,
+        slug: fallbackCourse.id,
+        title: fallbackCourse.title,
+        modules: [dataset],
+      };
+
+      if (String(singleCourse.slug).toLowerCase() === normalizedSlug) {
+        return singleCourse;
+      }
+    }
+
+    return null;
+  };
+
   const windowsMatch = microsoftWindowsCourseContent.find((course) => String(course.slug).toLowerCase() === normalizedSlug);
   if (windowsMatch) return normalizeCourse(windowsMatch);
 
-  const networkingMatch = networkingInternetBasicsCourseContent.find(
-    (course) => String(course.slug).toLowerCase() === normalizedSlug,
-  );
+  const networkingMatch = findCourseBySlug(networkingInternetBasicsCourseContent, {
+    id: "networking-internet-basics",
+    title: "Networking & Internet Basics",
+  });
   if (networkingMatch) return normalizeCourse(networkingMatch);
 
   const operatingSystemsMatch = operatingSystemsFundamentalsCourseContent.find(
