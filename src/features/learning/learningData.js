@@ -10,6 +10,8 @@ import importantImage from "@/assets/Important.png";
 import clientVsServerImage from "@/assets/Clinte vs Server.png";
 import routerImage from "@/assets/Router.jpg";
 import modemImage from "@/assets/Modem.png";
+import switchesImage from "@/assets/Switches.jpg";
+import switchExampleImage from "@/assets/example switch.webp";
 
 const lessonImageMap = {
   computerNetwork: computerNetworkImage,
@@ -17,6 +19,8 @@ const lessonImageMap = {
   important: importantImage,
   modem: modemImage,
   router: routerImage,
+  switchExample: switchExampleImage,
+  switches: switchesImage,
   rj45: rj45Image,
   windowsDesktop: windowsDesktopImage,
 };
@@ -106,6 +110,14 @@ const lessonSectionsToBlocks = (lesson) => {
   if (lesson.examples?.length) {
     blocks.push({ type: "h2", text: "Examples" });
     blocks.push(...toListBlock(lesson.examples));
+
+    if (lesson.examplesImageKey && lessonImageMap[lesson.examplesImageKey]) {
+      blocks.push({
+        type: "image",
+        src: lessonImageMap[lesson.examplesImageKey],
+        alt: lesson.examplesImageAlt ?? "Examples reference image",
+      });
+    }
   }
 
   if (lesson.keyPoints?.length) {
