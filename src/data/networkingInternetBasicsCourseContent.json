@@ -21,7 +21,9 @@
               "A network connects multiple devices",
               "Devices communicate by sending data",
               "Networks can be wired or wireless"
-            ]
+            ],
+            "definitionImageKey": "computerNetwork",
+            "definitionImageAlt": "Computer network diagram showing multiple connected devices"
           },
           {
             "title": "Lesson 2: Why Networks Are Important",

@@ -5,8 +5,10 @@ import networkingInternetBasicsCourseContent from "@/data/networkingInternetBasi
 import operatingSystemsFundamentalsCourseContent from "@/data/operatingSystemsFundamentalsCourseContent.json";
 import rj45Image from "@/assets/rj45.png";
 import windowsDesktopImage from "@/assets/windows-desktop.svg";
+import computerNetworkImage from "@/assets/computer_network.webp";
 
 const lessonImageMap = {
+  computerNetwork: computerNetworkImage,
   rj45: rj45Image,
   windowsDesktop: windowsDesktopImage,
 };
