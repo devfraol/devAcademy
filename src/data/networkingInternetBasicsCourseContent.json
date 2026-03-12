@@ -36,7 +36,9 @@
               "Networks allow global communication",
               "They support internet services and online applications",
               "Businesses and organizations depend on networks"
-            ]
+            ],
+            "definitionImageKey": "important",
+            "definitionImageAlt": "Important note about why networks matter"
           },
           {
             "title": "Lesson 4: Client vs Server",
