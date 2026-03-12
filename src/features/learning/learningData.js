@@ -6,9 +6,11 @@ import operatingSystemsFundamentalsCourseContent from "@/data/operatingSystemsFu
 import rj45Image from "@/assets/rj45.png";
 import windowsDesktopImage from "@/assets/windows-desktop.svg";
 import computerNetworkImage from "@/assets/computer_network.webp";
+import importantImage from "@/assets/Important.png";
 
 const lessonImageMap = {
   computerNetwork: computerNetworkImage,
+  important: importantImage,
   rj45: rj45Image,
   windowsDesktop: windowsDesktopImage,
 };
