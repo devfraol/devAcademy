@@ -137,6 +137,8 @@
             "title": "Lesson 1: Router",
             "overview": "A router is a device that connects different networks and directs data traffic between them.",
             "definition": "Routers examine the destination address of data packets and decide the best path to send them. In most homes and offices, the router connects the local network to the internet.",
+            "definitionImageKey": "router",
+            "definitionImageAlt": "Router device diagram",
             "examples": [
               "Your home router allows all your devices to share a single internet connection."
             ],
