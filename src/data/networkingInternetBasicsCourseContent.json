@@ -150,9 +150,13 @@
             "title": "Lesson 2: Switch",
             "overview": "A switch connects multiple devices within the same local network.",
             "definition": "Switches receive data from one device and send it directly to the correct destination device within the network. This helps improve network efficiency because data is not broadcast to every device.",
+            "definitionImageKey": "switches",
+            "definitionImageAlt": "Network switch with multiple Ethernet ports",
             "examples": [
               "In an office network, computers are often connected to a switch using Ethernet cables."
             ],
+            "examplesImageKey": "exampleSwitch",
+            "examplesImageAlt": "Example network switch setup",
             "keyPoints": [
               "Connects devices inside a LAN",
               "Sends data to the correct device",

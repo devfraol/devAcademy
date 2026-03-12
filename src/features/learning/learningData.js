@@ -8,12 +8,16 @@ import windowsDesktopImage from "@/assets/windows-desktop.svg";
 import computerNetworkImage from "@/assets/computer_network.webp";
 import importantImage from "@/assets/Important.png";
 import clientVsServerImage from "@/assets/Clinte vs Server.png";
+import switchesImage from "@/assets/Switches.jpg";
+import exampleSwitchImage from "@/assets/example switch.webp";
 
 const lessonImageMap = {
   computerNetwork: computerNetworkImage,
   clientVsServer: clientVsServerImage,
   important: importantImage,
   rj45: rj45Image,
+  switches: switchesImage,
+  exampleSwitch: exampleSwitchImage,
   windowsDesktop: windowsDesktopImage,
 };
 
@@ -102,6 +106,14 @@ const lessonSectionsToBlocks = (lesson) => {
   if (lesson.examples?.length) {
     blocks.push({ type: "h2", text: "Examples" });
     blocks.push(...toListBlock(lesson.examples));
+
+    if (lesson.examplesImageKey && lessonImageMap[lesson.examplesImageKey]) {
+      blocks.push({
+        type: "image",
+        src: lessonImageMap[lesson.examplesImageKey],
+        alt: lesson.examplesImageAlt ?? "Examples reference image",
+      });
+    }
   }
 
   if (lesson.keyPoints?.length) {
