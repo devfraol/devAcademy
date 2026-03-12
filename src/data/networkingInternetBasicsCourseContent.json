@@ -172,7 +172,9 @@
               "Connects your network to the ISP",
               "Converts signals for network communication",
               "Often combined with routers"
-            ]
+            ],
+            "definitionImageKey": "modem",
+            "definitionImageAlt": "Modem device illustration"
           },
           {
             "title": "Lesson 4: Wireless Access Point",
