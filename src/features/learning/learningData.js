@@ -7,9 +7,11 @@ import rj45Image from "@/assets/rj45.png";
 import windowsDesktopImage from "@/assets/windows-desktop.svg";
 import computerNetworkImage from "@/assets/computer_network.webp";
 import importantImage from "@/assets/Important.png";
+import clientVsServerImage from "@/assets/Clinte vs Server.png";
 
 const lessonImageMap = {
   computerNetwork: computerNetworkImage,
+  clientVsServer: clientVsServerImage,
   important: importantImage,
   rj45: rj45Image,
   windowsDesktop: windowsDesktopImage,

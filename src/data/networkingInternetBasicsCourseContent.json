@@ -44,6 +44,8 @@
             "title": "Lesson 4: Client vs Server",
             "overview": "In many networks, devices have different roles. Two common roles are clients and servers.",
             "definition": "A client is a device that requests services or information. Examples include laptops, smartphones, and desktop computers. A server is a powerful computer that provides services, data, or applications to clients. When a client needs something, it sends a request to a server. The server processes that request and sends back the response. This model is used by most internet services.",
+            "definitionImageKey": "clientVsServer",
+            "definitionImageAlt": "Diagram showing how a client sends requests to a server and receives responses",
             "examples": [
               "When you open a website:",
               "Your computer acts as the client",
