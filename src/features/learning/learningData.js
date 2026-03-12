@@ -9,11 +9,13 @@ import computerNetworkImage from "@/assets/computer_network.webp";
 import importantImage from "@/assets/Important.png";
 import clientVsServerImage from "@/assets/Clinte vs Server.png";
 import routerImage from "@/assets/Router.jpg";
+import modemImage from "@/assets/Modem.png";
 
 const lessonImageMap = {
   computerNetwork: computerNetworkImage,
   clientVsServer: clientVsServerImage,
   important: importantImage,
+  modem: modemImage,
   router: routerImage,
   rj45: rj45Image,
   windowsDesktop: windowsDesktopImage,
