@@ -37,22 +37,6 @@
             ]
           },
           {
-            "title": "Lesson 3: Real-World Network Examples",
-            "overview": "Networks exist in many different environments. Understanding real examples helps you see how networking is used every day.",
-            "definition": "Networks can be small or extremely large depending on their purpose. A home network connects devices like phones, laptops, and smart TVs through a Wi-Fi router. An office network connects employee computers, printers, and servers so people can share files and applications. The internet is the largest network in the world. It connects billions of devices across different countries. Each of these networks works on the same basic principle: devices communicate using network connections.",
-            "examples": [
-              "In a company office:",
-              "Employees connect to the company network",
-              "Files are stored on shared servers",
-              "Everyone can access internal systems"
-            ],
-            "keyPoints": [
-              "Networks exist in homes, offices, schools, and the internet",
-              "They allow devices to share information and resources",
-              "Small and large networks follow the same basic concepts"
-            ]
-          },
-          {
             "title": "Lesson 4: Client vs Server",
             "overview": "In many networks, devices have different roles. Two common roles are clients and servers.",
             "definition": "A client is a device that requests services or information. Examples include laptops, smartphones, and desktop computers. A server is a powerful computer that provides services, data, or applications to clients. When a client needs something, it sends a request to a server. The server processes that request and sends back the response. This model is used by most internet services.",
@@ -66,22 +50,6 @@
               "Clients request services",
               "Servers provide services",
               "Most internet systems follow the client-server model"
-            ]
-          },
-          {
-            "title": "Lesson 5: How Data Travels on the Internet",
-            "overview": "Data does not travel across networks as one large piece. Instead, it moves in small units.",
-            "definition": "When information is sent across a network, it is divided into smaller pieces called packets. Each packet contains: a part of the data, the sender's address, and the destination address. Routers and other networking devices read this information and forward the packets toward their destination. When all packets arrive, the receiving device reassembles them to recreate the original message. This system makes network communication efficient and reliable.",
-            "examples": [
-              "When you send a photo through the internet:",
-              "1. The photo is split into many packets",
-              "2. Each packet travels through the network",
-              "3. The receiving device combines the packets to rebuild the photo"
-            ],
-            "keyPoints": [
-              "Data travels in packets",
-              "Packets contain addressing information",
-              "Devices reassemble packets to restore the original data"
             ]
           }
         ]
