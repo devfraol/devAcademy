@@ -12,6 +12,7 @@ import routerImage from "@/assets/Router.jpg";
 import modemImage from "@/assets/Modem.png";
 import switchesImage from "@/assets/Switches.jpg";
 import switchExampleImage from "@/assets/example switch.webp";
+import wirelessAccessPointImage from "@/assets/Wireless Access Point.jpg";
 
 const lessonImageMap = {
   computerNetwork: computerNetworkImage,
@@ -21,6 +22,7 @@ const lessonImageMap = {
   router: routerImage,
   switchExample: switchExampleImage,
   switches: switchesImage,
+  wirelessAccessPoint: wirelessAccessPointImage,
   rj45: rj45Image,
   windowsDesktop: windowsDesktopImage,
 };

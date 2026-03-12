@@ -184,6 +184,8 @@
             "title": "Lesson 4: Wireless Access Point",
             "overview": "A wireless access point allows devices to connect to a network using Wi-Fi.",
             "definition": "Access points extend wireless coverage and allow many devices to connect without cables. They are commonly used in offices, schools, and large buildings.",
+            "definitionImageKey": "wirelessAccessPoint",
+            "definitionImageAlt": "Wireless access point device providing Wi-Fi coverage",
             "examples": [
               "A coffee shop Wi-Fi system uses access points to provide internet access to customers."
             ],
